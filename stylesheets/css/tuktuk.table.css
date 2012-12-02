@@ -1,0 +1,15 @@
+table {
+  margin: 0 0 20px 0;
+  width: 100%;
+  border-spacing: 2px;
+}
+table td,
+table th {
+  padding: 10px 8px 10px 8px;
+}
+table th {
+  font-weight: 700;
+}
+table td.highlight {
+  font-weight: 700;
+}

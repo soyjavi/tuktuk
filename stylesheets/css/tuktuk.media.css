@@ -1,0 +1,41 @@
+/* ==== Screen Bigger than 960px ==== */
+@media only screen and (min-width:1200px) {
+  header {
+    height: auto;
+  }
+}
+/* ==== Screen 960px ==== */
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  header {
+    height: auto;
+  }
+}
+/* ==== Tablet (Smaller than 959px) ==== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  header {
+    height: auto;
+  }
+}
+/* ==== Phone (landscape 420px) ==== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    height: auto !important;
+  }
+}
+/* ==== Phone (portrait 300px) ==== */
+@media only screen and (max-width: 767px) {
+  header {
+    height: auto !important;
+  }
+  nav button,
+  nav .button,
+  nav a {
+    width: 100%;
+  }
+}
+/* ==== Retina ==== */
+@media only screen and (-webkit-min-device-pixel-ratio:1.5) {
+  header {
+    height: auto;
+  }
+}

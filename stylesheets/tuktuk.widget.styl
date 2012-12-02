@@ -1,0 +1,61 @@
+@import "__vendor.styl"
+
+.float
+  &.clear
+    clear: both
+  &.left
+    float: left
+  &.right
+    float: right
+
+dimension = 20px
+.no-margin
+  margin: 0
+.margin
+  &.all
+    margin: dimension
+  &.left
+    margin-left: dimension
+  &.right
+    margin-right: dimension
+  &.top
+    margin-top: dimension
+  &.bottom
+    margin-bottom: dimension
+
+.no-padding
+  padding: 0
+.padding
+  &.all
+    padding: dimension
+  &.left
+    padding-left: dimension
+  &.right
+    padding-right: dimension
+  &.top
+    padding-top: dimension
+  &.bottom
+    padding-bottom: dimension
+
+.display
+  &.block
+    display: block
+  &.hidden
+    display: none
+
+/* ================== DASHBOARD ================== */
+section
+  &.underline
+    border-bottom: solid #bbb 1px
+    padding: 12px 0
+
+/* ================== IMAGE & MEDIA ================== */
+img
+  border: 0
+  -ms-interpolation-mode: bicubic
+
+  &.responsive
+    width: 100%
+    height: auto
+    &.rounded
+      border-radius 50%

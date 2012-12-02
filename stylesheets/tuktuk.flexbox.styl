@@ -1,0 +1,22 @@
+@import "__vendor.styl"
+@import "__constants.styl"
+
+.flexbox
+  display-box()
+
+  &.y
+    box-orient(vertical)
+  &.x
+    box-orient(horizontal)
+    box-pack(justify)
+
+  & > *
+    display: block
+
+  & > .box
+    box-flex(0)
+  & > .box-1
+    box-flex(1)
+  & > .box-2
+    box-flex(2)
+

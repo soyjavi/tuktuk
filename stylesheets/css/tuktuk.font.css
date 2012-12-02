@@ -1,0 +1,93 @@
+/* ========================= HEADING ========================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+h1 .right,
+h2 .right,
+h3 .right,
+h4 .right,
+h5 .right,
+h6 .right {
+  font-size: 1em;
+}
+h1 .icon,
+h2 .icon,
+h3 .icon,
+h4 .icon,
+h5 .icon,
+h6 .icon {
+  font-size: 0.85em;
+}
+h1 {
+  font-size: 2.4em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.6em;
+}
+h5 {
+  font-size: 1.3em;
+}
+h6 {
+  font-size: 1em;
+}
+/* ========================= TEXT ========================= */
+.text.thin {
+  font-weight: 200;
+}
+.text.book {
+  font-weight: 300;
+}
+.text.normal {
+  font-weight: 400;
+}
+.text.bold {
+  font-weight: 700;
+}
+.text.italic {
+  font-style: italic;
+}
+.text.underline {
+  border-bottom: 1px solid;
+}
+.text.left {
+  text-align: left;
+}
+.text.right {
+  text-align: right;
+}
+.text.center {
+  text-align: center;
+}
+.text.justify {
+  text-align: justify;
+}
+/* ========================= BASIC ELEMENTS ========================= */
+p {
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+small {
+  font-size: 0.85em;
+  line-height: 0.85em;
+}

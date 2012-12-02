@@ -1,0 +1,23 @@
+nav.group a {
+  font-size: 15px;
+  padding: 0 16px;
+}
+nav.group a:last-child {
+  border-right: none;
+  padding-right: 0px;
+}
+nav .icon {
+  margin-right: 4px;
+}
+nav:not(.group) a.text.normal {
+  font-size: 14px;
+}
+nav .text.normal {
+  font-size: 14px;
+}
+.navigation.fixed {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: block;
+}

@@ -1,0 +1,42 @@
+@import "__vendor.styl"
+@import "__constants.styl"
+
+form, .form
+  & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
+    display: block
+    height: 32px
+    width: 100%
+    padding: 6px
+    margin: 2px 0 6px 0
+    transition all 0.15s linear
+    font-family: inherit
+    font-size: 14px
+    &:focus
+      outline: none !important;
+    &.large
+      height: size = 52px
+      padding: 0 20px
+      font-size: 1.2em
+      margin: 0px
+  & textarea
+    height: 64px
+  & label
+    font-size: 0.9em
+    font-weight: 400
+
+.fieldset, fieldset
+  & label
+    display: block
+    text-align: right
+    float: left
+    width: 25%
+    padding: 2px 8px
+
+    & > span
+      display: block
+      font-size: 0.8em
+      font-weight: 300
+      color: #666
+
+  & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
+    width: 75%

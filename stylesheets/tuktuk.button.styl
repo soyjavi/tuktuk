@@ -1,0 +1,49 @@
+@import "__vendor.styl"
+@import "__constants.styl"
+
+.button, button
+  display: inline-block
+  padding: 10px 16px
+  border: none
+  cursor: pointer
+
+  font-family: inherit
+  font-size: 1.0em
+  font-weight: 500
+  line-height: font-size
+  text-align: center
+  text-decoration: none
+  outline: none
+
+  &:disabled, &.disabled
+    background: rgba(255,255,255,0.2)
+    color: #999 !important
+
+  & .icon
+    margin-right: (padding / 2)
+
+  &.anchor
+    width: 100%
+    & .icon
+      margin-left: 8px
+      float: left
+
+  &.large
+    height: h = 52px
+    padding: 0 24px
+    font-size: 1.45em
+    font-weight: 300
+    line-height: h
+
+  &.small
+    height: h = 28px
+    padding: 0 12px
+
+    font-size: 0.9em
+    line-height: (h - 2)
+
+  &.tiny
+    height: h = 22px
+    padding: 0 10px
+    font-size: 0.75em
+    line-height: (h - 2)

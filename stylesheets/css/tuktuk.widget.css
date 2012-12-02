@@ -1,0 +1,72 @@
+.float.clear {
+  clear: both;
+}
+.float.left {
+  float: left;
+}
+.float.right {
+  float: right;
+}
+.no-margin {
+  margin: 0;
+}
+.margin.all {
+  margin: 20px;
+}
+.margin.left {
+  margin-left: 20px;
+}
+.margin.right {
+  margin-right: 20px;
+}
+.margin.top {
+  margin-top: 20px;
+}
+.margin.bottom {
+  margin-bottom: 20px;
+}
+.no-padding {
+  padding: 0;
+}
+.padding.all {
+  padding: 20px;
+}
+.padding.left {
+  padding-left: 20px;
+}
+.padding.right {
+  padding-right: 20px;
+}
+.padding.top {
+  padding-top: 20px;
+}
+.padding.bottom {
+  padding-bottom: 20px;
+}
+.display.block {
+  display: block;
+}
+.display.hidden {
+  display: none;
+}
+/* ================== DASHBOARD ================== */
+section.underline {
+  border-bottom: solid #bbb 1px;
+  padding: 12px 0;
+}
+/* ================== IMAGE & MEDIA ================== */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+img.responsive {
+  width: 100%;
+  height: auto;
+}
+img.responsive.rounded {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}

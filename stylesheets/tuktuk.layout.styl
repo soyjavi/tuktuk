@@ -1,0 +1,86 @@
+@import "__vendor.styl"
+
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+
+body
+  margin: 0
+  padding: 0
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: none
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+
+  & *
+    box-sizing: border-box
+
+  & > header
+    // height: size = 48px
+    line-height: 48px
+    position: relative
+
+    & .logo
+      font-size: 2.0em
+      line-height: 48px
+
+    & button, .button
+      position: relative
+      top: -5px
+
+    & nav
+      font-size: 0.9em
+      & a
+        padding: 0 12px
+        &:not(.button):last-child
+          padding-right: 0px
+        & > .icon
+          font-size: 1.1em
+
+  & > footer
+    padding: 16px 0
+
+  & > section
+    padding: 48px 0
+    background: none
+
+    &.landing
+      padding: 64px 0
+      & h1
+        font-size: 8.0em
+      & h2
+        font-size: 4.0em
+      & h3
+        font-size: 2.8em
+      & .form
+        margin-top: 5px
+        & input
+          width: 65%
+        & .button, button
+          width: 35%
+
+  a
+    text-decoration: none
+    outline: 0
+    &:link
+      transition(color 0.2s linear 0s)
+
+

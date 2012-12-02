@@ -1,0 +1,301 @@
+@import "__vendor.styl"
+
+
+
+/* ========================= ROW ========================= */
+.row
+  margin: 0 auto
+  width: 960px
+  overflow: hidden
+  & .row
+    margin: 0 -16px 0 -16px
+    width: auto
+    display: inline-block
+
+/* ========================= COLUMN ========================= */
+.column, .columns
+  margin: 0 16px 0 16px
+  overflow: hidden
+  float: left
+  display: inline
+  &._1
+    width: 48px
+  &._2
+    width: 128px
+  &._3
+    width: 208px
+  &._4
+    width: 288px
+  &._5
+    width: 368px
+  &._6
+    width: 448px
+  &._7
+    width: 528px
+  &._8
+    width: 608px
+  &._9
+    width: 688px
+  &._10
+    width: 768px
+  &._11
+    width: 848px
+  &._12
+    width: 928px
+
+/* ========================= OFFSET ========================= */
+.offset_1
+  margin-left: 96px
+.offset_2
+  margin-left: 176px
+.offset_3
+  margin-left: 256px
+.offset_4
+  margin-left: 336px
+.offset_5
+  margin-left: 416px
+.offset_6
+  margin-left: 496px
+.offset_7
+  margin-left: 576px
+.offset_8
+  margin-left: 656px
+.offset_9
+  margin-left: 736px
+.offset_10
+  margin-left: 816px
+.offset_11
+  margin-left: 896px
+
+/* ========================= VISIBILITY ========================= */
+.show-phone
+  display: none !important
+.show-tablet
+  display: none !important
+.show-screen
+  display: inherit !important
+.hide-phone
+  display: inherit !important
+.hide-tablet
+  display: inherit !important
+.hide-screen
+  display: none !important
+
+/* ========================= MEDIA QUERY ========================= */
+@media only screen and (min-width:1200px)
+  .row
+    width: 1200px
+    & .row
+      margin: 0 -20px 0 -20px
+
+  .column
+    margin: 0 20px 0 20px
+    &._1
+      width: 60px
+    &._2
+      width: 160px
+    &._3
+      width: 260px
+    &._4
+      width: 360px
+    &._5
+      width: 460px
+    &._6
+      width: 560px
+    &._7
+      width: 660px
+    &._8
+      width: 760px
+    &._9
+      width: 860px
+    &._10
+      width: 960px
+    &._11
+      width: 1060px
+    &._12
+      width: 1160px
+
+  .offset_1
+    margin-left: 120px
+  .offset_2
+    margin-left: 220px
+  .offset_3
+    margin-left: 320px
+  .offset_4
+    margin-left: 420px
+  .offset_5
+    margin-left: 520px
+  .offset_6
+    margin-left: 620px
+  .offset_7
+    margin-left: 720px
+  .offset_8
+    margin-left: 820px
+  .offset_9
+    margin-left: 920px
+  .offset_10
+    margin-left: 1020px
+  .offset_11
+    margin-left: 1120px
+
+  .show-phone
+    display: none !important
+  .show-tablet
+    display: none !important
+  .show-screen
+    display: inherit
+  .hide-phone
+    display: inherit !important
+  .hide-tablet
+    display: inherit !important
+  .hide-screen
+    display: none !important
+
+@media only screen and (min-width: 768px) and (max-width: 959px)
+  .row
+    width: 768px
+    & .row
+      margin: 0 -14px 0 -14px
+
+  .column
+    margin: 0 14px 0 14px
+    &._1
+      width: 36px
+    &._2
+      width: 100px
+    &._3
+      width: 164px
+    &._4
+      width: 228px
+    &._5
+      width: 292px
+    &._6
+      width: 356px
+    &._7
+      width: 420px
+    &._8
+      width: 484px
+    &._9
+      width: 548px
+    &._10
+      width: 612px
+    &._11
+      width: 676px
+    &._12
+      width: 740px
+
+  .offset_1
+    margin-left: 78px
+  .offset_2
+    margin-left: 142px
+  .offset_3
+    margin-left: 206px
+  .offset_4
+    margin-left: 270px
+  .offset_5
+    margin-left: 334px
+  .offset_6
+    margin-left: 398px
+  .offset_7
+    margin-left: 462px
+  .offset_8
+    margin-left: 526px
+  .offset_9
+    margin-left: 590px
+  .offset_10
+    margin-left: 654px
+  .offset_11
+    margin-left: 718px
+
+  .show-phone
+    display: none !important
+
+  .show-tablet
+    display: inherit !important
+
+  .show-screen
+    display: none !important
+
+  .hide-phone
+    display: inherit !important
+
+  .hide-tablet
+    display: none !important
+
+  .hide-screen
+    display: inherit !important
+
+@media only screen and (max-width: 767px)
+  .row
+    width: 300px
+    & .row
+      margin: 0
+
+  .column
+    &._1, &._2, &._3, &._4, &._5, &._6, &._7, &._8, &._9, &._10, &._11, &._12
+      width: 300px
+      margin: 10px 0 0 0
+
+  .offset_1, .offset_2, .offset_3, .offset_4, .offset_5, .offset_6, .offset_7, .offset_8, .offset_9, .offset_10, .offset_11
+    margin-left: 0
+
+  .show-phone
+    display: inherit !important
+  .show-tablet
+    display: none !important
+  .show-screen
+    display: none !important
+  .hide-phone
+    display: none !important
+  .hide-tablet
+    display: inherit !important
+  .hide-screen
+    display: inherit !important
+
+@media only screen and (min-width: 480px) and (max-width: 767px)
+  .row
+    margin: 0 auto
+    width: 456px
+    overflow: hidden
+
+  .row .row
+    margin: 0
+    width: auto
+    display: inline-block
+
+  .column
+    margin: 10px 0 0 0
+    &._1, &._2, &._3, &._4, &._5, &._6, &._7, &._8, &._9, &._10, &._11, &._12
+      width: 456px
+
+  .show-phone, .hide-tablet, .hide-screen
+    display: inherit !important
+  .show-tablet, .show-screen, .hide-phone
+    display: none !important
+
+// .container:after
+//   content: "\0020"
+//   display: block
+//   height: 0
+//   clear: both
+//   visibility: hidden
+
+// .clearfix, .row
+//   zoom: 1
+//   &:before, &:after
+//     content: '\0020'
+//     display: block
+//     overflow: hidden
+//     visibility: hidden
+//     width: 0
+//     height: 0
+//   &:after
+//     clear: both
+
+// .clear
+//   clear: both
+//   display: block
+//   overflow: hidden
+//   visibility: hidden
+//   width: 0
+//   height: 0
