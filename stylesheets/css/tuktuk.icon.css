@@ -15,7 +15,7 @@
 }
 
 /* Use the following CSS code if you want to have a class per icon */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon"]:before, [class*=" icon"]:before {
     font-family: 'tuktuk';
     font-style: normal;
     speak: none;
@@ -23,60 +23,60 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
-.icon-checkmark:before {
+.icon.checkmark:before {
     content: "\21";
 }
-.icon-cancel:before {
+.icon.cancel:before {
     content: "\22";
 }
-.icon-tablet:before {
+.icon.tablet:before {
     content: "\23";
 }
-.icon-mobile:before {
+.icon.mobile:before {
     content: "\24";
 }
-.icon-screen:before {
+.icon.screen:before {
     content: "\25";
 }
-.icon-html5:before {
+.icon.html5:before {
     content: "\26";
 }
-.icon-css3:before {
+.icon.css3:before {
     content: "\27";
 }
-.icon-chrome:before {
+.icon.chrome:before {
     content: "\28";
 }
-.icon-firefox:before {
+.icon.firefox:before {
     content: "\29";
 }
-.icon-IE:before {
+.icon.IE:before {
     content: "\2a";
 }
-.icon-opera:before {
+.icon.opera:before {
     content: "\2b";
 }
-.icon-safari:before {
+.icon.safari:before {
     content: "\2c";
 }
-.icon-twitter:before {
+.icon.twitter:before {
     content: "\2d";
 }
-.icon-facebook:before {
+.icon.facebook:before {
     content: "\2e";
 }
-.icon-google-plus:before {
+.icon.google-plus:before {
     content: "\2f";
 }
-.icon-share:before {
+.icon.share:before {
     content: "\30";
 }
-.icon-paper-plane:before {
+.icon.paper-plane:before {
     content: "\31";
 }
-.icon-cube:before {
+.icon.cube:before {
     content: "\32";
 }
-.icon-github:before {
+.icon.github:before {
     content: "\33";
 }

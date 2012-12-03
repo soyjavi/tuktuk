@@ -6,17 +6,14 @@ nav
       &:last-child
         border-right: none
         padding-right: 0px
-  & .icon
-      margin-right: 4px
-
 
   &:not(.group)
     & a
-      &.text.normal
-        font-size: 14px
-
-  & .text.normal
-    font-size: 14px
+      &:not(.button) .icon
+        margin-right: 4px
+        position: relative
+        font-size: 1.15em
+        top: 1px
 
 .navigation
   &.fixed
