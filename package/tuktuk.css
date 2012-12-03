@@ -97,6 +97,7 @@ body * {
   box-sizing: border-box;
 }
 body > header {
+  height: 48px;
   line-height: 48px;
   position: relative;
 }
@@ -104,22 +105,15 @@ body > header .logo {
   font-size: 2em;
   line-height: 48px;
 }
-body > header button,
-body > header .button {
-  position: relative;
-  top: -5px;
-}
 body > header nav {
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 body > header nav a {
-  padding: 0 12px;
+  margin: 0 10px;
+  display: inline-block;
 }
-body > header nav a:not(.button):last-child {
-  padding-right: 0px;
-}
-body > header nav a > .icon {
-  font-size: 1.1em;
+body > header nav a:last-child {
+  margin-right: 0px;
 }
 body > footer {
   padding: 16px 0;
@@ -941,6 +935,9 @@ button.tiny {
   font-size: 0.75em;
   line-height: 20px;
 }
+nav {
+  display: inline-block;
+}
 nav.group a {
   font-size: 15px;
   padding: 0 16px;
@@ -949,14 +946,11 @@ nav.group a:last-child {
   border-right: none;
   padding-right: 0px;
 }
-nav .icon {
+nav:not(.group) a:not(.button) .icon {
   margin-right: 4px;
-}
-nav:not(.group) a.text.normal {
-  font-size: 14px;
-}
-nav .text.normal {
-  font-size: 14px;
+  position: relative;
+  font-size: 1.15em;
+  top: 1px;
 }
 .navigation.fixed {
   position: fixed;
