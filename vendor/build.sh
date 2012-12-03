@@ -19,7 +19,7 @@ echo -e "\033[0m"============================ LUNGO COMPILER ===================
         FILES_TO_COMPRESS=$FILES_TO_COMPRESS" "$DIR$NAMESPACE$file
     done
     cat $FILES_TO_COMPRESS > $PACKAGE/$NAMESPACE"css"
-    # java -jar $COMPRESSOR $PACKAGE/$NAMESPACE"css" -o $PACKAGE/$NAMESPACE"min.css"
+    java -jar $COMPRESSOR $PACKAGE/$NAMESPACE"css" -o $PACKAGE/$NAMESPACE"min.css"
     echo -e "\033[32m    [BUILD]: tuktuk.css\033[0m"
 
     DIR=$SOURCES"stylesheets/"
