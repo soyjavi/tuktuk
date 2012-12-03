@@ -1,5 +1,5 @@
 # tuktuk 0.1
-### Micro #RWD Framework
+### Simple (but powerful) RWD Framework
 
 ## tuktuk?
 
