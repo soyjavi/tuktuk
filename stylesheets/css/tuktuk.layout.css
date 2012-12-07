@@ -110,7 +110,6 @@ body > header nav {
 }
 body > header nav a {
   margin: 0 10px;
-  display: inline-block;
 }
 body > header nav a:last-child {
   margin-right: 0px;
