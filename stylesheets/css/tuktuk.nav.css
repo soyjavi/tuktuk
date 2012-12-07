@@ -1,3 +1,7 @@
+nav,
+nav a {
+  font-size: 13px !important;
+}
 nav.group a {
   font-size: 15px;
   padding: 0 16px;
