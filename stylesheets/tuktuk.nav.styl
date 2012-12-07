@@ -1,6 +1,6 @@
 nav
-  &, & a
-    font-size: 13px !important
+  &, & a:not(.button)
+    font-size: 14px !important
 
   &.group
     & a
@@ -12,11 +12,16 @@ nav
 
   &:not(.group)
     & a
+      margin: 0 2px
+
       &:not(.button) .icon
         margin-right: 4px
         position: relative
         font-size: 1.15em
         top: 1px
+
+      &:last-child
+        margin-right: 0px
 
 .navigation
   &.fixed
