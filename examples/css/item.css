@@ -1,0 +1,17 @@
+.avatar {
+  border: 2px solid #fff;
+}
+.avatar.small {
+  height: 28px;
+}
+.avatar.medium {
+  height: 48px;
+}
+.item {
+  height: 420px;
+  line-height: 420px;
+}
+.message .info {
+  margin-top: 10px;
+  opacity: 0.5;
+}

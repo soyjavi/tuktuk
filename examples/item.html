@@ -6,70 +6,134 @@
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!-- CSS -->
-    <!-- <link rel="stylesheet" href="includes/css/base.css"> -->
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.css">
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.layout.css">
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.fonts.css">
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.wrapper.css">
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.form.css">
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.widget.css">
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.widget.nav.css">
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.widget.table.css">
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.widget.list.css">
-    <!-- THEME -->
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.theme.css">
-    <link rel="stylesheet" href="stylesheets/css/tuktuk.theme.media.css">
-    <!-- EXTRAS -->
-    <link rel="stylesheet" href="extras/lungo.icon.css">
-    <link rel="stylesheet" href="extras/lungo.icon.brand.css">
-    <!-- APP -->
-    <link rel="stylesheet" href="app/css/app.css">
-    <link rel="stylesheet" href="app/css/app.media.css">
+    <!-- TUKTUK -->
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.layout.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.grid.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.flexbox.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.font.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.form.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.button.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.nav.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.table.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.list.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.widget.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.icon.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.media.css">
+    <!-- TUKTUK.THEME -->
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.theme.css">
+    <!-- TUKTUK.APP -->
+    <link rel="stylesheet" href="css/item.css">
 </head>
 <body>
 
 
-<header>
+<header class="bck darkest">
     <div class="row">
         <div class="column _3">
-            <h3 class="bold">slid.us</h3>
+            <a href="http://tuktuk.tapquo.com" class="logo text normal color white">tuk<span class="text book">tuk</span></a>
         </div>
-        <nav class="column _4 offset_4 text right bold">
-            <a href="#"><span class="icon lock"></span>Login</a>
-            <a href="#"><span class="icon user"></span>Signup</a>
-            <a href="#"><span class="icon pencil"></span>Create new slidus</a>
+        <nav class="column _6 offset_3 text normal right">
+            <a href="#">
+                <img src="http://dribbble.s3.amazonaws.com/users/24447/avatars/small/chanporito.png?1352858686" class="avatar small"/>
+                Profile</a>
         </nav>
     </div>
 </header>
 
-<section class="search underline">
+<div class="bck dark text color white padding top bottom">
     <div class="row">
         <div class="column _12">
+            <h1>Item</h1>
+            <h5>Description</h5>
+        </div>
+    </div>
+</div>
 
-        <input type="text" placeholder="Search"/>
+<section>
+    <div class="row">
+        <div class="column _8">
+            <h1>
+                Item
+                <nav class="float right">
+                    <a href="#">d</a>
+                    <a href="#">b</a>
+                    <a href="#" class="button">d</a>
+                </nav>
+            </h1>
+            <small>
+                Description by <a href="#" class="text normal underline">soyjavi</a>
+                <br/>
+                <a href="#" class="text normal ">http://tuktuk.tapquo.com</a>
+            </small>
+            <hr/>
+
+            <div class="bck light text center item">
+                item
+            </div>
+
+
+        <h4 class="margin_top">Comments</h4>
+        <hr class="margin_bottom"/>
+
+        <div class="row margin_bottom">
+            <div class="column _1">
+                <img src="http://dribbble.s3.amazonaws.com/users/24447/avatars/small/chanporito.png?1352858686" class="avatar medium"/>
+            </div>
+            <div class="column _7 message">
+                <strong class="display block text bold color theme">Javi Jimenez</strong>
+                <div class="text justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem reiciendis commodi mollitia vel iusto itaque praesentium exercitationem quis nesciunt amet nostrum quos et deleniti numquam officiis. Suscipit quaerat dolore optio.</div>
+                <small class="info display block">about 20 hours ago | Like? <span class="float right icon paper-plane">1</span></small>
+            </div>
+        </div>
+
+        <div class="row margin_bottom">
+            <div class="column _1">
+                <img src="http://dribbble.s3.amazonaws.com/users/24447/avatars/small/chanporito.png?1352858686" class="avatar medium"/>
+            </div>
+            <div class="column _7">
+                <strong class="display block">Javi says</strong>
+                <small>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem reiciendis commodi mollitia vel iusto itaque praesentium exercitationem quis nesciunt amet nostrum quos et deleniti numquam officiis. Suscipit quaerat dolore optio.
+                </small>
+            </div>
+        </div>
+
+
+        </div>
+
+        <div class="column _4">
+
+            <div class="bck lightest  margin_bottom">
+                <h5 class="text underline">Info</h5>
+
+            </div>
+
+            <div class="bck light padding margin_bottom">
+                <h6 class="text normal underline">Users</h6>
+                <img src="http://dribbble.s3.amazonaws.com/users/24447/avatars/small/chanporito.png?1352858686" class="avatar small"/>
+            </div>
+
+
+            <div class="bck dark padding text color white">
+                <h6 >Users</h6>
+                <img src="http://dribbble.s3.amazonaws.com/users/24447/avatars/small/chanporito.png?1352858686" class="avatar small"/>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="contrast">
+
+<footer class="bck dark text color white">
     <div class="row">
-        <div class="column _12">
-        <h1>HTML5 Mobile Devices
-            <nav class="float right">
-                <a href="#" ><span class="icon heart"></span></a>
-                <a href="#" class="button large "><span class="icon upload"></span>Download</a>
-                <a href="#" class="button large secondary"><span class="icon upload"></span>Tell a friend</a>
-            </nav>
-        </h1>
-        <small>Designed by <a href="#" class="text bold underline">Javi Jiménez</a></small>
-        <br/>
-        <small><a href="e">http://tapquo.com</a></small>
-        </div>
-
-        <div class="column _12 kinout preview margin top">
-        </div>
+      <div class="column _4">
+        <p>Site content © 2012 Tapquo, inc.</p>
+      </div>
+      <div class="column _8 text float right">
+          <a href="#" class="text color white margin right">Home</a>
+          <a href="#" class="text color white">Download</a>
+        </ul>
+      </div>
     </div>
-</section>
-
+</footer>
 </body>
 </html>
