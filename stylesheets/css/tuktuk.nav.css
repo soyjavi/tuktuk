@@ -1,6 +1,6 @@
 nav,
-nav a {
-  font-size: 13px !important;
+nav a:not(.button) {
+  font-size: 14px !important;
 }
 nav.group a {
   font-size: 15px;
@@ -10,11 +10,17 @@ nav.group a:last-child {
   border-right: none;
   padding-right: 0px;
 }
+nav:not(.group) a {
+  margin: 0 2px;
+}
 nav:not(.group) a:not(.button) .icon {
   margin-right: 4px;
   position: relative;
   font-size: 1.15em;
   top: 1px;
+}
+nav:not(.group) a:last-child {
+  margin-right: 0px;
 }
 .navigation.fixed {
   position: fixed;

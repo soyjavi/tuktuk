@@ -7,11 +7,22 @@
 .avatar.medium {
   height: 48px;
 }
+.avatar.big {
+  height: 80px;
+}
+header .avatar {
+  margin-bottom: -8px;
+  margin-right: 3px;
+  height: 24px;
+}
 .item {
   height: 420px;
   line-height: 420px;
 }
+.message {
+  margin-bottom: 18px;
+}
 .message .info {
-  margin-top: 10px;
+  margin-top: 8px;
   opacity: 0.5;
 }

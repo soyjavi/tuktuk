@@ -253,12 +253,12 @@ body button.secondary {
   -o-text-shadow: 0 1px 0 rgba(255,255,255,0.25);
   text-shadow: 0 1px 0 rgba(255,255,255,0.25);
 }
-body .button.success,
-body button.success {
+body .button.accept,
+body button.accept {
   background-color: #3fb58e;
 }
-body .button.alert,
-body button.alert {
+body .button.cancel,
+body button.cancel {
   background-color: #ee6557;
 }
 body .button.transparent,
