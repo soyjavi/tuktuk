@@ -27,10 +27,23 @@
   header {
     height: auto !important;
   }
+}
+/* ==== Any phone ==== */
+@media only screen and (max-width: 767px) {
+  header {
+    height: auto !important;
+    line-height: 32px;
+  }
   nav button,
   nav .button,
   nav a {
-    width: 100%;
+    text-align: center;
+    display: block !important;
+    margin: 2px 0px !important;
+    line-height: 32px;
+  }
+  nav.group a {
+    border: none !important;
   }
 }
 /* ==== Retina ==== */
