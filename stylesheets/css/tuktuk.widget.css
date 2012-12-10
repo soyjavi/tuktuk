@@ -49,10 +49,6 @@
 .display.hidden {
   display: none;
 }
-/* ================== DASHBOARD ================== */
-section.underline {
-  padding: 0;
-}
 /* ================== IMAGE & MEDIA ================== */
 img {
   border: 0;

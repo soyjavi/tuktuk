@@ -121,6 +121,9 @@ body > section {
   padding: 48px 0;
   background: none;
 }
+body > section.underline {
+  padding: 0;
+}
 body > section.landing {
   padding: 64px 0;
 }
