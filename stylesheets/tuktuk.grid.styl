@@ -13,35 +13,36 @@
     display: inline-block
 
 /* ========================= COLUMN ========================= */
-.column, .columns
+[class^="column_"], [class*=" column_"]
   margin: 0 16px 0 16px
   overflow: hidden
   float: left
   display: inline
-  &._1
-    width: 48px
-  &._2
-    width: 128px
-  &._3
-    width: 208px
-  &._4
-    width: 288px
-  &._5
-    width: 368px
-  &._6
-    width: 448px
-  &._7
-    width: 528px
-  &._8
-    width: 608px
-  &._9
-    width: 688px
-  &._10
-    width: 768px
-  &._11
-    width: 848px
-  &._12
-    width: 928px
+
+.column_1
+  width: 48px
+.column_2
+  width: 128px
+.column_3
+  width: 208px
+.column_4
+  width: 288px
+.column_5
+  width: 368px
+.column_6
+  width: 448px
+.column_7
+  width: 528px
+.column_8
+  width: 608px
+.column_9
+  width: 688px
+.column_10
+  width: 768px
+.column_11
+  width: 848px
+.column_12
+  width: 928px
 
 /* ========================= OFFSET ========================= */
 .offset_1
@@ -88,32 +89,32 @@
     & .row
       margin: 0 -20px 0 -20px
 
-  .column
+  [class^="column_"], [class*=" column_"]
     margin: 0 20px 0 20px
-    &._1
-      width: 60px
-    &._2
-      width: 160px
-    &._3
-      width: 260px
-    &._4
-      width: 360px
-    &._5
-      width: 460px
-    &._6
-      width: 560px
-    &._7
-      width: 660px
-    &._8
-      width: 760px
-    &._9
-      width: 860px
-    &._10
-      width: 960px
-    &._11
-      width: 1060px
-    &._12
-      width: 1160px
+  .column_1
+    width: 60px
+  .column_2
+    width: 160px
+  .column_3
+    width: 260px
+  .column_4
+    width: 360px
+  .column_5
+    width: 460px
+  .column_6
+    width: 560px
+  .column_7
+    width: 660px
+  .column_8
+    width: 760px
+  .column_9
+    width: 860px
+  .column_10
+    width: 960px
+  .column_11
+    width: 1060px
+  .column_12
+    width: 1160px
 
   .offset_1
     margin-left: 120px
@@ -157,32 +158,32 @@
     & .row
       margin: 0 -14px 0 -14px
 
-  .column
+  [class^="column_"], [class*=" column_"]
     margin: 0 14px 0 14px
-    &._1
-      width: 36px
-    &._2
-      width: 100px
-    &._3
-      width: 164px
-    &._4
-      width: 228px
-    &._5
-      width: 292px
-    &._6
-      width: 356px
-    &._7
-      width: 420px
-    &._8
-      width: 484px
-    &._9
-      width: 548px
-    &._10
-      width: 612px
-    &._11
-      width: 676px
-    &._12
-      width: 740px
+  .column_1
+    width: 36px
+  .column_2
+    width: 100px
+  .column_3
+    width: 164px
+  .column_4
+    width: 228px
+  .column_5
+    width: 292px
+  .column_6
+    width: 356px
+  .column_7
+    width: 420px
+  .column_8
+    width: 484px
+  .column_9
+    width: 548px
+  .column_10
+    width: 612px
+  .column_11
+    width: 676px
+  .column_12
+    width: 740px
 
   .offset_1
     margin-left: 78px
@@ -231,10 +232,9 @@
     & .row
       margin: 0
 
-  .column
-    &._1, &._2, &._3, &._4, &._5, &._6, &._7, &._8, &._9, &._10, &._11, &._12
-      width: 300px
-      margin: 10px 0 0 0
+  [class^="column_"], [class*=" column_"]
+    width: 300px
+    margin: 10px 0 0 0
 
   .offset_1, .offset_2, .offset_3, .offset_4, .offset_5, .offset_6, .offset_7, .offset_8, .offset_9, .offset_10, .offset_11
     margin-left: 0
@@ -263,39 +263,12 @@
     width: auto
     display: inline-block
 
-  .column
+  [class^="column_"], [class*=" column_"]
     margin: 10px 0 0 0
-    &._1, &._2, &._3, &._4, &._5, &._6, &._7, &._8, &._9, &._10, &._11, &._12
-      width: 456px
+    width: 456px
 
   .show-phone, .hide-tablet, .hide-screen
     display: inherit !important
   .show-tablet, .show-screen, .hide-phone
     display: none !important
 
-// .container:after
-//   content: "\0020"
-//   display: block
-//   height: 0
-//   clear: both
-//   visibility: hidden
-
-// .clearfix, .row
-//   zoom: 1
-//   &:before, &:after
-//     content: '\0020'
-//     display: block
-//     overflow: hidden
-//     visibility: hidden
-//     width: 0
-//     height: 0
-//   &:after
-//     clear: both
-
-// .clear
-//   clear: both
-//   display: block
-//   overflow: hidden
-//   visibility: hidden
-//   width: 0
-//   height: 0
