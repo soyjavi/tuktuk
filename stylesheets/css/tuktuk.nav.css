@@ -13,8 +13,9 @@ nav:not(.group) a {
 nav:not(.group) a:last-child {
   margin-right: 0px;
 }
-nav a:not(.button) .icon {
-  margin-right: 4px;
+nav a:not(.button) .icon,
+nav a:not(.button) img {
+  margin-right: 2px;
   position: relative;
   top: 1px;
 }
