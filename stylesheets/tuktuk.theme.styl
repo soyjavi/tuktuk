@@ -23,16 +23,23 @@ body
       &:hover, &:active
         color: #fff
 
+  & > section
+    &.underline
+      border-bottom: solid #bbb 1px
+
   /* ====================== NAVIGATION ====================== */
   & nav
     &.group a
-      border-right: solid #ccc 1px
+      border-left: solid #ccc 1px
       &, & > .icon
-        color: #666
+        color: #888
       &:hover, &:active, &.active
         color: #000
+        background: white
         & > .icon
           color: #000
+      &:last-child
+        border-right: solid #ccc 1px
 
   /* ====================== BACKGROUNDS ====================== */
   & .bck

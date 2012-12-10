@@ -14,6 +14,8 @@
     height: auto
 
 
+
+
 /* ==== Phone (landscape 420px) ==== */
 @media only screen and (min-width: 480px) and (max-width: 767px)
   header
@@ -25,9 +27,22 @@
   header
     height: auto !important
 
+/* ==== Any phone ==== */
+@media only screen and (max-width: 767px)
+ header
+    height: auto !important
+    line-height: 32px
+
   nav
     & button, .button, a
-      width: 100%
+      text-align: center
+      display: block !important
+      margin: 2px 0px !important
+      line-height: 32px
+
+    &.group a
+      border: none !important
+
 
 /* ==== Retina ==== */
 @media only screen and (-webkit-min-device-pixel-ratio:1.5)
