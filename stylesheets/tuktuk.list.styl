@@ -1,14 +1,11 @@
-ul, ol
-  margin-bottom: 20px
-  list-style: none
-  & ul li, ol li
-    margin: 0 0 6px 0
-
 ul
+  list-style: disc
+
   & li
-    margin: 0 0 5px 0
-    padding: 0 0 0 18px
-    line-height: 18px
+    margin: 0 0 5px 18px
+    padding: 0
+    background: none
+
   & ul, ol
     margin: 5px 0 5px 0
   &.none
@@ -18,14 +15,6 @@ ul
     list-style: square outside
   &.circle, &.circle ul
     list-style: circle outside
-  &.disc, &.disc ul
-    list-style: disc outside
-  &.square, &.circle, &.disc
-    & li
-      margin: 0 0 5px 15px
-      padding: 0
-      line-height: 18px
-      background: none
 
 ol
   margin: 0 0 20px 20px
