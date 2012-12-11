@@ -54,3 +54,11 @@
   border: 2px solid #fff;
   margin-right: 6px;
 }
+.form.search input {
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 1.8em;
+  height: auto;
+  padding: 12px 0 !important;
+  margin: 0 !important;
+}
