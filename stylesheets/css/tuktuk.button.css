@@ -22,6 +22,7 @@ button.disabled {
 .button .icon,
 button .icon {
   margin-right: 5px;
+  display: inline-block;
 }
 .button.anchor,
 button.anchor {
@@ -47,10 +48,18 @@ button.small {
   font-size: 0.9em;
   line-height: 26px;
 }
+.button.small > .icon,
+button.small > .icon {
+  height: 17px;
+}
 .button.tiny,
 button.tiny {
   height: 22px;
   padding: 0 10px;
   font-size: 0.75em;
   line-height: 20px;
+}
+.button.tiny > .icon,
+button.tiny > .icon {
+  height: 12px;
 }

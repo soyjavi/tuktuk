@@ -21,6 +21,7 @@
 
   & .icon
     margin-right: (padding / 2)
+    display: inline-block
 
   &.anchor
     width: 100%
@@ -38,12 +39,15 @@
   &.small
     height: h = 28px
     padding: 0 12px
-
     font-size: 0.9em
     line-height: (h - 2)
+    & > .icon
+      height: 17px
 
   &.tiny
     height: h = 22px
     padding: 0 10px
     font-size: 0.75em
     line-height: (h - 2)
+    & > .icon
+      height: 12px
