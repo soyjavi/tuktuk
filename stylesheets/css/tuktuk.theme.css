@@ -25,7 +25,6 @@ body > header nav a:active {
   color: #fff;
 }
 body > section.underline {
-  border-top: solid #bbb 1px;
   border-bottom: solid #bbb 1px;
 }
 body nav.group a {
