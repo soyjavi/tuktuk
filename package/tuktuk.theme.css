@@ -24,22 +24,29 @@ body > header nav a:hover,
 body > header nav a:active {
   color: #fff;
 }
+body > section.underline {
+  border-bottom: solid #bbb 1px;
+}
 body nav.group a {
-  border-right: solid #ccc 1px;
+  border-left: solid #ccc 1px;
 }
 body nav.group a,
 body nav.group a > .icon {
-  color: #666;
+  color: #888;
 }
 body nav.group a:hover,
 body nav.group a:active,
 body nav.group a.active {
   color: #000;
+  background: #fff;
 }
 body nav.group a:hover > .icon,
 body nav.group a:active > .icon,
 body nav.group a.active > .icon {
   color: #000;
+}
+body nav.group a:last-child {
+  border-right: solid #ccc 1px;
 }
 body .bck.lightest {
   background-color: #fff;
@@ -253,12 +260,12 @@ body button.secondary {
   -o-text-shadow: 0 1px 0 rgba(255,255,255,0.25);
   text-shadow: 0 1px 0 rgba(255,255,255,0.25);
 }
-body .button.success,
-body button.success {
+body .button.accept,
+body button.accept {
   background-color: #3fb58e;
 }
-body .button.alert,
-body button.alert {
+body .button.cancel,
+body button.cancel {
   background-color: #ee6557;
 }
 body .button.transparent,
