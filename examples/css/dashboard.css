@@ -17,8 +17,40 @@
   height: 16px;
   margin-right: 2px;
 }
-.avatars > img {
-  width: 31px;
-  height: 31px;
-  margin: 0px 1px 1px 0px;
+.last h5 {
+  margin-bottom: 8px;
+}
+.last .avatar {
+  width: 41px;
+  height: 41px;
+}
+.last .avatar.border {
+  border: 1px solid none;
+}
+.last .avatar.border:hover {
+  border: 1px solid #f00;
+}
+.list_avatar > li {
+  height: 41px;
+  margin-bottom: 4px;
+  line-heigth: 32px;
+}
+.list_avatar > li > img {
+  margin-right: 8px;
+}
+.promotioned {
+  font-size: 1.2em;
+}
+.promotioned .preview {
+  width: 100%;
+  height: 340px;
+}
+.promotioned .author {
+  line-height: 32px;
+  margin: 6px 0 12px 0;
+}
+.promotioned .author .avatar {
+  width: 32px;
+  border: 2px solid #fff;
+  margin-right: 6px;
 }
