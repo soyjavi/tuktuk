@@ -1,8 +1,8 @@
-# tuktuk 0.1
+# tuktuk 0.3
 ### Simple (but powerful) RWD Framework
 
-## tuktuk?
-
+## This isn't another frontend framework... is a way to create sites and extend them with your own style.?
+More info in http://tuktuk.tapquo.com
 
 [Source code](https://github.com/soyjavi/tuktuk) and [issue tracking](https://github.com/soyjavi/tuktuk/issues) are available on Github.
 
