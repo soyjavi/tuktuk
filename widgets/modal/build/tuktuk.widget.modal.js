@@ -45,7 +45,10 @@
         tk.dom("[data-tuktuk=modal] [data-action=close]").on("click", function() {
           return TukTuk.Modal.hide();
         });
-        tk.dom(document).append("<div data-tuktuk='lock'></div>");
+        tk.dom("[data-tuktuk-modal]").on("click", function() {
+          return TukTuk.Modal.show(tk.dom(this).attr('data-tuktuk-modal'));
+        });
+        tk.dom(document.body).append("<div data-tuktuk=\"lock\"></div>");
         return lock = tk.dom("[data-tuktuk=lock]").first();
       })(),
       show: show,

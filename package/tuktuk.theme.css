@@ -3,7 +3,7 @@
 body {
   color: #000;
   font-size: 1em;
-  line-height: 1.123;
+  line-height: 1.2;
   font-family: "Source Sans Pro";
   font-weight: 300;
 /* ====================== NAVIGATION ====================== */
@@ -63,10 +63,10 @@ body .bck.darkest {
 body .bck.theme {
   background-color: #16a6b6;
 }
-body .bck.success {
+body .bck.accept {
   background-color: #3fb58e;
 }
-body .bck.alert {
+body .bck.cancel {
   background-color: #ee6557;
 }
 body .text.shadow {
@@ -85,10 +85,10 @@ body .text.color.theme {
 body .text.color.secondary {
   color: #bfbfbf;
 }
-body .text.color.success {
+body .text.color.accept {
   color: #3fb58e;
 }
-body .text.color.alert {
+body .text.color.cancel {
   color: #ee6557;
 }
 body form input[type="text"],
