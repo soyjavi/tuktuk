@@ -29,10 +29,7 @@ TukTuk.Modal = ((tk, undefined_) ->
 
   _Instance: (->
     tk.dom("[data-tuktuk=modal] [data-action=close]").on "click", -> TukTuk.Modal.hide()
-    tk.dom("[data-tuktuk-modal]").on "click", ->
-      TukTuk.Modal.show(tk.dom(this).attr('data-tuktuk-modal'))
-
-    tk.dom(document.body).append """<div data-tuktuk="lock"></div>"""
+    tk.dom(document).append """<div data-tuktuk="lock"></div>"""
     lock = tk.dom("[data-tuktuk=lock]").first()
   )()
 

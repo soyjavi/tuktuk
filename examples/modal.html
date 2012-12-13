@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>tuktuk - Landing Example</title>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- TUKTUK -->
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.layout.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.grid.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.flexbox.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.font.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.form.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.button.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.nav.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.table.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.list.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.widget.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.icon.css">
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.media.css">
+    <!-- TUKTUK.THEME -->
+    <link rel="stylesheet" href="../stylesheets/css/tuktuk.theme.css">
+    <!-- TUKTUK.WIDGETS -->
+    <link rel="stylesheet" href="../widgets/modal/css/tuktuk.widget.modal.css">
+</head>
+<body>
+
+<!-- ========================== LANDING ========================== -->
+<section class="landing bck dark text color white  center">
+    <div class="row">
+        <div class="column_10 offset_1">
+            <h1 class="text normal">tuk<span class="text thin">tuk</span> <span class="text small thin">modal</span></h1>
+            <a href="#" data-tuktuk-modal="a" class="button large margin bottom"><span class="icon download"></span>Download <span class="text bold">tuk</span><span class="text normal">tuk</span> now!</a>
+        </div>
+    </div>
+</section>
+
+
+
+<div id="a" data-tuktuk="modal" class="-small -big">
+    <h5 class="text bold">That's all, folks</h5>
+    <hr/>
+    <span class="text -small -big">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda aperiam nobis quam earum nihil veritatis modi possimus blanditiis perferendis obcaecati voluptatibus fuga eaque ad et atque nostrum porro expedita!</span>
+
+    <div class="margin_all">
+        <button class="button accept">Accept</button>
+        <button data-action="close" class="button cancel">Cancel</button>
+    </div>
+</div>
+
+<div id="b" data-tuktuk="modal" class="big">
+    <h5 class="text bold">That's all, folks</h5>
+    <hr/>
+    <span class="text -small -big">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+
+    <div class="margin_top">
+        <button data-action="close" class="button anchor cancel">Cancel</button>
+    </div>
+</div>
+
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="../widgets/modal/build/tuktuk.widget.modal.js"></script>
+
+    <script>
+        TukTuk.Modal.show("a")
+
+        setTimeout(function(){
+            TukTuk.Modal.hide()
+            TukTuk.Modal.show("b")
+        }, 1000)
+    </script>
+</body>
+</html>
