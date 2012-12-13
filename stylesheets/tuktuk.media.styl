@@ -14,8 +14,6 @@
     height: auto
 
 
-
-
 /* ==== Phone (landscape 420px) ==== */
 @media only screen and (min-width: 480px) and (max-width: 767px)
   header
@@ -29,7 +27,16 @@
 
 /* ==== Any phone ==== */
 @media only screen and (max-width: 767px)
- header
+
+  section.landing
+    & h1
+      font-size: 5.0em !important
+    & h2
+      font-size: 2.8em !important
+    & h3
+      font-size: 1.8em !important
+
+  header
     height: auto !important
     line-height: 32px
 

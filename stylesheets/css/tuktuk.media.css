@@ -30,6 +30,15 @@
 }
 /* ==== Any phone ==== */
 @media only screen and (max-width: 767px) {
+  section.landing h1 {
+    font-size: 5em !important;
+  }
+  section.landing h2 {
+    font-size: 2.8em !important;
+  }
+  section.landing h3 {
+    font-size: 1.8em !important;
+  }
   header {
     height: auto !important;
     line-height: 32px;
