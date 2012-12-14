@@ -15,18 +15,31 @@
 .apps
   & li
     border-bottom: solid 1px #ccc
+    &:last-child
+      border-bottom: none
+      padding-bottom: 0
+
     & > img
+      width: 57px
+      height: 57px
       border: solid 2px #fff
       margin-right: 8px
 
 .menu
-  border: 1px solid #eee
   & > a
     display: block
     padding: 8px 8px
     border-bottom: solid 1px #eee
-    background: #f5f5f5
+    margin: 0px !important
+
     &:last-child
       border-bottom: none
     &.active, &:hover, &:active
-      background: #fff
+      background: #16A6B6
+      color: #fff
+
+
+.bck
+  &.bordered
+    border: 1px solid #eee
+    border-radius: 4px

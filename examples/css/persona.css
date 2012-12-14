@@ -17,18 +17,21 @@ header .avatar {
 .apps li {
   border-bottom: solid 1px #ccc;
 }
+.apps li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 .apps li > img {
+  width: 57px;
+  height: 57px;
   border: solid 2px #fff;
   margin-right: 8px;
-}
-.menu {
-  border: 1px solid #eee;
 }
 .menu > a {
   display: block;
   padding: 8px 8px;
   border-bottom: solid 1px #eee;
-  background: #f5f5f5;
+  margin: 0px !important;
 }
 .menu > a:last-child {
   border-bottom: none;
@@ -36,5 +39,10 @@ header .avatar {
 .menu > a.active,
 .menu > a:hover,
 .menu > a:active {
-  background: #fff;
+  background: #16a6b6;
+  color: #fff;
+}
+.bck.bordered {
+  border: 1px solid #eee;
+  border-radius: 4px;
 }
