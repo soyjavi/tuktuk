@@ -1,0 +1,32 @@
+.avatar
+  border: 2px solid #fff
+  &.small
+    height: 28px
+  &.medium
+    height: 40px
+  &.big
+    height: 80px
+
+  header &
+    margin-bottom: -7px
+    height: 24px
+
+
+.apps
+  & li
+    border-bottom: solid 1px #ccc
+    & > img
+      border: solid 2px #fff
+      margin-right: 8px
+
+.menu
+  border: 1px solid #eee
+  & > a
+    display: block
+    padding: 8px 8px
+    border-bottom: solid 1px #eee
+    background: #f5f5f5
+    &:last-child
+      border-bottom: none
+    &.active, &:hover, &:active
+      background: #fff
