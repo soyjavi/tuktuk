@@ -46,7 +46,7 @@
 .display.block {
   display: block;
 }
-.display.hidden {
+.display.none {
   display: none;
 }
 /* ================== IMAGE & MEDIA ================== */

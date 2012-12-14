@@ -4,8 +4,13 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700")
 color = #16A6B6
 color_secondary = #BFBFBF
-color_cancel = #EE6557
-color_accept = #3FB58E
+color_cancel    = #EE6557
+color_accept    = #3FB58E
+
+bck_lightest    = #fff
+bck_light       = #f7f7f7
+bck_dark        = #282828
+bck_darkest     = #181818
 
 
 body
@@ -28,6 +33,12 @@ body
       border-bottom: solid #bbb 1px
 
 
+  & hr
+    border-style: solid
+    border-color: bck_light
+    margin: 20px 0
+    padding: 0
+
   /* ====================== NAVIGATION ====================== */
   & nav
     &.group a
@@ -45,13 +56,13 @@ body
   /* ====================== BACKGROUNDS ====================== */
   & .bck
     &.lightest
-      background-color: #fff
+      background-color: bck_lightest
     &.light
-      background-color: #f7f7f7
+      background-color: bck_light
     &.dark
-      background-color: #282828
+      background-color: bck_dark
     &.darkest
-      background-color: #181818
+      background-color: bck_darkest
     &.theme
       background-color: color
     &.accept
@@ -132,7 +143,8 @@ body
 
 
   /* ====================== BUTTONS ====================== */
-  & :not(nav) > a:not(.button)
+  // & :not(nav) > a:not(.button)
+  & a
     color: color
     opacity: 0.9
     &:hover, &:active

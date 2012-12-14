@@ -27,6 +27,12 @@ body > header nav a:active {
 body > section.underline {
   border-bottom: solid #bbb 1px;
 }
+body hr {
+  border-style: solid;
+  border-color: #f7f7f7;
+  margin: 20px 0;
+  padding: 0;
+}
 body nav.group a {
   border-left: solid #ccc 1px;
 }
@@ -272,11 +278,11 @@ body .button.transparent,
 body button.transparent {
   background: none !important;
 }
-body :not(nav) > a:not(.button) {
+body a {
   color: #16a6b6;
   opacity: 0.9;
 }
-body :not(nav) > a:not(.button):hover,
-body :not(nav) > a:not(.button):active {
+body a:hover,
+body a:active {
   opacity: 1;
 }
