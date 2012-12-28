@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../package/tuktuk.css">
     <link rel="stylesheet" href="../package/theme.tuktuk.css">
     <!-- TUKTUK.WIDGETS -->
-    <link rel="stylesheet" href="../widgets/modal/css/tuktuk.widget.modal.css">
+    <link rel="stylesheet" href="../package/widgets/modal/tuktuk.widget.modal.css">
 </head>
 <body>
 
@@ -23,23 +23,25 @@
     </div>
 </section>
 
-
-
-<div id="a" data-tuktuk="modal" class="-small -big">
+<div id="a" data-tuktuk="modal">
     <h5 class="text bold">That's all, folks</h5>
     <hr/>
     <span class="text -small -big">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda aperiam nobis quam earum nihil veritatis modi possimus blanditiis perferendis obcaecati voluptatibus fuga eaque ad et atque nostrum porro expedita!</span>
-
     <div class="margin_all">
         <button class="button accept">Accept</button>
         <button data-action="close" class="button cancel">Cancel</button>
     </div>
 </div>
 
-<div id="b" data-tuktuk="modal" class="big">
+<div id="b" data-tuktuk="modal" class="column_12">
     <h5 class="text bold">That's all, folks</h5>
     <hr/>
     <span class="text -small -big">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+
+    <div class="row">
+        <div class="column_4">6</div>
+        <div class="column_6">6</div>
+    </div>
 
     <div class="margin_top">
         <button data-action="close" class="button anchor cancel">Cancel</button>
