@@ -1,0 +1,10 @@
+{
+  "name": "Tuktuk",
+  "description": "Simple (but powerful) RWD Framework",
+  "version": "0.4.0",
+  "homepage": "http://tuktuk.tapquo.com",
+  "author": {
+    "name": "Javi Jimenez",
+    "site": "https://twitter.com/soyjavi"},
+  "license": [ {"type": "MIT"} ]
+}
