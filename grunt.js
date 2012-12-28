@@ -47,16 +47,25 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      target: {
+        // options: { cwd: 'path/to/sources' },
+        files: { 'package/': ['stylesheets/theme*.styl'] }
+      }
+    },
+
     watch: {
       files: ['<config:resources.stylus>', '<config:resources.coffee>'],
-      tasks:  'stylus coffee'
+      tasks: 'stylus copy coffee'
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-coffee');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+
 
   // Default task.
-  grunt.registerTask('default', 'stylus coffee');
+  grunt.registerTask('default', 'stylus copy coffee');
 
 };
