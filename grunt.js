@@ -13,8 +13,8 @@ module.exports = function(grunt) {
     },
 
     resources: {
-        coffee: ['**/*.coffee'],
-        stylus: ['**/*.styl'],
+        coffee: ['widgets/**/*.coffee'],
+        stylus: ['stylesheets/**/*.styl', 'widgets/**/*.styl'],
 
         stylesheets: ['stylesheets/tuktuk.*.styl'],
         themes: ['stylesheets/theme.*.styl'],
