@@ -172,8 +172,7 @@ body > header nav{font-size:.95em;}
 body > header nav a{margin:0 10px;}
 body > header nav a:last-child{margin-right:0}
 body > footer{padding:16px 0}
-body > section{padding:48px 0;background:none;}
-body > section.underline{padding:0}
+body > section.padding{padding:48px 0}
 body > section.landing{padding:64px 0;}
 body > section.landing h1{font-size:8em}
 body > section.landing h2{font-size:4em}
