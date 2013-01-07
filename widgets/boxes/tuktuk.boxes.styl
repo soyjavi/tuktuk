@@ -1,0 +1,155 @@
+@import "../../stylesheets/__vendor.styl"
+@import "../../stylesheets/__constants.styl"
+
+/* ====================== CONSTANTS ====================== */
+header_height = 44px
+aside_width   = 240px
+dimension     = 16px
+
+[data-tuktuk=boxes]
+  position: absolute
+  height: 100%
+  width: 100%
+  display-box()
+  box-pack(justify)
+
+  /* ====================== SCAFFOLD ====================== */
+  & > aside, & > section
+    display-box()
+    box-orient(vertical)
+
+  & aside
+    box-flex(0)
+    width: aside_width
+    z-index: 1
+
+    &.absolute
+      position: absolute
+      height: 100%
+      transition all 250ms
+      transform translate3d(-100%, 0, 0)
+
+    &.active
+      transform translate3d(0%, 0, 0)
+
+    // &.dark
+    //   z-index: 2
+    //   position: absolute
+    //   height: 100%
+    //   // left: -128px
+    //   transform translate3d(-95%, 0, 0)
+    //   transition all 300ms
+    //   &:hover
+    //     left: 0px
+    //     transform translate3d(0, 0, 0)
+
+  & section
+    box-flex(1)
+    z-index: 0
+
+  & header, footer
+    box-flex(0)
+    display: block
+    height: header_height
+    line-height: header_height
+    padding: (dimension / 2)
+    & > *
+      height: h = (header_height - dimension)
+      line-height: h
+
+  & article
+    box-flex(1)
+
+  /* ====================== LIST ====================== */
+  & ul
+    list-style: none
+    &.totals
+      display-box()
+      box-pack(justify)
+      text-align: center
+
+      & > li
+        box-flex(0)
+        & > strong
+          display: block
+          font-weight: 400
+          font-size: 1.75em
+          line-height: 0.9em
+
+        & > small
+          text-transform: uppercase
+          font-size: 0.85em
+
+  /* ====================== NAVIGATION ====================== */
+  & nav
+    &[data-filter]
+      font-size: font-size-tiny
+      & > a
+        margin-right: (dimension / 2)
+        padding: (dimension / 2.5) (dimension / 1.5)
+        &:last-child
+          margin-right: 0
+
+    &[data-menu]
+      & > a
+        display: block
+        padding: (dimension / 1.5)
+
+    &[data-link]
+      & > a
+        display: block
+        font-size: font-size-tiny
+        line-height: 2em
+        & > .icon
+          position: relative
+          top: 3px
+          margin-right: (dimension / 3)
+          font-size: 1.5em
+          font-weight: normal
+
+    &[data-button]
+      display-box()
+      box-pack(justify)
+      & > *
+        box-flex(0)
+        display: inherit
+
+
+    & > a > small
+      position: relative
+      margin-left: 4px
+      bottom: 1px
+
+  /* ====================== WIDGETS ====================== */
+  & .margin
+    margin: dimension
+
+  & .tag
+    position: relative
+    padding: 3px 4px
+    font-size: 10px
+    line-height: 1.0em
+    text-transform: uppercase
+
+  & header
+    & .session
+      & > *
+        float: left
+
+      & > .avatar
+        height: (header_height - dimension)
+        margin-right: (dimension / 2)
+
+      & > button, & > .button
+        margin-top: (dimension / 5)
+        float: right
+
+  & aside
+    & > article .avatar
+      height: aside_width - (dimension * 2)
+      width: aside_width - (dimension * 2)
+
+    & hr
+      border: 0
+      height: 1px
+      margin: 0px
