@@ -1,6 +1,5 @@
-
 TukTuk =
-    dom: (args...) -> if $$? then $$ args... else $ args...
+  dom: (args...) -> if $$? then $$ args... else $ args...
 
 window.TukTuk = TukTuk
 
