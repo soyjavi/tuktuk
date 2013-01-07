@@ -33,14 +33,16 @@ h6{font-size:1em}
 .text.bold{font-weight:700}
 .text.italic{font-style:italic}
 .text.underline{border-bottom:1px solid}
+.text.uppercase{text-transform:uppercase}
 .text.left{text-align:left}
 .text.right{text-align:right}
 .text.center{text-align:center}
 .text.justify{text-align:justify}
-.text.small{font-size:.8em}
-.text.big{font-size:1.2em}
+.text.tiny{font-size:font-size-tiny}
+.text.small{font-size:font-size-small}
+.text.big{font-size:font-size-big}
 p{font-size:1.1em;line-height:1.1em}
-small{font-size:.85em;line-height:.85em}
+small{font-size:font-size-small;line-height:font-size-small}
 
 form input[type="text"],.form input[type="text"],form input[type="password"],.form input[type="password"],form input[type="date"],.form input[type="date"],form input[type="datetime"],.form input[type="datetime"],form input[type="email"],.form input[type="email"],form input[type="number"],.form input[type="number"],form input[type="search"],.form input[type="search"],form input[type="tel"],.form input[type="tel"],form input[type="time"],.form input[type="time"],form input[type="url"],.form input[type="url"],form select,.form select,form textarea,.form textarea{display:block;height:32px;width:100%;padding:6px;margin:2px 0 6px 0;-webkit-transition:all .15s linear;-moz-transition:all .15s linear;-ms-transition:all .15s linear;-o-transition:all .15s linear;transition:all .15s linear;font-family:inherit;font-size:14px;}
 form input[type="text"]:focus,.form input[type="text"]:focus,form input[type="password"]:focus,.form input[type="password"]:focus,form input[type="date"]:focus,.form input[type="date"]:focus,form input[type="datetime"]:focus,.form input[type="datetime"]:focus,form input[type="email"]:focus,.form input[type="email"]:focus,form input[type="number"]:focus,.form input[type="number"]:focus,form input[type="search"]:focus,.form input[type="search"]:focus,form input[type="tel"]:focus,.form input[type="tel"]:focus,form input[type="time"]:focus,.form input[type="time"]:focus,form input[type="url"]:focus,.form input[type="url"]:focus,form select:focus,.form select:focus,form textarea:focus,.form textarea:focus{outline:none !important}
@@ -164,7 +166,7 @@ form label,.form label{font-size:.9em;font-weight:400}
 .show-tablet,.show-screen,.hide-phone{display:none !important}
 }
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-weight:inherit;vertical-align:baseline}
-body{margin:0;padding:0;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+body{margin:0;padding:0;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;}
 body *{box-sizing:border-box}
 body > header{height:48px;line-height:48px;position:relative;}
 body > header .logo{font-size:2em;line-height:48px}
@@ -172,7 +174,9 @@ body > header nav{font-size:.95em;}
 body > header nav a{margin:0 10px;}
 body > header nav a:last-child{margin-right:0}
 body > footer{padding:16px 0}
+body > section{background:none;}
 body > section.padding{padding:48px 0}
+body > section.underline{padding:0}
 body > section.landing{padding:64px 0;}
 body > section.landing h1{font-size:8em}
 body > section.landing h2{font-size:4em}
@@ -184,7 +188,8 @@ body a{text-decoration:none;outline:0;}
 body a:link{-webkit-transition:color .2s linear 0;-moz-transition:color .2s linear 0;-ms-transition:color .2s linear 0;-o-transition:color .2s linear 0;transition:color .2s linear 0}
 
 ul{list-style:disc;}
-ul:not(.none) li{margin:0 0 5px 18px;padding:0;background:none}
+ul.square li,ul.circle li{margin:0 0 5px 18px}
+ul:not(.none) li{padding:0;background:none}
 ul ul,ul ol{margin:5px 0 5px 0}
 ul.none{list-style:none outside;margin:0}
 ul.square,ul.square ul{list-style:square outside}
@@ -206,7 +211,6 @@ nav button,nav .button,nav a{text-align:center;display:block !important;margin:2
 nav.group a{border:none !important}
 }@media only screen and (-webkit-min-device-pixel-ratio:1.5){header{height:auto}
 }
-nav{font-size:15px !important;}
 nav.group a{font-size:15px;padding:12px 16px;margin:0;display:inline-block}
 nav:not(.group) a{margin:0 4px;}
 nav:not(.group) a:last-child{margin-right:0}
@@ -217,6 +221,9 @@ table td,table th{padding:10px 8px 10px 8px}
 table th{font-weight:700}
 table td.highlight{font-weight:700}
 
+.scroll{overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch;-webkit-box-flex:1;}
+.scroll.horizontal{overflow-x:scroll;overflow-y:hidden;white-space:nowrap}
+.scroll > *{-webkit-transform:translate3d(0,0,0)}
 .float.clear{clear:both}
 .float.left{float:left}
 .float.right{float:right}
@@ -233,6 +240,7 @@ table td.highlight{font-weight:700}
 .padding_top{padding-top:20px}
 .padding_bottom{padding-bottom:20px}
 .display.block{display:block}
+.display.inline{display:inline-block}
 .display.none{display:none}
 img{border:0;-ms-interpolation-mode:bicubic;}
 img.responsive{width:100%;height:auto;}

@@ -1,5 +1,19 @@
 @import "__vendor.styl"
 
+.scroll
+  overflow-x: hidden
+  overflow-y: scroll
+  -webkit-overflow-scrolling: touch
+  -webkit-box-flex: 1
+
+  &.horizontal
+    overflow-x: scroll
+    overflow-y: hidden
+    white-space: nowrap
+  /* BUG (iOS) POSITION: relative childrens */
+  & > *
+    -webkit-transform: translate3d(0, 0, 0)
+
 .float
   &.clear
     clear: both
@@ -9,7 +23,6 @@
     float: right
 
 dimension = 20px
-
 .margin_none
   margin: 0
 .margin
@@ -39,6 +52,8 @@ dimension = 20px
 .display
   &.block
     display: block
+  &.inline
+    display: inline-block
   &.none
     display: none
 
