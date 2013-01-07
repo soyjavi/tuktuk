@@ -1,0 +1,102 @@
+@import "../../stylesheets/__vendor.styl"
+@import "../../stylesheets/__theme.styl"
+
+text               = #333
+aside              = bck_lightest
+aside_light_header = color
+aside_light_anchor = darken(aside, 15%)
+aside_dark         = bck_dark
+aside_dark_header  = darken(aside_dark, 38%)
+aside_dark_anchor  = lighten(aside_dark, 15%)
+section            = bck_light
+dimension          = 16px
+
+/* ====================== ASIDE ====================== */
+aside
+  &.light
+    background: aside
+    &
+      color: lighten(text, 15%)
+    & a
+      color: lighten(text, 25%)
+    & hr
+      background: aside_light_anchor
+
+  &.dark
+    background: aside_dark
+    &
+      color: lighten(aside_dark, 90%)
+    & a
+      color: #fff
+    & hr
+      background: #444
+
+
+  & a
+    &:hover, &:active, &.active
+        color: color
+
+  & > header .avatar
+    border-radius 4px
+
+  & > article .avatar
+    border-radius dimension
+
+/* ====================== SECTION ====================== */
+section
+  background: section
+  box-shadow: inset 4px 0 0 rgba(0,0,0,0.025)
+
+/* ====================== HEADER/FOOTER ====================== */
+header
+  aside.light > &
+    background-color: aside_light_header
+    box-shadow inset 0 1px 0 lighten(aside_light_header, 25%), inset 0 -1px 0 darken(aside_light_header, 20%)
+    color: #fff
+  aside.dark > &
+    background: color = aside_dark_header
+    box-shadow: inset 0 -1px 0 aside_dark_anchor
+  section > &
+    border-bottom: dotted 1px aside_light_anchor
+footer
+  background: rgba(0,0,0,0.1)
+
+/* ====================== ARTICLE ====================== */
+article
+  aside.light &
+    box-shadow inset -1px 0 0 aside_light_anchor
+
+/* ====================== NAVIGATION ====================== */
+nav
+  &[data-filter]
+    & > a
+      border-radius 2px
+      color: lighten(text, 40%)
+      &:hover, &:active, &.active
+        color: text
+        background: darken(section, 5%)
+        box-shadow 0 -1px 0 darken(section, 20%), 0 1px 0 lighten(section, 80%)
+
+  &[data-menu]
+    & > a
+      aside.light &
+        border-bottom: dotted 1px aside_light_anchor
+        &:first-child
+          border-top: dotted 1px aside_light_anchor
+      aside.dark &
+        border-bottom: dotted 1px aside_dark_anchor
+        &:first-child
+          border-top: dotted 1px aside_dark_anchor
+
+  &[data-link] > a > .icon
+    color: aside_light_anchor
+
+  & > a > small
+    opacity: 0.5
+
+/* ====================== WIDGET ====================== */
+.tag
+  color: #fff !important
+  background: color
+  border: solid 1px rgba(0,0,0,0.1)
+  border-radius 2px
