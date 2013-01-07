@@ -3,8 +3,9 @@
 body {
   color: #000;
   font-size: 1em;
+  font-size: 13px;
   line-height: 1.2;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 /* ====================== NAVIGATION ====================== */
 /* ====================== BACKGROUNDS ====================== */
