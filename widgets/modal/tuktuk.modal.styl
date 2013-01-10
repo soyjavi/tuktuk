@@ -52,6 +52,19 @@ padding = 12px
     width: w = 928px
     margin-left: -(w / 2)
 
+  &.side
+    right: 0px
+    left: auto
+    top: size = 44px
+    bottom: size
+    height: auto
+    margin: 0
+    box-shadow 1px 0 4px #000
+    transform translateX(100%)
+    &.active
+      transform translateX(0%)
+
+
   & > hr
     border: solid 1px #ccc
 
