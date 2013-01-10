@@ -1,11 +1,8 @@
-TukTuk =
-  dom: (args...) -> if $$? then $$ args... else $ args...
+unless window.TukTuk?
+  window.TukTuk =
+    dom: (args...) -> if $$? then $$ args... else $ args...
 
-window.TukTuk = TukTuk
-
-
-
-TukTuk.Box = ((tk, undefined_) ->
+window.TukTuk.Box = ((tk, undefined_) ->
 
   lock = undefined
   box = undefined

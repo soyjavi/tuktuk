@@ -1,21 +1,20 @@
-var TukTuk,
-  __slice = [].slice;
+var __slice = [].slice;
 
-TukTuk = {
-  dom: function() {
-    var args;
-    args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
-    if (typeof $$ !== "undefined" && $$ !== null) {
-      return $$.apply(null, args);
-    } else {
-      return $.apply(null, args);
+if (!window.TukTuk) {
+  window.TukTuk = {
+    dom: function() {
+      var args;
+      args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+      if (typeof $$ !== "undefined" && $$ !== null) {
+        return $$.apply(null, args);
+      } else {
+        return $.apply(null, args);
+      }
     }
-  }
-};
+  };
+}
 
-window.TukTuk = TukTuk;
-
-TukTuk.Modal = (function(tk, undefined_) {
+window.TukTuk.Modal = (function(tk, undefined_) {
   var hide, lock, modal, show;
   lock = void 0;
   modal = void 0;
