@@ -28,7 +28,10 @@ dimension     = 16px
         height: h = (header_height - dimension)
         line-height: h
 
-  & aside
+    & > article
+      box-flex(1)
+
+  & > aside
     box-flex(0)
     width: aside_width
     z-index: 1
@@ -39,29 +42,12 @@ dimension     = 16px
       transition all 250ms
       transform translate3d(-100%, 0, 0)
 
-    &.active
-      transform translate3d(0%, 0, 0)
+      &.active
+        transform translate3d(0%, 0, 0)
 
-    // &.dark
-    //   z-index: 2
-    //   position: absolute
-    //   height: 100%
-    //   // left: -128px
-    //   transform translate3d(-95%, 0, 0)
-    //   transition all 300ms
-    //   &:hover
-    //     left: 0px
-    //     transform translate3d(0, 0, 0)
-
-  & section
+  & > section
     box-flex(1)
     z-index: 0
-
-
-
-
-  & article
-    box-flex(1)
 
   /* ====================== LIST ====================== */
   & ul
@@ -127,27 +113,21 @@ dimension     = 16px
   & .margin
     margin: dimension
 
-  & .tag
-    position: relative
-    padding: 3px 4px
-    font-size: 10px
-    line-height: 1.0em
-    text-transform: uppercase
+  & > aside, & > section
+    & > header
+      & .session
+        & > *
+          float: left
 
-  & header
-    & .session
-      & > *
-        float: left
+        & > .avatar
+          height: (header_height - dimension)
+          margin-right: (dimension / 2)
 
-      & > .avatar
-        height: (header_height - dimension)
-        margin-right: (dimension / 2)
+        & > button, & > .button
+          margin-top: (dimension / 5)
+          float: right
 
-      & > button, & > .button
-        margin-top: (dimension / 5)
-        float: right
-
-  & aside
+  & > aside
     & > article .avatar
       height: aside_width - (dimension * 2)
       width: aside_width - (dimension * 2)
