@@ -38,11 +38,11 @@ h6{font-size:1em}
 .text.right{text-align:right}
 .text.center{text-align:center}
 .text.justify{text-align:justify}
-.text.tiny{font-size:font-size-tiny}
-.text.small{font-size:font-size-small}
-.text.big{font-size:font-size-big}
+.text.tiny{font-size:.8em}
+.text.small{font-size:.9em}
+.text.big{font-size:1.2em}
 p{font-size:1.1em;line-height:1.1em}
-small{font-size:font-size-small;line-height:font-size-small}
+small{font-size:.9em;line-height:.9em}
 
 form input[type="text"],.form input[type="text"],form input[type="password"],.form input[type="password"],form input[type="date"],.form input[type="date"],form input[type="datetime"],.form input[type="datetime"],form input[type="email"],.form input[type="email"],form input[type="number"],.form input[type="number"],form input[type="search"],.form input[type="search"],form input[type="tel"],.form input[type="tel"],form input[type="time"],.form input[type="time"],form input[type="url"],.form input[type="url"],form select,.form select,form textarea,.form textarea{display:block;height:32px;width:100%;padding:6px;margin:2px 0 6px 0;-webkit-transition:all .15s linear;-moz-transition:all .15s linear;-ms-transition:all .15s linear;-o-transition:all .15s linear;transition:all .15s linear;font-family:inherit;font-size:14px;}
 form input[type="text"]:focus,.form input[type="text"]:focus,form input[type="password"]:focus,.form input[type="password"]:focus,form input[type="date"]:focus,.form input[type="date"]:focus,form input[type="datetime"]:focus,.form input[type="datetime"]:focus,form input[type="email"]:focus,.form input[type="email"]:focus,form input[type="number"]:focus,.form input[type="number"]:focus,form input[type="search"]:focus,.form input[type="search"]:focus,form input[type="tel"]:focus,.form input[type="tel"]:focus,form input[type="time"]:focus,.form input[type="time"]:focus,form input[type="url"]:focus,.form input[type="url"]:focus,form select:focus,.form select:focus,form textarea:focus,.form textarea:focus{outline:none !important}
