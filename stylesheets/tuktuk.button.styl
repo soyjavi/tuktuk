@@ -3,9 +3,7 @@
 
 .button, button
   display: inline-block
-  // padding: 10px 16px
   height: h = 32px
-  padding: 0 16px
   border: none
   cursor: pointer
   font-size: 15px
@@ -19,34 +17,48 @@
     background: rgba(255,255,255,0.2)
     color: #999 !important
 
-  & .icon
-    margin-right: (padding / 2)
-    display: inline-block
+  &.icon
+    padding: 1px 9px
+  &:not(.icon)
+    padding: 0 16px
+    & .icon
+      margin-right: (padding / 2)
+      display: inline-block
 
   &.anchor
     width: 100%
-    & .icon
+    &:not(.icon) .icon
       margin-left: 8px
       float: left
 
   &.large
     height: h = 52px
-    padding: 0 24px
     font-size: 22px
     line-height: h
+    &.icon
+      padding: 0 16px
+    &:not(.icon)
+      padding: 0 24px
+
 
   &.small
     height: h = 28px
-    padding: 0 12px
     font-size: 13px
     line-height: (h - 2)
-    & > .icon
-      height: 17px
+    &.icon
+      padding: 1px 8px
+    &:not(.icon)
+      padding: 0 12px
+      & > .icon
+        height: 17px
 
   &.tiny
     height: h = 22px
-    padding: 0 10px
     font-size: 11px
     line-height: (h - 2)
-    & > .icon
-      height: 12px
+    &.icon
+      padding: 0 6px
+    &:not(.icon)
+      padding: 0 10px
+      & > .icon
+        height: 12px
