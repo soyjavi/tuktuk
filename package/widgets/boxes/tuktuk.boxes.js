@@ -29,7 +29,7 @@ window.TukTuk.Box = (function(tk, undefined_) {
   };
   return {
     _Instance: (function() {
-      tk.dom("[data-tuktuk=boxes] [data-action=close]").on("click", function() {
+      tk.dom("[data-tuktuk=boxes] [data-box=close]").on("click", function() {
         return TukTuk.Box.hide();
       });
       return tk.dom("[data-tuktuk-box]").on("click", function() {
