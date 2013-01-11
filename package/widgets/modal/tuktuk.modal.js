@@ -39,7 +39,7 @@ window.TukTuk.Modal = (function(tk, undefined_) {
   };
   return {
     _Instance: (function() {
-      tk.dom("[data-tuktuk=modal] [data-action=close]").on("click", function() {
+      tk.dom("[data-tuktuk=modal] [data-modal=close]").on("click", function() {
         return TukTuk.Modal.hide();
       });
       tk.dom("[data-tuktuk-modal]").on("click", function() {

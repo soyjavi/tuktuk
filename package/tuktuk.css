@@ -1,12 +1,12 @@
-.button,button{display:inline-block;padding:10px 16px;border:none;cursor:pointer;font-family:inherit;font-size:1em;font-weight:500;line-height:13px;text-align:center;text-decoration:none;outline:none;}
+.button,button{display:inline-block;padding:10px 16px;border:none;cursor:pointer;font-size:1rem;font-family:inherit;line-height:13px;text-align:center;text-decoration:none;outline:none;}
 .button:disabled,button:disabled,.button.disabled,button.disabled{background:rgba(255,255,255,0.2);color:#999 !important}
 .button .icon,button .icon{margin-right:5px;display:inline-block}
 .button.anchor,button.anchor{width:100%;}
 .button.anchor .icon,button.anchor .icon{margin-left:8px;float:left}
-.button.large,button.large{height:52px;padding:0 24px;font-size:1.45em;font-weight:300;line-height:52px}
-.button.small,button.small{height:28px;padding:0 12px;font-size:.9em;line-height:26px;}
+.button.large,button.large{height:52px;padding:0 24px;font-size:1.25rem;line-height:52px !important}
+.button.small,button.small{height:28px;padding:0 12px;font-size:.9rem;line-height:26px !important;}
 .button.small > .icon,button.small > .icon{height:17px}
-.button.tiny,button.tiny{height:22px;padding:0 10px;font-size:.75em;line-height:20px;}
+.button.tiny,button.tiny{height:22px;padding:0 10px;font-size:.75rem;line-height:20px !important;}
 .button.tiny > .icon,button.tiny > .icon{height:12px}
 
 .flexbox{display:-webkit-box;display:-moz-box;display:box;}
@@ -224,9 +224,9 @@ table td.highlight{font-weight:700}
 .scroll{overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch;-webkit-box-flex:1;}
 .scroll.horizontal{overflow-x:scroll;overflow-y:hidden;white-space:nowrap}
 .scroll > *{-webkit-transform:translate3d(0,0,0)}
-.float.clear{clear:both}
-.float.left{float:left}
-.float.right{float:right}
+.clear{clear:both}
+.left{float:left}
+.right{float:right}
 .margin_none{margin:0}
 .margin{margin:20px}
 .margin_left{margin-left:20px}
@@ -239,9 +239,10 @@ table td.highlight{font-weight:700}
 .padding_right{padding-right:20px}
 .padding_top{padding-top:20px}
 .padding_bottom{padding-bottom:20px}
-.display.block{display:block}
-.display.inline{display:inline-block}
-.display.none{display:none}
+.block{display:block}
+.inline{display:inline-block}
+.none{display:none}
 img{border:0;-ms-interpolation-mode:bicubic;}
 img.responsive{width:100%;height:auto;}
 img.responsive.rounded{-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%}
+.tag{position:relative;padding:3px 4px;font-size:9px !important;line-height:1em;text-transform:uppercase}

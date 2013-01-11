@@ -13,6 +13,7 @@ body {
 /* ====================== TABLE ====================== */
 /* ====================== BUTTONS ====================== */
 /* ====================== BUTTONS ====================== */
+/* ====================== TAGs ====================== */
 }
 body > header.solid {
   background: #111;
@@ -246,6 +247,7 @@ body button {
   -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
   border: solid 1px rgba(0,0,0,0.1);
+  font-weight: 400;
 }
 body .button:active,
 body button:active {
@@ -285,4 +287,13 @@ body a {
 body a:hover,
 body a:active {
   opacity: 1;
+}
+body .tag {
+  color: #fff !important;
+  border: solid 1px rgba(0,0,0,0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
