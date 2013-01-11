@@ -18,7 +18,7 @@ dimension          = 16px
       background: aside
       &
         color: lighten(text, 15%)
-      & a
+      & a:not(.button)
         color: lighten(text, 25%)
       & hr
         background: aside_light_anchor
@@ -27,12 +27,12 @@ dimension          = 16px
       background: aside_dark
       &
         color: lighten(aside_dark, 90%)
-      & a
+      & a:not(.button)
         color: #fff
       & hr
         background: #444
 
-    & a
+    & a:not(.button)
       &:hover, &:active, &.active
           color: color
 
@@ -46,7 +46,7 @@ dimension          = 16px
 
   /* ====================== NAVIGATION ====================== */
   & nav
-    &[data-filter] > a
+    &[data-filter] > a:not(.button)
       border-radius 2px
       color: lighten(text, 40%)
       &:hover, &:active, &.active
@@ -82,7 +82,7 @@ article
     box-shadow inset -1px 0 0 aside_light_anchor
 
 /* ====================== MENU ====================== */
-[data-menu] > a
+[data-menu] > a:not(.button)
   aside.light &
     border-bottom: dotted 1px aside_light_anchor
     &:first-child

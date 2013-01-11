@@ -3,12 +3,14 @@
 
 .button, button
   display: inline-block
-  padding: 10px 16px
+  // padding: 10px 16px
+  height: h = 32px
+  padding: 0 16px
   border: none
   cursor: pointer
-  font-size: 1.0rem
+  font-size: 15px
   font-family: inherit
-  line-height: font-size
+  line-height: (h - 2)
   text-align: center
   text-decoration: none
   outline: none
@@ -30,21 +32,21 @@
   &.large
     height: h = 52px
     padding: 0 24px
-    font-size: 1.25rem
-    line-height: h !important
+    font-size: 22px
+    line-height: h
 
   &.small
     height: h = 28px
     padding: 0 12px
-    font-size: 0.9rem
-    line-height: (h - 2) !important
+    font-size: 13px
+    line-height: (h - 2)
     & > .icon
       height: 17px
 
   &.tiny
     height: h = 22px
     padding: 0 10px
-    font-size: 0.75rem
-    line-height: (h - 2) !important
+    font-size: 11px
+    line-height: (h - 2)
     & > .icon
       height: 12px

@@ -1,12 +1,12 @@
-.button,button{display:inline-block;padding:10px 16px;border:none;cursor:pointer;font-size:1rem;font-family:inherit;line-height:13px;text-align:center;text-decoration:none;outline:none;}
+.button,button{display:inline-block;height:32px;padding:0 16px;border:none;cursor:pointer;font-size:15px;font-family:inherit;line-height:30px;text-align:center;text-decoration:none;outline:none;}
 .button:disabled,button:disabled,.button.disabled,button.disabled{background:rgba(255,255,255,0.2);color:#999 !important}
 .button .icon,button .icon{margin-right:5px;display:inline-block}
 .button.anchor,button.anchor{width:100%;}
 .button.anchor .icon,button.anchor .icon{margin-left:8px;float:left}
-.button.large,button.large{height:52px;padding:0 24px;font-size:1.25rem;line-height:52px !important}
-.button.small,button.small{height:28px;padding:0 12px;font-size:.9rem;line-height:26px !important;}
+.button.large,button.large{height:52px;padding:0 24px;font-size:22px;line-height:52px}
+.button.small,button.small{height:28px;padding:0 12px;font-size:13px;line-height:26px;}
 .button.small > .icon,button.small > .icon{height:17px}
-.button.tiny,button.tiny{height:22px;padding:0 10px;font-size:.75rem;line-height:20px !important;}
+.button.tiny,button.tiny{height:22px;padding:0 10px;font-size:11px;line-height:20px;}
 .button.tiny > .icon,button.tiny > .icon{height:12px}
 
 .flexbox{display:-webkit-box;display:-moz-box;display:box;}

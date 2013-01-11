@@ -4,7 +4,7 @@
 /* ====================== CONSTANTS ====================== */
 header_height = 44px
 aside_width   = 240px
-dimension     = 16px
+dimension     = (dimension - 6)
 
 [data-tuktuk=boxes]
   position: absolute
@@ -112,6 +112,14 @@ dimension     = 16px
   /* ====================== WIDGETS ====================== */
   & .margin
     margin: dimension
+  & .margin_left
+    margin-left: dimension
+  & .margin_right
+    margin-right: dimension
+  & .margin_top
+    margin-top: dimension
+  & .margin_bottom
+    margin-bottom: dimension
 
   & > aside, & > section
     & > header
