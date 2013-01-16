@@ -1,6 +1,6 @@
 .button,button{display:inline-block;height:32px;border:none;cursor:pointer;font-size:15px;font-family:inherit;line-height:30px;text-align:center;text-decoration:none;outline:none;}
 .button:disabled,button:disabled,.button.disabled,button.disabled{background:rgba(255,255,255,0.2);color:#999 !important}
-.button.icon,button.icon{padding:1px 9px}
+.button.icon,button.icon{padding:2px 9px 0 9px}
 .button:not(.icon),button:not(.icon){padding:0 16px;}
 .button:not(.icon) .icon,button:not(.icon) .icon{margin-right:5px;display:inline-block}
 .button.anchor,button.anchor{width:100%;}
@@ -9,11 +9,11 @@
 .button.large.icon,button.large.icon{padding:0 16px}
 .button.large:not(.icon),button.large:not(.icon){padding:0 24px}
 .button.small,button.small{height:28px;font-size:13px;line-height:26px;}
-.button.small.icon,button.small.icon{padding:1px 8px}
+.button.small.icon,button.small.icon{padding:1px 8px 0 8px}
 .button.small:not(.icon),button.small:not(.icon){padding:0 12px;}
 .button.small:not(.icon) > .icon,button.small:not(.icon) > .icon{height:17px}
 .button.tiny,button.tiny{height:22px;font-size:11px;line-height:20px;}
-.button.tiny.icon,button.tiny.icon{padding:0 6px}
+.button.tiny.icon,button.tiny.icon{padding:1px 6px 0 6px}
 .button.tiny:not(.icon),button.tiny:not(.icon){padding:0 10px;}
 .button.tiny:not(.icon) > .icon,button.tiny:not(.icon) > .icon{height:12px}
 
@@ -231,7 +231,6 @@ table td.highlight{font-weight:700}
 
 .scroll{overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch;-webkit-box-flex:1;}
 .scroll.horizontal{overflow-x:scroll;overflow-y:hidden;white-space:nowrap}
-.scroll > *{-webkit-transform:translate3d(0,0,0)}
 .clear{clear:both}
 .left{float:left}
 .right{float:right}
