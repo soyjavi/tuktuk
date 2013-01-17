@@ -4,11 +4,10 @@
 padding = 12px
 
 [data-tuktuk="modal"]
-  position: fixed
+  position: absolute
   top: 0
   left: 50%
   background: #eee
-
   border-radius 0 0 1px 1px
   box-shadow 0 1px 4px #000
   transition all 300ms 100ms
@@ -16,10 +15,6 @@ padding = 12px
   opacity: 0
   visibility: hidden
   z-index: 1981
-
-  display-box()
-  box-orient(vertical)
-
 
   & > *
     padding: padding
@@ -35,52 +30,68 @@ padding = 12px
     opacity: 1
     visibility: visible
 
-  &.[class^="column_"]
+  &:not(.side)
+    w = 288px
+    margin-left: -(w / 2)
     margin-top: 0px !important
 
-  &, &.column_4
-    width: w = 288px
-    margin-left: -(w / 2)
+    &.column_5
+      w = 368px
+      margin-left: -(w / 2)
+    &.column_6
+      w = 448px
+      margin-left: -(w / 2)
+    &.column_7
+      w = 528px
+      margin-left: -(w / 2)
+    &.column_8
+      w = 608px
+      margin-left: -(w / 2)
+    &.column_9
+      w = 688px
+      margin-left: -(w / 2)
+    &.column_10
+      w = 768px
+      margin-left: -(w / 2)
+    &.column_11
+      w = 848px
+      margin-left: -(w / 2)
+    &.column_12
+      w = 928px
+      margin-left: -(w / 2)
+
+  &
+    width: 288px
   &.column_5
-    width: w = 368px
-    margin-left: -(w / 2)
+    width: 368px
   &.column_6
-    width: w = 448px
-    margin-left: -(w / 2)
+    width: 448px
   &.column_7
-    width: w = 528px
-    margin-left: -(w / 2)
+    width: 528px
   &.column_8
-    width: w = 608px
-    margin-left: -(w / 2)
+    width: 608px
   &.column_9
-    width: w = 688px
-    margin-left: -(w / 2)
+    width: 688px
   &.column_10
-    width: w = 768px
-    margin-left: -(w / 2)
+    width: 768px
   &.column_11
-    width: w = 848px
-    margin-left: -(w / 2)
+    width: 848px
   &.column_12
-    width: w = 928px
-    margin-left: -(w / 2)
+    width: 928px
 
   &.side
-    right: 0px
+    position: absolute
+    display-box()
+    box-orient(vertical)
     top: 0px
+    right: 0px
     bottom: 0px
     left: auto
-    height: auto
     margin: 0
     box-shadow -1px 0 4px #000
     transform translateX(100%)
     &.active
       transform translateX(0%)
-
-
-
-
 
 @media only screen and (max-width: 528px)
   [data-tuktuk="modal"]

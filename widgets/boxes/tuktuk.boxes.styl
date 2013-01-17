@@ -6,16 +6,21 @@ header_height = 44px
 aside_width   = 240px
 dimension     = (dimension - 6)
 
-[data-tuktuk=boxes]
-  position: absolute
+body, html
   height: 100%
   width: 100%
+  margin: 0
+  padding: 0
+
+[data-tuktuk=boxes]
   display-box()
   box-pack(justify)
+  overflow: hidden
 
   /* ====================== SCAFFOLD ====================== */
   & > aside, & > section
     display-box()
+    box-flex(1)
     box-orient(vertical)
 
     & > header, > footer
@@ -38,12 +43,12 @@ dimension     = (dimension - 6)
 
     &.absolute
       position: absolute
-      height: 100%
+      height: inherit
       transition all 250ms
-      transform translate3d(-100%, 0, 0)
+      transform translateX(-(aside_width))
 
       &.active
-        transform translate3d(0%, 0, 0)
+        transform translateX(0px)
 
   & > section
     box-flex(1)
