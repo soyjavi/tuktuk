@@ -6,9 +6,37 @@
 
   &.y
     box-orient(vertical)
+    &.top
+      box-pack(start)
+    &.bottom
+      box-pack(end)
+    &.middle
+      box-pack(center)
+    &.left
+      box-align(start)
+    &.right
+      box-align(end)
+    &.center
+      box-align(center)
+
   &.x
     box-orient(horizontal)
     box-pack(justify)
+    &.top
+      box-align(start)
+    &.bottom
+      box-align(end)
+    &.middle
+      box-align(center)
+    &.left
+      box-pack(start)
+    &.right
+      box-pack(end)
+    &.center
+      box-pack(center)
+
+  &.reverse
+    box-direction(reverse)
 
   & > *
     display: block
