@@ -17,7 +17,7 @@
 .button.tiny:not(.icon),button.tiny:not(.icon){padding:0 10px;}
 .button.tiny:not(.icon) > .icon,button.tiny:not(.icon) > .icon{height:12px}
 
-.flexbox{display:-webkit-box;display:-moz-box !important;display:-ms-box;display:-o-box;display:box;}
+.flexbox{display:-webkit-box;display:-moz-box;display:-ms-box;display:-o-box;display:box;}
 .flexbox.y{-webkit-box-orient:vertical;-moz-box-orient:vertical;-ms-box-orient:vertical;-o-box-orient:vertical;box-orient:vertical;}
 .flexbox.y.top{-webkit-box-pack:start;-moz-box-pack:start;-ms-box-pack:start;-o-box-pack:start;box-pack:start}
 .flexbox.y.bottom{-webkit-box-pack:end;-moz-box-pack:end;-ms-box-pack:end;-o-box-pack:end;box-pack:end}
