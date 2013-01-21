@@ -20,7 +20,7 @@ background-image()
 /* ====================== FLEXBOX ====================== */
 display-box()
   display -webkit-box
-  display -moz-box !important
+  display -moz-box
   display -ms-box
   display -o-box
   display box
@@ -39,6 +39,37 @@ box-orient()
 
 box-direction()
   vendor('box-direction', arguments)
+
+/* ====================== BOXFLEX ====================== */
+display-flex()
+  display -webkit-flex
+  display -moz-flex
+  display -ms-flex
+  display -o-flex
+  display flex
+
+flex-flow()
+  vendor('flex-flow', arguments)
+
+justify-content()
+  vendor('justify-content', arguments)
+
+align-content()
+  vendor('align-content', arguments)
+
+align-items()
+  vendor('align-items', arguments)
+
+order()
+  vendor('order', arguments)
+
+flex()
+  vendor('flex', arguments)
+
+align-self()
+  vendor('align-self', arguments)
+
+
 
 /* ====================== TRANSITIONS ====================== */
 transition()
