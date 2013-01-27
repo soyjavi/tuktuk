@@ -25,6 +25,10 @@ window.TukTuk.Modal = ((tk, undefined_) ->
     @
 
   _Instance: (->
+    tk.dom("[data-tuktuk=modal].side").each (index, element) ->
+      modal = tk.dom(element)
+      modal.html "<div>" + modal.html() + "</div>"
+
     tk.dom("[data-tuktuk=modal] [data-modal=close]").on "click", -> TukTuk.Modal.hide()
     tk.dom("[data-tuktuk-modal]").on "click", ->
       TukTuk.Modal.show(tk.dom(this).attr('data-tuktuk-modal'))
