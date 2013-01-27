@@ -39,6 +39,10 @@ window.TukTuk.Modal = (function(tk, undefined_) {
   };
   return {
     _Instance: (function() {
+      tk.dom("[data-tuktuk=modal].side").each(function(index, element) {
+        modal = tk.dom(element);
+        return modal.html("<div>" + modal.html() + "</div>");
+      });
       tk.dom("[data-tuktuk=modal] [data-modal=close]").on("click", function() {
         return TukTuk.Modal.hide();
       });
