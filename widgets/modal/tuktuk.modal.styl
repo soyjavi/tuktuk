@@ -16,13 +16,13 @@ padding = 12px
   visibility: hidden
   z-index: 1981
 
-  & > *
+  & header, footer, article
     padding: padding
 
-  & > header, > footer
+  & header, footer
     background: #e5e5e5
 
-  & > article
+  & article
     box-flex(1)
 
   &.active
@@ -92,6 +92,13 @@ padding = 12px
     transform translateX(100%)
     &.active
       transform translateX(0%)
+
+    & > div
+      width: 100%
+      height: 100%
+      display-box()
+      box-orient(vertical)
+
 
 @media only screen and (max-width: 528px)
   [data-tuktuk="modal"]
