@@ -36,7 +36,7 @@ dimension          = 16px
       &:hover, &:active, &.active
           color: color
 
-    & > header .avatar
+    & header .avatar
       border-radius 4px
 
   /* ====================== SECTION ====================== */
@@ -62,23 +62,23 @@ dimension          = 16px
 
 /* ====================== HEADER/FOOTER ====================== */
 header
-  aside.light > &
+  aside.light &
     background-color: aside_light_header
     box-shadow inset 0 1px 0 lighten(aside_light_header, 25%), inset 0 -1px 0 darken(aside_light_header, 20%)
     color: #fff
-  aside.dark > &
+  aside.dark &
     background: color = aside_dark_header
     box-shadow: inset 0 -1px 0 aside_dark_anchor
   section > &
       border-bottom: dotted 1px aside_light_anchor
 
 footer
-  aside > &, section > &
+  aside &, section > &
     background: rgba(0,0,0,0.1)
 
 /* ====================== ARTICLE ====================== */
 article
-  aside.light > &
+  aside.light &
     box-shadow inset -1px 0 0 aside_light_anchor
 
 /* ====================== MENU ====================== */
