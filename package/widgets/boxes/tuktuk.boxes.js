@@ -29,6 +29,11 @@ window.TukTuk.Box = (function(tk, undefined_) {
   };
   return {
     _Instance: (function() {
+      tk.dom("[data-tuktuk=boxes] aside.absolute").each(function(index, element) {
+        var modal;
+        modal = tk.dom(element);
+        return modal.html("<div>" + modal.html() + "</div>");
+      });
       tk.dom("[data-tuktuk=boxes] [data-box=close]").on("click", function() {
         return TukTuk.Box.hide();
       });
