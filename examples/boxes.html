@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>tuktuk - Boxes Example</title>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="../package/tuktuk.css">
@@ -37,8 +37,9 @@
     </aside>
 
     <aside class="light">
-        <header class="text centser">
-            <button class="small tiny secondary float left" data-tuktuk-box="menu">Menu</button>
+        <header class="text center">
+            <button class="tiny secondary icon cog inline left" data-tuktuk-box="menu"></button>
+            <h2 class="text bold inline">tuk<span class="text thin">tuk</span></h2>
         </header>
         <article class="scroll">
             <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="avatar margin"/>
@@ -147,6 +148,8 @@
     <script>
         // TukTuk.Modal.show("right");
         TukTuk.Box.show("menu");
+
+        TukTuk.Modal.loading();
     </script>
 </body>
 </html>
