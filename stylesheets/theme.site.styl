@@ -1,0 +1,162 @@
+@import "__vendor.styl"
+@import "__theme.styl"
+/* ====================== FONT-FACE ====================== */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700")
+
+body
+  color: text
+  font-size: 14px
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 300
+
+  & > header
+    &.solid
+      background: #111
+
+    & .tapquo > img
+      max-height: 48px
+    & nav a.icon
+      color: #ccc
+      font-size: 24px
+      margin: 0 0 0 16px
+      &:hover, &:active
+        color: #666
+
+  & > footer
+    & img
+      height: 16px
+      position: relative
+      top: 5px
+      left: 2px
+    & p
+      margin-bottom: 4px
+
+  & > section
+    &.underline
+      border-bottom: solid #bbb 1px
+
+
+  & hr
+    border-style: solid
+    border-color: bck_light
+    margin: 20px 0
+    padding: 0
+
+  /* ====================== NAVIGATION ====================== */
+  & nav
+    &.group a
+      border-left: solid #ccc 1px
+      &, & > .icon
+        color: #888
+      &:hover, &:active, &.active
+        color: #000
+        background: white
+        & > .icon
+          color: #000
+      &:last-child
+        border-right: solid #ccc 1px
+
+  /* ====================== BACKGROUNDS ====================== */
+  & .bck
+    &.lightest
+      background-color: bck_lightest
+    &.light
+      background-color: bck_light
+    &.dark
+      background-color: bck_dark
+    &.darkest
+      background-color: bck_darkest
+    &.theme
+      background-color: color
+    &.accept
+      background-color: color_accept
+    &.cancel
+      background-color: color_cancel
+
+  /* ====================== TEXT ====================== */
+  & .text
+    &.shadow
+      text-shadow 0 1px 1px rgba(0,0,0,0.5)
+    &.color
+      &.white
+        color: #fff
+      &.theme
+        color: color
+      &.secondary
+        color: color_secondary
+      &.accept
+        color: color_accept
+      &.cancel
+        color: color_cancel
+
+
+  /* ====================== FORM ====================== */
+  & form, .form
+    & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
+      background-color: white
+      color: rgba(0, 0, 0, 0.75)
+      border: 1px solid #ddd
+      box-shadow inset 0 1px 2px rgba(0, 0, 0, 0.1)
+      &.error, &:required
+        border-color: color_cancel
+        color: color_cancel
+        background-color: rgba(198, 15, 19, 0.1)
+      &:focus
+        background: #FAFAFA;
+        border-color: #B3B3B3;
+        color: rgba(0, 0, 0, 0.75)
+
+  /* ====================== TABLE ====================== */
+  & table
+    background: #fff
+    color: #333
+    border: 1px solid #ddd;
+    border-radius 3px
+    & tr
+      &:nth-child(even) td
+        background-color: #F9F9F9
+    & th
+      background-color: #eee
+      color: #222
+    & td
+      &.highlight
+        background-color: color !important
+        color: #fff
+
+  /* ====================== BUTTONS ====================== */
+  & .button, button
+    background-color: color
+    color: white
+    border-radius 1px
+    box-shadow inset 0 1px 0 rgba(255,255,255,0.2)
+    border: solid 1px rgba(0,0,0,0.1)
+    font-weight: 400
+    &:active
+      box-shadow inset 0 0 128px rgba(0,0,0,0.25)
+      border-color: none
+    &.secondary
+      background-color: color_secondary
+      color: #666
+      text-shadow: 0 1px 0 rgba(255,255,255,0.25)
+    &.accept
+      background-color: color_accept
+    &.cancel
+      background-color: color_cancel
+    &.transparent
+      background: none !important
+
+
+  /* ====================== BUTTONS ====================== */
+  // & :not(nav) > a:not(.button)
+  & a
+    color: color
+    opacity: 0.9
+    &:hover, &:active
+      opacity: 1.0
+
+
+  /* ====================== TAGs ====================== */
+  & :not(.icon).tag
+    color: #fff !important
+    border: solid 1px rgba(0,0,0,0.1)
+    border-radius 2px
