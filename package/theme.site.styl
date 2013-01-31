@@ -1,22 +1,35 @@
 @import "__vendor.styl"
 @import "__theme.styl"
 /* ====================== FONT-FACE ====================== */
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700")
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700")
 
 body
-  color: #000
-  font-size: 13px
-  line-height: 1.2
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
+  color: text
+  font-size: 14px
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-weight: 300
 
   & > header
     &.solid
       background: #111
-    & nav a
-      color: rgba(255,255,255,0.5)
+
+    & .tapquo > img
+      max-height: 48px
+    & nav a.icon
+      color: #ccc
+      font-size: 24px
+      margin: 0 0 0 16px
       &:hover, &:active
-        color: #fff
+        color: #666
+
+  & > footer
+    & img
+      height: 16px
+      position: relative
+      top: 5px
+      left: 2px
+    & p
+      margin-bottom: 4px
 
   & > section
     &.underline
@@ -143,7 +156,7 @@ body
 
 
   /* ====================== TAGs ====================== */
-  & .tag
+  & :not(.icon).tag
     color: #fff !important
     border: solid 1px rgba(0,0,0,0.1)
     border-radius 2px

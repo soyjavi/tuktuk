@@ -14,8 +14,8 @@ if (!window.TukTuk) {
   };
 }
 
-window.TukTuk.Modal = (function(tk, undefined_) {
-  var hide, lock, modal, show;
+window.TukTuk.Modal = (function(tk) {
+  var hide, loading, lock, modal, show;
   lock = void 0;
   modal = void 0;
   /*
@@ -33,8 +33,16 @@ window.TukTuk.Modal = (function(tk, undefined_) {
   */
 
   hide = function() {
-    lock.removeClass("active");
+    lock.removeClass("active").attr("data-loading", "false");
     modal.removeClass("active");
+    return this;
+  };
+  /*
+        @loading: Describe method
+  */
+
+  loading = function(text) {
+    lock.attr("data-loading", "true").addClass("active");
     return this;
   };
   return {
@@ -49,10 +57,11 @@ window.TukTuk.Modal = (function(tk, undefined_) {
       tk.dom("[data-tuktuk-modal]").on("click", function() {
         return TukTuk.Modal.show(tk.dom(this).attr('data-tuktuk-modal'));
       });
-      tk.dom(document.body).append("<div data-tuktuk=\"lock\"></div>");
+      tk.dom(document.body).append("<div data-tuktuk=\"lock\" data-loading=\"false\">\n  <div class=\"loading\">\n      <span class=\"top\"></span>\n      <span class=\"right\"></span>\n      <span class=\"bottom\"></span>\n      <span class=\"left\"></span>\n  </div>\n</div>");
       return lock = tk.dom("[data-tuktuk=lock]").first();
     })(),
     show: show,
-    hide: hide
+    hide: hide,
+    loading: loading
   };
 })(TukTuk);

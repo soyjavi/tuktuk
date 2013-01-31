@@ -3,9 +3,9 @@
 .button.icon,button.icon{padding:2px 9px 0 9px}
 .button:not(.icon),button:not(.icon){padding:0 16px;}
 .button:not(.icon) .icon,button:not(.icon) .icon{margin-right:5px;display:inline-block}
-.button.anchor,button.anchor{width:100%;}
-.button.anchor:not(.icon) .icon,button.anchor:not(.icon) .icon{margin-left:8px;float:left}
-.button.large,button.large{height:52px;font-size:22px;line-height:52px;}
+.button.anchor,button.anchor{width:100%;position:relative;}
+.button.anchor:not(.icon) .icon,button.anchor:not(.icon) .icon{position:absolute;left:5%}
+.button.large,button.large{height:52px;font-size:22px;line-height:48px;}
 .button.large.icon,button.large.icon{padding:0 16px}
 .button.large:not(.icon),button.large:not(.icon){padding:0 24px}
 .button.small,button.small{height:28px;font-size:13px;line-height:26px;}
@@ -15,7 +15,7 @@
 .button.tiny,button.tiny{height:22px;font-size:11px;line-height:20px;}
 .button.tiny.icon,button.tiny.icon{padding:1px 6px 0 6px}
 .button.tiny:not(.icon),button.tiny:not(.icon){padding:0 10px;}
-.button.tiny:not(.icon) > .icon,button.tiny:not(.icon) > .icon{height:12px}
+.button.tiny:not(.icon) > .icon,button.tiny:not(.icon) > .icon{height:11px;line-height:11px}
 
 .flexbox{display:-webkit-box;display:-moz-box;display:-ms-box;display:-o-box;display:box;}
 .flexbox.y{-webkit-box-orient:vertical;-moz-box-orient:vertical;-ms-box-orient:vertical;-o-box-orient:vertical;box-orient:vertical;}
@@ -59,9 +59,7 @@
 .flexbox > .order_8{-webkit-box-ordinal-group:8;-moz-box-ordinal-group:8;-ms-box-ordinal-group:8;-o-box-ordinal-group:8;box-ordinal-group:8}
 .flexbox > .order_9{-webkit-box-ordinal-group:9;-moz-box-ordinal-group:9;-ms-box-ordinal-group:9;-o-box-ordinal-group:9;box-ordinal-group:9}
 
-h1,h2,h3,h4,h5,h6{margin:0;padding:0;line-height:1.2em;}
-h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
-h1 .right,h2 .right,h3 .right,h4 .right,h5 .right,h6 .right{font-size:1em}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
 h1 .icon,h2 .icon,h3 .icon,h4 .icon,h5 .icon,h6 .icon{font-size:.85em}
 h1{font-size:2.6em}
 h2{font-size:2.2em}
@@ -286,4 +284,4 @@ table td.highlight{font-weight:700}
 img{border:0;-ms-interpolation-mode:bicubic;}
 img.responsive{width:100%;height:auto;}
 img.responsive.rounded{-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%}
-.tag{position:relative;padding:3px 4px;font-size:9px !important;line-height:1em;text-transform:uppercase}
+:not(.icon).tag{position:relative;padding:3px 4px;font-size:9px !important;line-height:1em;text-transform:uppercase}

@@ -1,10 +1,9 @@
 /* ====================== FONT-FACE ====================== */
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700");
 body {
-  color: #000;
-  font-size: 13px;
-  line-height: 1.2;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111;
+  font-size: 14px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 /* ====================== NAVIGATION ====================== */
 /* ====================== BACKGROUNDS ====================== */
@@ -18,12 +17,26 @@ body {
 body > header.solid {
   background: #111;
 }
-body > header nav a {
-  color: rgba(255,255,255,0.5);
+body > header .tapquo > img {
+  max-height: 48px;
 }
-body > header nav a:hover,
-body > header nav a:active {
-  color: #fff;
+body > header nav a.icon {
+  color: #ccc;
+  font-size: 24px;
+  margin: 0 0 0 16px;
+}
+body > header nav a.icon:hover,
+body > header nav a.icon:active {
+  color: #666;
+}
+body > footer img {
+  height: 16px;
+  position: relative;
+  top: 5px;
+  left: 2px;
+}
+body > footer p {
+  margin-bottom: 4px;
 }
 body > section.underline {
   border-bottom: solid #bbb 1px;
@@ -62,19 +75,19 @@ body .bck.light {
   background-color: #f7f7f7;
 }
 body .bck.dark {
-  background-color: #282828;
+  background-color: #383838;
 }
 body .bck.darkest {
   background-color: #181818;
 }
 body .bck.theme {
-  background-color: #16a6b6;
+  background-color: #f00;
 }
 body .bck.accept {
-  background-color: #3fb58e;
+  background-color: color_accept;
 }
 body .bck.cancel {
-  background-color: #ee6557;
+  background-color: color_cancel;
 }
 body .text.shadow {
   -webkit-text-shadow: 0 1px 1px rgba(0,0,0,0.5);
@@ -87,16 +100,16 @@ body .text.color.white {
   color: #fff;
 }
 body .text.color.theme {
-  color: #16a6b6;
+  color: #f00;
 }
 body .text.color.secondary {
   color: #bfbfbf;
 }
 body .text.color.accept {
-  color: #3fb58e;
+  color: color_accept;
 }
 body .text.color.cancel {
-  color: #ee6557;
+  color: color_cancel;
 }
 body form input[type="text"],
 body .form input[type="text"],
@@ -179,8 +192,8 @@ body form select:required,
 body .form select:required,
 body form textarea:required,
 body .form textarea:required {
-  border-color: #ee6557;
-  color: #ee6557;
+  border-color: color_cancel;
+  color: color_cancel;
   background-color: rgba(198,15,19,0.1);
 }
 body form input[type="text"]:focus,
@@ -229,12 +242,12 @@ body table th {
   color: #222;
 }
 body table td.highlight {
-  background-color: #16a6b6 !important;
+  background-color: #f00 !important;
   color: #fff;
 }
 body .button,
 body button {
-  background-color: #16a6b6;
+  background-color: #f00;
   color: #fff;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
@@ -270,25 +283,25 @@ body button.secondary {
 }
 body .button.accept,
 body button.accept {
-  background-color: #3fb58e;
+  background-color: color_accept;
 }
 body .button.cancel,
 body button.cancel {
-  background-color: #ee6557;
+  background-color: color_cancel;
 }
 body .button.transparent,
 body button.transparent {
   background: none !important;
 }
 body a {
-  color: #16a6b6;
+  color: #f00;
   opacity: 0.9;
 }
 body a:hover,
 body a:active {
   opacity: 1;
 }
-body .tag {
+body :not(.icon).tag {
   color: #fff !important;
   border: solid 1px rgba(0,0,0,0.1);
   -webkit-border-radius: 2px;

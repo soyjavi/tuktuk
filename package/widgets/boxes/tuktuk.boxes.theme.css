@@ -1,24 +1,23 @@
 [data-tuktuk=boxes] > aside.light{background:#fff;}
-[data-tuktuk=boxes] > aside.light{color:#525252}
-[data-tuktuk=boxes] > aside.light a:not(.button){color:#666}
+[data-tuktuk=boxes] > aside.light{color:#353535}
+[data-tuktuk=boxes] > aside.light a:not(.button){color:#4d4d4d}
 [data-tuktuk=boxes] > aside.light hr{background:#d9d9d9}
-[data-tuktuk=boxes] > aside.dark{background:#282828;}
-[data-tuktuk=boxes] > aside.dark{color:#eaeaea}
+[data-tuktuk=boxes] > aside.dark{background:#383838;}
+[data-tuktuk=boxes] > aside.dark{color:#ebebeb}
 [data-tuktuk=boxes] > aside.dark a:not(.button){color:#fff}
 [data-tuktuk=boxes] > aside.dark hr{background:#444}
-[data-tuktuk=boxes] > aside a:not(.button):hover,[data-tuktuk=boxes] > aside a:not(.button):active,[data-tuktuk=boxes] > aside a:not(.button).active{color:#16a6b6}
-[data-tuktuk=boxes] > aside header .avatar{-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px}
+[data-tuktuk=boxes] > aside a:not(.button):hover,[data-tuktuk=boxes] > aside a:not(.button):active,[data-tuktuk=boxes] > aside a:not(.button).active{color:#f00}
 [data-tuktuk=boxes] > section{background:#f7f7f7;-webkit-box-shadow:inset 4px 0 0 rgba(0,0,0,0.025);-moz-box-shadow:inset 4px 0 0 rgba(0,0,0,0.025);-ms-box-shadow:inset 4px 0 0 rgba(0,0,0,0.025);-o-box-shadow:inset 4px 0 0 rgba(0,0,0,0.025);box-shadow:inset 4px 0 0 rgba(0,0,0,0.025)}
-[data-tuktuk=boxes] nav[data-filter] > a:not(.button){-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;color:#858585;}
-[data-tuktuk=boxes] nav[data-filter] > a:not(.button):hover,[data-tuktuk=boxes] nav[data-filter] > a:not(.button):active,[data-tuktuk=boxes] nav[data-filter] > a:not(.button).active{color:#333;background:#ebebeb;-webkit-box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd;-moz-box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd;-ms-box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd;-o-box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd;box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd}
+[data-tuktuk=boxes] nav[data-filter] > a:not(.button){-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;color:#707070;}
+[data-tuktuk=boxes] nav[data-filter] > a:not(.button):hover,[data-tuktuk=boxes] nav[data-filter] > a:not(.button):active,[data-tuktuk=boxes] nav[data-filter] > a:not(.button).active{color:#111;background:#ebebeb;-webkit-box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd;-moz-box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd;-ms-box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd;-o-box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd;box-shadow:0 -1px 0 #c6c6c6,0 1px 0 #fdfdfd}
 [data-tuktuk=boxes] nav[data-link] > a > .icon{color:#d9d9d9}
 [data-tuktuk=boxes] nav > a > small{opacity:.5}
-aside.light header{background-color:#16a6b6;-webkit-box-shadow:inset 0 1px 0 #32d4e6,inset 0 -1px 0 #128592;-moz-box-shadow:inset 0 1px 0 #32d4e6,inset 0 -1px 0 #128592;-ms-box-shadow:inset 0 1px 0 #32d4e6,inset 0 -1px 0 #128592;-o-box-shadow:inset 0 1px 0 #32d4e6,inset 0 -1px 0 #128592;box-shadow:inset 0 1px 0 #32d4e6,inset 0 -1px 0 #128592;color:#fff}
-aside.dark header{background:#191919;-webkit-box-shadow:inset 0 -1px 0 #484848;-moz-box-shadow:inset 0 -1px 0 #484848;-ms-box-shadow:inset 0 -1px 0 #484848;-o-box-shadow:inset 0 -1px 0 #484848;box-shadow:inset 0 -1px 0 #484848}
+aside.light header{background-color:#f00;-webkit-box-shadow:inset 0 1px 0 #ff4040,inset 0 -1px 0 #c00;-moz-box-shadow:inset 0 1px 0 #ff4040,inset 0 -1px 0 #c00;-ms-box-shadow:inset 0 1px 0 #ff4040,inset 0 -1px 0 #c00;-o-box-shadow:inset 0 1px 0 #ff4040,inset 0 -1px 0 #c00;box-shadow:inset 0 1px 0 #ff4040,inset 0 -1px 0 #c00;color:#fff}
+aside.dark header{background:#181818;-webkit-box-shadow:inset 0 -1px 0 #565656;-moz-box-shadow:inset 0 -1px 0 #565656;-ms-box-shadow:inset 0 -1px 0 #565656;-o-box-shadow:inset 0 -1px 0 #565656;box-shadow:inset 0 -1px 0 #565656}
 section > header{border-bottom:dotted 1px #d9d9d9}
 aside footer,section > footer{background:rgba(0,0,0,0.1)}
 aside.light article{-webkit-box-shadow:inset -1px 0 0 #d9d9d9;-moz-box-shadow:inset -1px 0 0 #d9d9d9;-ms-box-shadow:inset -1px 0 0 #d9d9d9;-o-box-shadow:inset -1px 0 0 #d9d9d9;box-shadow:inset -1px 0 0 #d9d9d9}
 aside.light [data-menu] > a:not(.button){border-bottom:dotted 1px #d9d9d9;}
 aside.light [data-menu] > a:not(.button):first-child{border-top:dotted 1px #d9d9d9}
-aside.dark [data-menu] > a:not(.button){border-bottom:dotted 1px #484848;}
-aside.dark [data-menu] > a:not(.button):first-child{border-top:dotted 1px #484848}
+aside.dark [data-menu] > a:not(.button){border-bottom:dotted 1px #565656;}
+aside.dark [data-menu] > a:not(.button):first-child{border-top:dotted 1px #565656}
