@@ -27,14 +27,15 @@
 
   &.anchor
     width: 100%
+    position: relative
     &:not(.icon) .icon
-      margin-left: 8px
-      float: left
+      position: absolute
+      left: 5%
 
   &.large
     height: h = 52px
     font-size: 22px
-    line-height: h
+    line-height: (h - 4)
     &.icon
       padding: 0 16px
     &:not(.icon)
