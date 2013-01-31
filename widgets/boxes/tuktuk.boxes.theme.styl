@@ -1,13 +1,10 @@
 @import "../../stylesheets/__vendor.styl"
 @import "../../stylesheets/__theme.styl"
 
-text               = #333
-aside              = bck_lightest
 aside_light_header = color
-aside_light_anchor = darken(aside, 15%)
-aside_dark         = bck_dark
-aside_dark_header  = darken(aside_dark, 38%)
-aside_dark_anchor  = lighten(aside_dark, 15%)
+aside_light_anchor = darken(bck_lightest, 15%)
+aside_dark_header  = bck_darkest
+aside_dark_anchor  = lighten(bck_dark, 15%)
 section            = bck_light
 dimension          = 16px
 
@@ -15,7 +12,7 @@ dimension          = 16px
   /* ====================== ASIDE ====================== */
   & > aside
     &.light
-      background: aside
+      background: bck_lightest
       &
         color: lighten(text, 15%)
       & a:not(.button)
@@ -24,9 +21,9 @@ dimension          = 16px
         background: aside_light_anchor
 
     &.dark
-      background: aside_dark
+      background: bck_dark
       &
-        color: lighten(aside_dark, 90%)
+        color: lighten(bck_dark, 90%)
       & a:not(.button)
         color: #fff
       & hr
@@ -36,12 +33,9 @@ dimension          = 16px
       &:hover, &:active, &.active
           color: color
 
-    & header .avatar
-      border-radius 4px
-
   /* ====================== SECTION ====================== */
   & > section
-    background: section
+    background: bck_light
     box-shadow: inset 4px 0 0 rgba(0,0,0,0.025)
 
   /* ====================== NAVIGATION ====================== */

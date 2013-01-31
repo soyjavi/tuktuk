@@ -32,6 +32,9 @@ body, html
         height: h = (header_height - dimension)
         line-height: h
 
+      & .button, button
+        margin: 0 1px
+
     & article
       box-flex(1)
 
@@ -83,7 +86,7 @@ body, html
   & nav
     &[data-filter]
       font-size: font-size-tiny
-      & > a
+      & > a:not(.button)
         margin-right: (dimension / 2)
         padding: (dimension / 2.5) (dimension / 1.5)
         &:last-child
