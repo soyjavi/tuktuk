@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!-- TUKTUK -->
     <link rel="stylesheet" href="package/tuktuk.css">
-    <link rel="stylesheet" href="package/theme.tuktuk.css">
+    <link rel="stylesheet" href="package/theme.site.css">
     <!-- TUKTUK.WIDGETS -->
     <link rel="stylesheet" href="package/widgets/icon/tuktuk.icon.css">
     <link rel="stylesheet" href="package/widgets/modal/tuktuk.modal.css">
@@ -15,73 +15,76 @@
 
 <body>
     <!-- ========================== HEADER ========================== -->
-    <header class="bck darkest text color white">
-        <div class="row ">
-            <div class="column_3">
-                <a href="http://tuktuk.tapquo.com" class="logo text normal color white">tuk<span class="text book">tuk</span></a>
+    <header class="margin_top margin_bottom">
+        <div class="row">
+            <div class="column_4">
+                <h2 class="text color theme"><span class="text bold">tuk</span>tuk</h2>
             </div>
-            <nav class="column_6 offset_3 text normal right">
-                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ftuktuk.tapquo.com%2F&text=Tuktuk%20-%20Simple%20(but%20powerful)%20RWD%20Framework&tw_p=tweetbutton&url=http%3A%2F%2Ftuktuk.tapquo.com%2F"><span class="icon twitter"></span>Share</a>
-                <a href="http://tuktuk.tapquo.com/download/tuktuk.0.3.zip" class="button small"><span class="icon download"></span>Download</a>
+            <div class="column_4 text center hide-phone">
+                <a href="http://tapquo.com" class="tapquo"><img src="http://cdn.tapquo.com/images/tapquo_circle.png"></a>
+            </div>
+            <nav class="column_4 text right color secondary">
+                <a href="https://github.com/soyjavi/package-monocle/archive/1.0.2.zip" class="icon download"></a>
+                <a href="https://github.com/soyjavi/tuktuk" class="icon github"></a>
+                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ftuktuk.tapquo.com%2F&text=Tuktuk%20-%20Simple%20(but%20powerful)%20RWD%20Framework&tw_p=tweetbutton&url=http%3A%2F%2Ftuktuk.tapquo.com%2F" class="icon twitter"></a>
             </nav>
         </div>
     </header>
 
-
-    <!-- ========================== LANDING ========================== -->
-    <section class="landing bck dark text color white  center">
-        <div class="row">
-            <div class="column_10 offset_1">
-                <h1 class="text normal">tuk<span class="text thin">tuk</span></h1>
-
-                <h3 class="margin bottom">This isn't another frontend framework... it's a way to create sites and extend them with <span class="text normal">your own style</span>.</h3>
-
-                <a href="http://tuktuk.tapquo.com/download/tuktuk.0.3.zip" class="button large margin bottom"><span class="icon download"></span>Download <span class="text bold">tuk</span><span class="text normal">tuk</span></a>
-
-                <nav >
-                    <a href="https://github.com/soyjavi/tuktuk" target="_blank" class="margin_right text color white"><span class="icon github"></span>GitHub Project</a>
-                    <span class="margin_left"><span class="icon cube"></span> Version 0.3</span>
-                </nav>
-            </div>
-        </div>
-    </section>
-
-
     <!-- ========================== FEATURES ========================== -->
-    <section class="padding bck light features">
-        <div class="row text center margin_bottom">
-            <div class="column_8 offset_2">
-                <h1 class="text color theme">A new kid on the block</h1>
-                <h3 class="text thin">
+    <section class="padding bck theme features">
+        <div class="row text center">
+            <div class="column_10 offset_1">
+                <h1 class="text color white">A new kid on the block</h1>
+                <h3>
                     Not trying to compete with Bootstrap or Foundation because they play in another league. Just worry about creating responsive and fully extensible sites easily.
                 </h3>
             </div>
         </div>
+
         <div class="row text center book margin_top">
 
             <div class="column_3">
-                <h1 class="icon css3 text color theme"></h1>
-                <h5>CSS3 Powered</h5>
-                <small>The premise is to use as much as possible the features of the latest CSS specification. Don't try to use Tuktuk in your hated IE6.</small>
+                <h1 class="icon css3 text color white"></h1>
+                <h4 class="text color white">CSS3 Powered</h4>
+                <p>The premise is to use as much as possible the features of the latest CSS specification. Don't try to use Tuktuk in your hated IE6.</p>
             </div>
             <div class="column_3">
-                <h1 class="icon paper-plane text color theme"></h1>
-                <h5>Lightweight & fast</h5>
-                <small>You don't want to carry heavy stylesheets that only make for a slow loading site. Tuktuk is lightweight at just 15kb.</small>
+                <h1 class="icon paper-plane text color white"></h1>
+                <h4 class="text color white">Lightweight & fast</h4>
+                <p>You don't want to carry heavy stylesheets that only make for a slow loading site. Tuktuk is lightweight at just 15kb.</p>
             </div>
             <div class="column_3">
-                <h1 class="icon cube text color theme"></h1>
-                <h5>Object Oriented CSS</h5>
-                <small>The purpose is to encourage code reuse plus faster and more efficient stylesheets that are easier to add to and maintain.</small>
+                <h1 class="icon cube text color white"></h1>
+                <h4  class="text color white">Object Oriented CSS</h4>
+                <p>The purpose is to encourage code reuse plus faster and more efficient stylesheets that are easier to add to and maintain.</p>
             </div>
             <div class="column_3">
-                <h1 class="icon github text color theme"></h1>
-                <h5>Community Project</h5>
-                <small>Each new line of code is welcomed, I hope that developers and restless minds help me improve this humble project day by day.</small>
+                <h1 class="icon github text color white"></h1>
+                <h4  class="text color white">Community Project</h4>
+                <p>Each new line of code is welcomed, I hope that developers and restless minds help me improve this humble project day by day.</p>
             </div>
         </div>
     </section>
 
+    <!-- ========================== Downloads ========================== -->
+    <section class="padding bck darkest ">
+        <div class="row text center margin_bottom">
+            <div class="column_10 offset_1">
+                <h1 class="text thin color theme">Downloads</h1>
+                <h3 class="text color white">Sounds cool? Checkout v0.5</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset_2 column_4">
+                <a href="https://github.com/soyjavi/package-quojs/archive/0.5.zip" class="button large anchor "><span class="icon download"></span>Download .Zip File</a>
+            </div>
+            <div class="column_4">
+                <a href="https://github.com/soyjavi/tuktuk" class="button large anchor secondary"><span class="icon github"></span>Source on Github</a>
+            </div>
+        </div>
+    </section>
 
     <!-- ========================== COLUMNS ========================== -->
     <section class="padding bck lightest text center">
@@ -180,8 +183,6 @@
                   <a href="#" class="button large">Large</a>
                   <a href="#" class="button ">Normal</a>
                   <a href="#" class="button secondary">Secondary</a>
-                  <a href="#" class="button accept">Accept</a>
-                  <a href="#" class="button cancel">Cancel</a>
                   <a href="#" class="button small">Small</a>
                   <a href="#" class="button tiny">Tiny</a>
               </div>
@@ -195,8 +196,6 @@
                   <a href="#" class="button "><span class="icon cube"></span>Normal</a>
                   <a href="#" class="button secondary"><span class="icon cube"></span>Secondary</a>
                   <a href="#" class="button accept"><span class="icon cube"></span>Accept</a>
-                  <a href="#" class="button cancel"><span class="icon cube"></span>Cancel</a>
-                  <a href="#" class="button small"><span class="icon cube"></span>Small</a>
                   <a href="#" class="button tiny"><span class="icon cube"></span>Tiny</a>
               </div>
             <div class="column_4">
@@ -209,8 +208,6 @@
                   <a href="#" class="button large icon cube"></a>
                   <a href="#" class="button icon cube"></a>
                   <a href="#" class="button secondary icon cube"></a>
-                  <a href="#" class="button accept icon cube"></a>
-                  <a href="#" class="button cancel icon cube"></a>
                   <a href="#" class="button small icon cube"></a>
                   <a href="#" class="button tiny icon cube"></a>
               </div>
@@ -345,7 +342,7 @@
                             </fieldset>
 
                             <button class="accept margin_right"><span class="icon accept"></span>Send</button>
-                            <button class="cancel"><span class="icon cancel"></span>Cancel</button>
+                            <button class="secondary"><span class="icon cancel"></span>Cancel</button>
                         </form>
                     </div>
                 </div>
@@ -454,8 +451,6 @@
                 <h6>color normal</h6>
                 <h6 class="text color theme">color theme</h6>
                 <h6 class="text color secondary">color secondary</h6>
-                <h6 class="text color accept">color accept</h6>
-                <h6 class="text color cancel">color cancel</h6>
             </div>
             <div class="column_3">
                 <h4>Style (.text)</h4>
@@ -475,15 +470,11 @@
             </div>
             <div class="column_3">
                 <h4>Background (.bck)</h4>
-                <h6>normal</h6>
                 <h6 class="bck lightest">lightest</h6>
                 <h6 class="bck light">light</h6>
                 <h6 class="bck dark text color white">dark</h6>
                 <h6 class="bck darkest text color white">darkest</h6>
-
                 <h6 class="bck theme">theme</h6>
-                <h6 class="bck accept">accept</h6>
-                <h6 class="bck cancel">cancel</h6>
             </div>
         </div>
     </section>
@@ -567,8 +558,8 @@
                 <div class="margin_bottom">Modal notifications for any device.</div>
                 <div class="row">
                     <button class="column_2" data-tuktuk-modal="default_modal">Default</button>
-                    <button class="column_2 cancel" data-tuktuk-modal="small_modal">column_6</button>
-                    <button class="column_2 accept" data-tuktuk-modal="big_modal">column_8</button>
+                    <button class="column_2 secondary" data-tuktuk-modal="small_modal">column_6</button>
+                    <button class="column_2 secondary" data-tuktuk-modal="big_modal">column_8</button>
                 </div>
 
             </div>
@@ -593,7 +584,7 @@
         </header>
         <div class="margin_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nihil aut sit incidunt amet modi dolores a sed.</div>
         <footer>
-            <button data-modal="close" class="button anchor cancel">Cancel</button>
+            <button data-modal="close" class="button anchor">Cancel</button>
         </footer>
     </div>
 
@@ -603,7 +594,7 @@
         </header>
         <div class="margin_bottom text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nihil aut sit incidunt amet modi dolores a sed.</div>
         <footer>
-            <button data-modal="close" class="button large accept">Cancel</button>
+            <button data-modal="close" class="button large">Cancel</button>
         </footer>
     </div>
 
@@ -628,28 +619,19 @@
 
 
     <!-- ========================== FOOTER ========================== -->
-    <footer class="bck darkest text color white">
-        <div class="row margin_top margin_bottom">
-            <div class="column_4">
-                <p class="text bold">Made by TAPQUO</p>
-                <small>We are a mobile user experiences company located in Bilbao, Spain. We've put over 12 years of experience building products.</small>
+    <footer class="bck darkest padding text color white">
+        <div class="row ">
+            <div class="column_5">
+                <p class="text bold big">Handcrafted by <a href="http://tapquo.com" class="display inline"><img src="http://cdn.tapquo.com/images/logo_footer.png"/></a></p>
+                We're a  user experiences company located in <span class="text normal">Bilbao</span>, SP.
             </div>
             <div class="column_4">
-                <p class="text bold">Join the team!</p>
-                <small>
-                    Do you want to be part of our team? Let us know how you're!
-                    <br/>
-                    <a href="mailto:hello@tapquo.com?subject=Join the team!">Get in touch →​</a>
-                </small>
+                <p class="text bold big">Join the team!</p>
+                Let us know how you're!<a href="mailto:hello@tapquo.com?subject=job" class="text normal"> Get in touch</a>
             </div>
-            <div class="column_4">
-                <p class="text bold">Connect with me in...</p>
-                <h3>
-                    <a href="https://twitter.com/soyjavi" class="icon twitter"></a>
-                    <a href="http://dribbble.com/soyjavi" class="icon dribbble"></a>
-                    <a href="https://github.com/soyjavi" class="icon github"></a>
-                    <a href="https://www.facebook.com/javi.jimenez.villar" class="icon facebook"></a>
-                </h3>
+            <div class="column_3">
+                <p class="text bold big">Need some help?</p>
+                For quick answers or help <a href="https://groups.google.com/forum/#!forum/quojs" class="text normal">write us</a>
             </div>
         </div>
     </footer>
