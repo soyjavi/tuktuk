@@ -17,6 +17,10 @@ body, html
   box-pack(justify)
   overflow: hidden
 
+  /* ===================== INHERITANCE ==================== */
+  &  [class^="column_"], [class*=" column_"]
+    margin-left: 0px !important
+
   /* ====================== SCAFFOLD ====================== */
   & > aside, & > section
     display-box()
