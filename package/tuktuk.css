@@ -256,7 +256,7 @@ nav:not(.group) a{margin:0 4px;}
 nav:not(.group) a:last-child{margin-right:0}
 nav a:not(.button) .icon,nav a:not(.button) img{margin-right:3px;position:relative;top:1px}
 
-table{margin:0 0 20px 0;width:100%;border-spacing:2px;}
+table{margin:12px 0 12px 0;width:100%;border-spacing:2px;}
 table td,table th{padding:10px 8px 10px 8px}
 table th{font-weight:700}
 table td.highlight{font-weight:700}
