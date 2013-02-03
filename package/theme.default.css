@@ -65,7 +65,7 @@ body .bck.darkest {
   background-color: #181818;
 }
 body .bck.theme {
-  background-color: #f00;
+  background-color: #f66;
 }
 body .text.shadow {
   -webkit-text-shadow: 0 1px 1px rgba(0,0,0,0.5);
@@ -78,7 +78,7 @@ body .text.color.white {
   color: #fff;
 }
 body .text.color.theme {
-  color: #f00;
+  color: #f66;
 }
 body .text.color.secondary {
   color: #bfbfbf;
@@ -214,12 +214,12 @@ body table th {
   color: #222;
 }
 body table td.highlight {
-  background-color: #f00 !important;
+  background-color: #f66 !important;
   color: #fff;
 }
 body .button,
 body button {
-  background-color: #f00;
+  background-color: #f66;
   color: #fff;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
@@ -262,7 +262,7 @@ body button.large {
   font-weight: 300;
 }
 body a {
-  color: #f00;
+  color: #f66;
   opacity: 0.9;
 }
 body a:hover,
