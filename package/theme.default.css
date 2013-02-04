@@ -278,3 +278,7 @@ body :not(.icon).tag {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
+[data-tuktuk="modal"] header {
+  background: #f66 !important;
+  color: #fff;
+}

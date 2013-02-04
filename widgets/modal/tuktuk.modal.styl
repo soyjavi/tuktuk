@@ -7,8 +7,8 @@ padding = 12px
   position: fixed
   top: 0
   left: 50%
-  background: #eee
-  border-radius 0 0 1px 1px
+  background: #fff
+  border-radius 0 0 3px 3px
   box-shadow 0 1px 4px #000
   transition all 300ms 100ms
   transform translateY(-100%)
@@ -18,9 +18,6 @@ padding = 12px
 
   & header, footer, article
     padding: padding
-
-  & header, footer
-    background: #e5e5e5
 
   & article
     box-flex(1)
@@ -32,8 +29,9 @@ padding = 12px
 
   &:not(.side)
     w = 288px
-    margin-left: -(w / 2)
+    // margin-left: -(w / 2)
     margin-top: 0px !important
+    margin-right: 0px !important
 
     &.column_5
       w = 368px

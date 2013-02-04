@@ -118,14 +118,15 @@
         </footer>
     </section>
 
-    <div id="modal" data-tuktuk="modal">
+    <div id="modal" data-tuktuk="modal" class="column_6">
         <header>
-            <h5 class="text bold">That's all, folks</h5>
+            <h5 class="text bold inline">That's all, folks</h5>
+            <button data-modal="close" class="button tiny  right inline icon cancel"></button>
+
         </header>
         <article class="text -small -big">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda aperiam nobis quam earum nihil veritatis modi possimus blanditiis perferendis obcaecati voluptatibus fuga eaque ad et atque nostrum porro expedita!</article>
         <footer>
             <button class="button accept">Accept</button>
-            <button data-modal="close" class="button secondary">Cancel</button>
         </footer>
     </div>
 
@@ -148,8 +149,8 @@
     <script src="../package/widgets/boxes/tuktuk.boxes.js"></script>
     <script src="../package/widgets/modal/tuktuk.modal.js"></script>
     <script>
-        // TukTuk.Modal.show("right");
-        TukTuk.Box.show("menu");
+        TukTuk.Modal.show("modal");
+        // TukTuk.Box.show("menu");
 
         // TukTuk.Modal.loading();
     </script>
