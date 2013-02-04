@@ -1,4 +1,4 @@
-# tuktuk 0.3
+# tuktuk 0.5.0
 ### Simple (but powerful) RWD Framework
 
 ## This isn't another frontend framework... is a way to create sites and extend them with your own style.?
@@ -8,7 +8,7 @@ More info in http://tuktuk.tapquo.com
 
 ## Credits
 Created by [Javier Jiménez](http://twitter.com/soyjavi).
-Copyright (c) 2011, 2012 by Tapquo Inc.
+Copyright (c) 2011, 2013
 
 ## Licensing Options
 Released under MIT license, https://raw.github.com/soyjavi/QuoJS/master/LICENSE.txt
