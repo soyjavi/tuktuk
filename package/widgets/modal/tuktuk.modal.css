@@ -1,9 +1,8 @@
-[data-tuktuk="modal"]{position:fixed;top:0;left:50%;background:#eee;-webkit-border-radius:0 0 1px 1px;-moz-border-radius:0 0 1px 1px;-ms-border-radius:0 0 1px 1px;-o-border-radius:0 0 1px 1px;border-radius:0 0 1px 1px;-webkit-box-shadow:0 1px 4px #000;-moz-box-shadow:0 1px 4px #000;-ms-box-shadow:0 1px 4px #000;-o-box-shadow:0 1px 4px #000;box-shadow:0 1px 4px #000;-webkit-transition:all 300ms 100ms;-moz-transition:all 300ms 100ms;-ms-transition:all 300ms 100ms;-o-transition:all 300ms 100ms;transition:all 300ms 100ms;-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%);opacity:0;visibility:hidden;z-index:1981;}
+[data-tuktuk="modal"]{position:fixed;top:0;left:50%;background:#fff;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-ms-border-radius:0 0 3px 3px;-o-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px;-webkit-box-shadow:0 1px 4px #000;-moz-box-shadow:0 1px 4px #000;-ms-box-shadow:0 1px 4px #000;-o-box-shadow:0 1px 4px #000;box-shadow:0 1px 4px #000;-webkit-transition:all 300ms 100ms;-moz-transition:all 300ms 100ms;-ms-transition:all 300ms 100ms;-o-transition:all 300ms 100ms;transition:all 300ms 100ms;-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%);opacity:0;visibility:hidden;z-index:1981;}
 [data-tuktuk="modal"] header,[data-tuktuk="modal"] footer,[data-tuktuk="modal"] article{padding:12px}
-[data-tuktuk="modal"] header,[data-tuktuk="modal"] footer{background:#e5e5e5}
 [data-tuktuk="modal"] article{-webkit-box-flex:1;-moz-box-flex:1;-ms-box-flex:1;-o-box-flex:1;box-flex:1}
 [data-tuktuk="modal"].active{-webkit-transform:translateY(0%);-moz-transform:translateY(0%);-ms-transform:translateY(0%);-o-transform:translateY(0%);transform:translateY(0%);opacity:1;visibility:visible}
-[data-tuktuk="modal"]:not(.side){margin-left:-144px;margin-top:0 !important;}
+[data-tuktuk="modal"]:not(.side){margin-top:0 !important;margin-right:0 !important;}
 [data-tuktuk="modal"]:not(.side).column_5{margin-left:-184px}
 [data-tuktuk="modal"]:not(.side).column_6{margin-left:-224px}
 [data-tuktuk="modal"]:not(.side).column_7{margin-left:-264px}

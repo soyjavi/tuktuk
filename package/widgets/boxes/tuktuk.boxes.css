@@ -1,6 +1,5 @@
 body,html{height:100%;width:100%;margin:0;padding:0}
 [data-tuktuk=boxes]{display:-webkit-box;display:-moz-box;display:-ms-box;display:-o-box;display:box;-webkit-box-pack:justify;-moz-box-pack:justify;-ms-box-pack:justify;-o-box-pack:justify;box-pack:justify;overflow:hidden;}
-[data-tuktuk=boxes] [class^="column_"],[data-tuktuk=boxes] [class*=" column_"]{margin-left:0 !important}
 [data-tuktuk=boxes] > aside,[data-tuktuk=boxes] > section{display:-webkit-box;display:-moz-box;display:-ms-box;display:-o-box;display:box;-webkit-box-orient:vertical;-moz-box-orient:vertical;-ms-box-orient:vertical;-o-box-orient:vertical;box-orient:vertical;}
 [data-tuktuk=boxes] > aside header,[data-tuktuk=boxes] > section header,[data-tuktuk=boxes] > aside footer,[data-tuktuk=boxes] > section footer{-webkit-box-flex:0;-moz-box-flex:0;-ms-box-flex:0;-o-box-flex:0;box-flex:0;display:block;height:44px;line-height:44px;padding:7px;}
 [data-tuktuk=boxes] > aside header > *,[data-tuktuk=boxes] > section header > *,[data-tuktuk=boxes] > aside footer > *,[data-tuktuk=boxes] > section footer > *{height:30px;line-height:30px}
