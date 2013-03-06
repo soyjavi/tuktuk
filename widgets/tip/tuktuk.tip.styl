@@ -3,7 +3,8 @@
 
 @import "../../stylesheets/__constants.styl"
 
-ARROW_COLOR = rgba(0,0,0,0.65)
+TIP_COLOR = rgba(0,0,0,0.75)
+
 [data-tip]
   position: relative
   display: inline-block
@@ -13,19 +14,16 @@ ARROW_COLOR = rgba(0,0,0,0.65)
     opacity: 0
     z-index: 1000000
     pointer-events: none
-    transition all 300ms 100ms
-
-  &:hover:before, &:hover:after
-    opacity: 1
-  &:before, &:before
+    transition all 300ms
+  &:before
     content: ''
     position: absolute
     background: transparent
     border: 6px solid transparent
     z-index: 1000001
-  &:after, &:after
+  &:after
     content: attr(data-tip)
-    background: ARROW_COLOR
+    background: TIP_COLOR
     color: white
     text-shadow: 0 -1px 0px black
     padding: 8px 10px
@@ -33,12 +31,13 @@ ARROW_COLOR = rgba(0,0,0,0.65)
     line-height: 13px
     font-weight: 600
     white-space: nowrap
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3)
-
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25)
+  &:hover:before, &:hover:after
+    opacity: 1
 
   &:not(.tiptop):not(.tipright):not(.tipleft)
     &:before
-      border-bottom-color: ARROW_COLOR
+      border-bottom-color: TIP_COLOR
       margin-top: -12px
     &:after
       margin-left: -18px
@@ -48,55 +47,40 @@ ARROW_COLOR = rgba(0,0,0,0.65)
     &:hover:before, &:hover:after
       transform translateY(8px)
 
+  &.tiptop
+    &:before
+      border-top-color: TIP_COLOR
+      margin-bottom: -12px
+    &:after
+      margin-left: -18px
+    &:before, &:after
+      bottom: 100%
+      left: 50%
+    &:hover:before, &:hover:after
+      transform translateY(-8px)
 
-/**
- * set default color for tooltip arrows
- */
-.tiptop:before
-  border-top-color: ARROW_COLOR
-.tipleft:before
-  border-left-color: ARROW_COLOR
-.tipright:before
-  border-right-color: ARROW_COLOR
+  &.tipleft
+    &:before
+      margin-right: -12px
+      margin-bottom: -6px
+      border-left-color: TIP_COLOR
+    &:after
+      margin-bottom: -14px
+    &:before, &:after
+      right: 100%
+      bottom: 50%
+    &:hover:before, &:hover:after
+      transform translateX(-8px)
 
-/**
- * top tooltip
- */
-.tiptop:before
-  margin-bottom: -12px
-.tiptop:after
-  margin-left: -18px
-.tiptop:before, .tiptop:after
-  bottom: 100%
-  left: 50%
-.tiptop:hover:before, .tiptop:hover:after
-  transform translateY(-8px)
-
-/**
- * right tooltip
- */
-.tipright:before
-  margin-left: -12px
-  margin-bottom: -6px
-.tipright:after
-  margin-bottom: -14px
-.tipright:before, .tipright:after
-  left: 100%
-  bottom: 50%
-.tipright:hover:before, .tipright:hover:after
-  transform translateX(8px)
-
-/**
- * left tooltip
- */
-.tipleft:before
-  margin-right: -12px
-  margin-bottom: -6px
-.tipleft:after
-  margin-bottom: -14px
-.tipleft:before, .tipleft:after
-  right: 100%
-  bottom: 50%
-.tipleft:hover:before, .tipleft:hover:after
-  transform translateX(-8px)
-
+  &.tipright
+    &:before
+      margin-left: -12px
+      margin-bottom: -6px
+      border-right-color: TIP_COLOR
+    &:after
+      margin-bottom: -14px
+    &:before, &:after
+      left: 100%
+      bottom: 50%
+    &:hover:before, &:hover:after
+      transform translateX(8px)
