@@ -33,7 +33,8 @@ module.exports = (grunt) ->
     copy:
       main:
         files:
-          src: '<%= source.icons %>', dest: "<%= meta.endpoint %>/<%=meta.file%>.icons.css"
+          src: '<%= source.icons %>',
+          dest: "<%= meta.endpoint %>/<%=meta.file%>.icons.css"
 
     watch:
       coffee:
@@ -42,7 +43,6 @@ module.exports = (grunt) ->
       stylus:
         files: ["<%= source.stylus %>", "<%= source.theme %>"]
         tasks: ["stylus"]
-
 
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-stylus"

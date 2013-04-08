@@ -4,10 +4,10 @@
   display: inline-block
   border: none
   cursor: pointer
-  font-size: 1.1em
+  font-size: 1.15em
   font-family: inherit
   font-weight: inherit
-  line-height: 2.2em
+  line-height: 2.3em
   text-align: center
   text-decoration: none
   outline: none
@@ -17,9 +17,10 @@
     color: #999 !important
 
   &.icon
-    // padding: 2px 9px 0 9px
+    padding: 0px 10px
+
   &:not(.icon)
-    padding: 0 16px
+    padding: 0 18px
     & .icon
       margin-right: (padding / 2)
       display: inline-block
@@ -33,15 +34,16 @@
 
   &.large
     font-size: font-size-large
+    line-height: 2.4em
     &.icon
       padding: 0 16px
     &:not(.icon)
-      padding: 0 24px
+      padding: 0 26px
 
 
   &.small
-    font-size: font-size-small
-    line-height: 2.0em
+    font-size: 1.0em
+    line-height: 2.1em
     &.icon
       padding: 1px 8px 0 8px
     &:not(.icon)
@@ -50,12 +52,12 @@
         height: 17px
 
   &.tiny
-    font-size: font-size-tiny
+    font-size: font-size-small
     line-height: 1.8em
     &.icon
-      padding: 1px 6px 0 6px
+      padding: 0px 6px
     &:not(.icon)
-      padding: 0 10px
+      padding: 0 8px
       & > .icon
         height: size
         line-height: size

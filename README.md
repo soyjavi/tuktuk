@@ -1,4 +1,4 @@
-# tuktuk 0.5.0
+# tuktuk 0.7.0
 ### Simple (but powerful) RWD Framework
 
 ## This isn't another frontend framework... is a way to create sites and extend them with your own style.?
