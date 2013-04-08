@@ -6,13 +6,9 @@
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="../package/tuktuk.css">
-    <link rel="stylesheet" href="../package/theme.default.css">
+    <link rel="stylesheet" href="../package/tuktuk.theme.css">
     <!-- TUKTUK.WIDGETS -->
-    <link rel="stylesheet" href="../package/widgets/modal/tuktuk.modal.css">
-    <link rel="stylesheet" href="../package/widgets/icon/tuktuk.icon.css">
-    <link rel="stylesheet" href="../package/widgets/boxes/tuktuk.boxes.css">
-    <link rel="stylesheet" href="../package/widgets/boxes/tuktuk.boxes.theme.css">
-    <link rel="stylesheet" href="../package/widgets/tip/tuktuk.tip.css">
+    <link rel="stylesheet" href="../package/tuktuk.icons.css">
 </head>
 <body data-tuktuk="boxes">
 
@@ -39,15 +35,26 @@
 
     <aside class="light">
         <header class="text center">
-            <div class="inline on_left">
+            <div class="inline on-left">
                 <button class="tiny secondary icon cog" data-tuktuk-box="menu"></button>
             </div>
             <h2 class="text bold ">tuk<span class="text thin">tuk</span></h2>
         </header>
         <article class="scroll">
             <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="avatar margin"/>
-            <h4 class="margin_left margin_bottom text bold inline">Javi Jiménez</h4>
-            <span class="margin_left tag bck theme inline text bold">pro</span>
+            <h4 class="margin-left margin-bottom text bold inline">Javi Jiménez</h4>
+            <span class="margin-left tag bck theme inline text bold">pro</span>
+            <hr/>
+
+
+            <p>
+                <div data-control="checkbox" class="margin inline">
+                    <input type="checkbox" value="None" id="prueba" />
+                    <label for="prueba"></label>
+                </div>
+                <strong class="inline">Share</strong>
+            </p>
+
             <hr/>
             <nav class="margin text bold uppercase" data-link="user">
                 <a href="#"><span class="icon cube"></span>london, UK</a>
@@ -81,12 +88,12 @@
 
     <section>
         <header>
-            <nav class="on_left text bold" data-filter="slidus">
+            <nav class="on-left text bold" data-filter="slidus">
                 <a href="#" class="active">item.active<small>small</small></a>
                 <a href="#">item</a>
             </nav>
 
-            <nav class="on_right">
+            <nav class="on-right">
                 <button class="tiny secondary">tiny</button>
                 <button class="small secondary">small</button>
                 <button class="tiny secondary icon twitter">@soyjavi</button>
@@ -105,14 +112,14 @@
             <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nesciunt inventore culpa modi. Explicabo maiores vel inventore eius iusto dolorum quia autem doloribus ut repellat voluptate rerum veniam natus recusandae.</h6>
         </article>
         <footer>
-            <nav class="on_left text bold" data-filter="slidus">
+            <nav class="on-left text bold" data-filter="slidus">
                 <a href="#" class="active">SHOTS<small>(100)</small></a>
                 <a href="#">PROJECTS<small>(3)</small></a>
                 <a href="#">LIKES<small>(192)</small></a>
                 <a href="#">TAGS<small>(160)</small></a>
             </nav>
 
-            <nav class="on_right">
+            <nav class="on-right">
                 <button class="small">Following</button>
                 <button class="small secondary">List</button>
             </nav>
@@ -121,9 +128,8 @@
 
     <div id="modal" data-tuktuk="modal" class="column_6">
         <header>
-            <h5 class="text bold inline">That's all, folks</h5>
-            <button data-modal="close" class="button tiny  on_right inline icon cancel"></button>
-
+            <h4 class="text inline">That's all, folks</h4>
+            <button data-modal="close" class="transparent small on-right inline icon remove"></button>
         </header>
         <article class="text -small -big">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda aperiam nobis quam earum nihil veritatis modi possimus blanditiis perferendis obcaecati voluptatibus fuga eaque ad et atque nostrum porro expedita!</article>
         <footer>
@@ -134,7 +140,7 @@
     <div id="right" data-tuktuk="modal" class="side column_6">
         <header>
             <h3 class="inline">Menu in ...</h3>
-            <nav class="inline on_right">
+            <nav class="inline on-right">
                 <button class="small secondary" data-modal="close">Close</button>
             </nav>
         </header>
@@ -147,8 +153,7 @@
     </div>
 
     <script src="components/jquery/jquery.js"></script>
-    <script src="../package/widgets/boxes/tuktuk.boxes.js"></script>
-    <script src="../package/widgets/modal/tuktuk.modal.js"></script>
+    <script src="../package/tuktuk.js"></script>
     <script>
         TukTuk.Modal.show("modal");
         // TukTuk.Box.show("menu");
