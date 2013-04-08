@@ -3,13 +3,13 @@
 form, .form
   & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
     display: block
-    height: 32px
     width: 100%
-    padding: 6px
+    line-height: 2.4em
+    padding: 0 10px
     margin: 2px 0 6px 0
-    transition all 0.15s linear
+    transition all 400ms linear
     font-family: inherit
-    font-size: 14px
+    font-size: inherit
     &:focus
       outline: none !important;
     &.large
@@ -18,16 +18,17 @@ form, .form
       font-size: 1.2em
       margin: 0px
   & textarea
-    height: 64px
+    min-height: 64px
+    line-height: 1.4em
   & label
-    font-size: 0.9em
+    font-size: font-size-small
     font-weight: 400
 
 
 
 /* -------------------------- CHECKBOX -------------------------- */
 [data-control=checkbox]
-  HEIGHT = 30px
+  HEIGHT = 29px
 
   width: 76px
   height: HEIGHT
@@ -60,17 +61,16 @@ form, .form
 
   & label
     display: block
-    height: S = (HEIGHT - 6)
+    height: S = (HEIGHT - 8)
     width: S
     cursor: pointer
     position: absolute
-    top: 3px
-    left: 3px
+    top: 4px
+    left: 5px
     z-index: 1
 
   & input[type=checkbox]:checked + label
-    left: 49px
-
+    left: 50px
 
 .fieldset, fieldset
   & label
@@ -80,11 +80,10 @@ form, .form
     width: 25%
     padding: 2px 8px
 
-    & > span
+    & > small
       display: block
       font-size: 0.8em
       font-weight: 300
-      color: #666
 
   & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
     width: 75%

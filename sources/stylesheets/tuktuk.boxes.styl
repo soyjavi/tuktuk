@@ -1,17 +1,15 @@
 @import "__constants.styl"
 
-[data-tuktuk=boxes]
+body, html
   height: 100%
   width: 100%
   margin: 0
   padding: 0
+
+[data-tuktuk=boxes]
   display-box()
   box-pack(justify)
   overflow: hidden
-
-  /* ===================== INHERITANCE ==================== */
-  // &  [class^="column_"], [class*=" column_"]
-  //   margin-left: 0px !important
 
   /* ====================== SCAFFOLD ====================== */
   & > aside, & > section
@@ -36,7 +34,7 @@
   & > aside
     box-flex(0)
     width: ASIDE_WIDTH
-    z-index: 1
+    z-index: 2
 
     &.absolute
       position: absolute
