@@ -1,0 +1,32 @@
+@import "__constants.styl"
+
+ul
+  list-style: disc
+
+  &.square li, &.circle li
+    margin: 0 0 5px 18px
+
+  &:not(.none) li
+    padding: 0
+    background: none
+
+  & ul, ol
+    margin: 5px 0 5px 0
+  &.none
+    list-style: none outside
+    margin: 0
+  &.square, &.square ul
+    list-style: square outside
+  &.circle, &.circle ul
+    list-style: circle outside
+
+ol
+  margin: 0 0 20px 20px
+  list-style: decimal
+  & ol, ul
+    margin: 5px 0 5px 20px
+
+  & li
+    margin: 0 0 5px 0
+    padding: 0
+    line-height: 18px

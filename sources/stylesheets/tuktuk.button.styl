@@ -1,0 +1,61 @@
+@import "__constants.styl"
+
+.button, button
+  display: inline-block
+  border: none
+  cursor: pointer
+  font-size: 1.1em
+  font-family: inherit
+  font-weight: inherit
+  line-height: 2.2em
+  text-align: center
+  text-decoration: none
+  outline: none
+
+  &:disabled, &.disabled
+    background: rgba(255,255,255,0.2)
+    color: #999 !important
+
+  &.icon
+    // padding: 2px 9px 0 9px
+  &:not(.icon)
+    padding: 0 16px
+    & .icon
+      margin-right: (padding / 2)
+      display: inline-block
+
+  &.anchor
+    width: 100%
+    position: relative
+    &:not(.icon) .icon
+      position: absolute
+      left: 5%
+
+  &.large
+    font-size: font-size-large
+    &.icon
+      padding: 0 16px
+    &:not(.icon)
+      padding: 0 24px
+
+
+  &.small
+    font-size: font-size-small
+    line-height: 2.0em
+    &.icon
+      padding: 1px 8px 0 8px
+    &:not(.icon)
+      padding: 0 12px
+      & > .icon
+        height: 17px
+
+  &.tiny
+    font-size: font-size-tiny
+    line-height: 1.8em
+    &.icon
+      padding: 1px 6px 0 6px
+    &:not(.icon)
+      padding: 0 10px
+      & > .icon
+        height: size
+        line-height: size

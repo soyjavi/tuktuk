@@ -1,0 +1,158 @@
+@import "__constants.styl"
+
+[data-tuktuk=boxes]
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+  display-box()
+  box-pack(justify)
+  overflow: hidden
+
+  /* ===================== INHERITANCE ==================== */
+  // &  [class^="column_"], [class*=" column_"]
+  //   margin-left: 0px !important
+
+  /* ====================== SCAFFOLD ====================== */
+  & > aside, & > section
+    display-box()
+    box-orient(vertical)
+
+    & > header, > footer, > div > header, > div > footer
+      box-flex(0)
+      display: block
+      height: HEADER_HEIGHT
+      line-height: HEADER_HEIGHT
+      padding: (DIMENSION / 2)
+      & > *
+        height: h = (HEADER_HEIGHT - DIMENSION)
+        line-height: h
+      & .button, button
+        margin: 0 1px
+
+    & article
+      box-flex(1)
+
+  & > aside
+    box-flex(0)
+    width: ASIDE_WIDTH
+    z-index: 1
+
+    &.absolute
+      position: absolute
+      height: inherit
+      transition all 300ms
+
+      &:not(.right)
+        transform translateX(-(ASIDE_WIDTH * 1.25))
+        &.active
+          transform translateX(0px)
+      &.right
+        transform translateX((ASIDE_WIDTH * 1.25))
+        &.active
+          transform translateX(-(ASIDE_WIDTH))
+
+    & > div
+      width: 100%
+      height: 100%
+      display-box()
+      box-orient(vertical)
+
+  & > section
+    box-flex(1)
+    z-index: 0
+
+  /* ====================== LIST ====================== */
+  & ul
+    &.totals
+      display-box()
+      box-pack(justify)
+      text-align: center
+      list-style: none
+
+      & > li
+        box-flex(0)
+        & > strong
+          display: block
+          font-weight: 400
+          font-size: 1.75em
+          line-height: 0.9em
+
+        & > small
+          text-transform: uppercase
+          font-size: 0.85em
+
+  /* ====================== NAVIGATION ====================== */
+  & nav
+    &[data-filter]
+      font-size: font-size-tiny
+      & > a:not(.button)
+        margin-right: (DIMENSION / 2)
+        padding: (DIMENSION / 2.5) (DIMENSION / 1.5)
+        &:last-child
+          margin-right: 0
+
+    &[data-menu]
+      & > a
+        display: block
+        padding: (DIMENSION / 1.5)
+
+    &[data-link]
+      & > a
+        display: block
+        font-size: font-size-tiny
+        line-height: 2em
+        & > .icon
+          position: relative
+          top: 3px
+          margin-right: (DIMENSION / 3)
+          font-size: 1.5em
+          font-weight: normal
+
+    &[data-button]
+      display-box()
+      box-pack(justify)
+      & > *
+        box-flex(0)
+        display: inherit
+
+
+    & > a > small
+      position: relative
+      margin-left: 4px
+      bottom: 1px
+
+  /* ====================== WIDGETS ====================== */
+  & .margin
+    margin: DIMENSION
+  & .margin-left
+    margin-left: DIMENSION
+  & .margin-right
+    margin-right: DIMENSION
+  & .margin-top
+    margin-top: DIMENSION
+  & .margin-bottom
+    margin-bottom: DIMENSION
+
+  & > aside, & > section
+    & .session
+      & > *
+        float: left
+
+      & > .avatar
+        height: (HEADER_HEIGHT - DIMENSION)
+        margin-right: (DIMENSION / 2)
+
+      & > button, & > .button
+        margin-top: (DIMENSION / 5)
+        float: right
+
+  & > aside
+    & article .avatar
+      height: ASIDE_WIDTH - (DIMENSION * 2)
+      width: ASIDE_WIDTH - (DIMENSION * 2)
+
+    & hr
+      border: 0
+      height: 1px
+      margin: 0px

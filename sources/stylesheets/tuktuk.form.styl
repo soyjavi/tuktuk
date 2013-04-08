@@ -1,0 +1,90 @@
+@import "__constants.styl"
+
+form, .form
+  & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
+    display: block
+    height: 32px
+    width: 100%
+    padding: 6px
+    margin: 2px 0 6px 0
+    transition all 0.15s linear
+    font-family: inherit
+    font-size: 14px
+    &:focus
+      outline: none !important;
+    &.large
+      height: size = 52px
+      padding: 0 20px
+      font-size: 1.2em
+      margin: 0px
+  & textarea
+    height: 64px
+  & label
+    font-size: 0.9em
+    font-weight: 400
+
+
+
+/* -------------------------- CHECKBOX -------------------------- */
+[data-control=checkbox]
+  HEIGHT = 30px
+
+  width: 76px
+  height: HEIGHT
+  position: relative
+  line-height: HEIGHT !important
+  font-size: FONT_size_normal
+  &, & label
+    transition all 200ms ease
+
+  input[type=checkbox]
+    visibility: hidden
+
+  &:after, &:before
+    z-index: 0
+    position: absolute
+  &:before
+    content: "ON"
+    left: (HEIGHT / 2.2)
+    opacity: 0
+  &:after
+    content: "OFF"
+    right: (HEIGHT / 2.2)
+  &.checked
+    &:before
+      opacity: 1
+      z-index: 1
+    &:after
+      opacity: 0
+      z-index: 0
+
+  & label
+    display: block
+    height: S = (HEIGHT - 6)
+    width: S
+    cursor: pointer
+    position: absolute
+    top: 3px
+    left: 3px
+    z-index: 1
+
+  & input[type=checkbox]:checked + label
+    left: 49px
+
+
+.fieldset, fieldset
+  & label
+    display: block
+    text-align: right
+    float: left
+    width: 25%
+    padding: 2px 8px
+
+    & > span
+      display: block
+      font-size: 0.8em
+      font-weight: 300
+      color: #666
+
+  & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
+    width: 75%
