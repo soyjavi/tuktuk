@@ -7,15 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!-- TUKTUK -->
     <link rel="stylesheet" href="package/tuktuk.css">
-    <link rel="stylesheet" href="package/theme.site.css">
+    <link rel="stylesheet" href="package/tuktuk.theme.css">
     <!-- TUKTUK.WIDGETS -->
-    <link rel="stylesheet" href="package/widgets/icon/tuktuk.icon.css">
-    <link rel="stylesheet" href="package/widgets/modal/tuktuk.modal.css">
+    <link rel="stylesheet" href="package/tuktuk.icons.css">
+    <style>
+          body > header .tapquo > img {
+              max-height: 48px; }
+
+          body > footer img {
+              height: 16px;
+              position: relative;
+              top: 5px;
+              left: 2px; }
+
+          body .devices span {
+            font-size: 128px; }
+      </style>
 </head>
 
 <body>
     <!-- ========================== HEADER ========================== -->
-    <header class="margin_top margin_bottom">
+    <header class="margin-top margin-bottom">
         <div class="row">
             <div class="column_4">
                 <h2 class="text color theme"><span class="text bold">tuk</span>tuk</h2>
@@ -23,8 +35,8 @@
             <div class="column_4 text center hide-phone">
                 <a href="http://tapquo.com" class="tapquo"><img src="http://cdn.tapquo.com/images/tapquo_circle.png"></a>
             </div>
-            <nav class="column_4 text right color secondary">
-                <a href="https://github.com/soyjavi/package-tuktuk/archive/0.5.0.zip" class="icon download"></a>
+            <nav class="column_4 text right color secondary hide-phone">
+                <a href="https://github.com/soyjavi/package-tuktuk/archive/0.7.0.zip" class="icon download"></a>
                 <a href="https://github.com/soyjavi/tuktuk" class="icon github"></a>
                 <a href="https://twitter.com/tapquo" target="_blank" class="icon twitter"></a>
             </nav>
@@ -33,52 +45,51 @@
 
     <!-- ========================== FEATURES ========================== -->
     <section class="padding bck theme features">
-        <div class="row text center">
+        <div class="row text center book">
             <div class="column_10 offset_1">
                 <h1 class="text color white">A new kid on the block</h1>
                 <h3>
-                    Not trying to compete with Bootstrap or Foundation because they play in another league. Just worry about creating responsive and fully extensible sites easily.
+                    <strong>Not trying</strong> to compete with Bootstrap or Foundation because they play in another league. Just worry about creating responsive and fully extensible sites easily.
                 </h3>
             </div>
         </div>
 
-        <div class="row text center book margin_top">
-
+        <div class="row text center normal margin-top">
             <div class="column_3">
-                <h1 class="icon css3 text color white"></h1>
+                <h1 class="icon dashboard text color white"></h1>
                 <h4 class="text color white">CSS3 Powered</h4>
-                <p>The premise is to use as much as possible the features of the latest CSS specification. Don't try to use Tuktuk in your hated IE6.</p>
+                <p class="text normal">The premise is to use as much as possible the features of the latest CSS specification. Don't try to use Tuktuk in your hated IE6.</p>
             </div>
             <div class="column_3">
-                <h1 class="icon paper-plane text color white"></h1>
+                <h1 class="icon leaf text color white"></h1>
                 <h4 class="text color white">Lightweight & fast</h4>
-                <p>You don't want to carry heavy stylesheets that only make for a slow loading site. Tuktuk is lightweight at just 15kb.</p>
+                <p class="text normal">You don't want to carry heavy stylesheets that only make for a slow loading site. Tuktuk is lightweight at just 15kb.</p>
             </div>
             <div class="column_3">
-                <h1 class="icon cube text color white"></h1>
+                <h1 class="icon cogs text color white"></h1>
                 <h4  class="text color white">Object Oriented CSS</h4>
-                <p>The purpose is to encourage code reuse plus faster and more efficient stylesheets that are easier to add to and maintain.</p>
+                <p class="text normal">The purpose is to encourage code reuse plus faster and more efficient stylesheets that are easier to add to and maintain.</p>
             </div>
             <div class="column_3">
                 <h1 class="icon github text color white"></h1>
                 <h4  class="text color white">Community Project</h4>
-                <p>Each new line of code is welcomed, I hope that developers and restless minds help me improve this humble project day by day.</p>
+                <p class="text normal">Each new line of code is welcomed, I hope that developers and restless minds help me improve this humble project day by day.</p>
             </div>
         </div>
     </section>
 
     <!-- ========================== Downloads ========================== -->
     <section class="padding bck darkest ">
-        <div class="row text center margin_bottom">
+        <div class="row text center margin-bottom">
             <div class="column_10 offset_1">
                 <h1 class="text thin color theme">Downloads</h1>
-                <h3 class="text color white">Sounds cool? Checkout v0.5</h3>
+                <h3 class="text color white">Sounds cool? Checkout v0.7</h3>
             </div>
         </div>
 
         <div class="row">
             <div class="offset_2 column_4">
-                <a href="https://github.com/soyjavi/package-tuktuk/archive/0.5.0.zip" class="button large anchor "><span class="icon download"></span>Download .Zip File</a>
+                <a href="https://github.com/soyjavi/package-tuktuk/archive/0.7.0.zip" class="button large anchor "><span class="icon download"></span>Download .Zip File</a>
             </div>
             <div class="column_4">
                 <a href="https://github.com/soyjavi/tuktuk" class="button large anchor secondary"><span class="icon github"></span>Source on Github</a>
@@ -89,40 +100,40 @@
     <!-- ========================== COLUMNS ========================== -->
     <section class="padding bck lightest text center">
         <div class="row ">
-            <div class="column_10 offset_1 margin_bottom">
+            <div class="column_10 offset_1 margin-bottom">
                 <h1 class="text color theme">Turn it up to 12 columns</h1>
                 <h3 class="text thin">Tuktuk is divided horizontally into a series of 12 columns, and vertically into rows. 12 columns divide nicely into equal columns of two, three, four, or six columns.</h3>
              </div>
         </div>
-        <div class="row margin_bottom">
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
-            <div class="column_1 bck light padding_top padding_bottom">1</div>
+        <div class="row margin-bottom">
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
+            <div class="column_1 bck light padding-top padding-bottom">1</div>
         </div>
-        <div class="row margin_bottom">
-            <div class="column_4 bck light padding_top padding_bottom">4</div>
-            <div class="column_4 bck light padding_top padding_bottom">4</div>
-            <div class="column_4 bck light padding_top padding_bottom">4</div>
+        <div class="row margin-bottom">
+            <div class="column_4 bck light padding-top padding-bottom">4</div>
+            <div class="column_4 bck light padding-top padding-bottom">4</div>
+            <div class="column_4 bck light padding-top padding-bottom">4</div>
         </div>
-        <div class="row margin_bottom">
-            <div class="column_4 bck light padding_top padding_bottom ">4</div>
-            <div class="column_8 bck light padding_top padding_bottom">8</div>
+        <div class="row margin-bottom">
+            <div class="column_4 bck light padding-top padding-bottom ">4</div>
+            <div class="column_8 bck light padding-top padding-bottom">8</div>
         </div>
-        <div class="row margin_bottom">
-            <div class="column_6 bck light padding_top padding_bottom">6</div>
-            <div class="column_6 bck light padding_top padding_bottom">6</div>
+        <div class="row margin-bottom">
+            <div class="column_6 bck light padding-top padding-bottom">6</div>
+            <div class="column_6 bck light padding-top padding-bottom">6</div>
         </div>
         <div class="row">
-            <div class="column_12 bck light padding_top padding_bottom">12</div>
+            <div class="column_12 bck light padding-top padding-bottom">12</div>
         </div>
     </section>
 
@@ -130,29 +141,29 @@
     <!-- ========================== OFFSETS ========================== -->
     <section class="padding bck light text center">
         <div class="row ">
-            <div class="column_10 offset_1 margin_bottom">
+            <div class="column_10 offset_1 margin-bottom">
                 <h1 class="text color theme">Offsetting columns</h1>
                 <h3 class="text thin">You have the option to offset a column, which should make life a little bit easier if you you need to add extra spacing between columns.</h3>
              </div>
         </div>
 
-        <div class="row margin_bottom">
-            <div class="column_4 bck lightest padding_top padding_bottom">4</div>
-            <div class="column_4 offset_4 bck dark text color white padding_top padding_bottom">4 with 4 offset</div>
+        <div class="row margin-bottom">
+            <div class="column_4 bck lightest padding-top padding-bottom">4</div>
+            <div class="column_4 offset_4 bck dark text color white padding-top padding-bottom">4 with 4 offset</div>
         </div>
-        <div class="row margin_bottom">
-            <div class="column_3 offset_3 bck dark text color white padding_top padding_bottom">3 with 3 offset</div>
-            <div class="column_3 offset_3 bck dark text color white padding_top padding_bottom">3 with 3 offset</div>
+        <div class="row margin-bottom">
+            <div class="column_3 offset_3 bck dark text color white padding-top padding-bottom">3 with 3 offset</div>
+            <div class="column_3 offset_3 bck dark text color white padding-top padding-bottom">3 with 3 offset</div>
         </div>
         <div class="row">
-            <div class="column_8 offset_4 bck dark text color white padding_top padding_bottom">8 with 4 offset</div>
+            <div class="column_8 offset_4 bck dark text color white padding-top padding-bottom">8 with 4 offset</div>
         </div>
     </section>
 
 
     <!-- ========================== HEADINGS ========================== -->
     <section class="padding bck lightest">
-        <div class="row margin_bottom">
+        <div class="row margin-bottom">
             <div class="column_10 offset_1 text center">
                 <h1 class="text color theme">Headings</h1>
                 <h3 class="text thin">You can use headings in a way optimized for each device.</h3>
@@ -173,12 +184,12 @@
     <!-- ========================== BUTTONS ========================== -->
     <section class="padding bck light">
         <div class="row ">
-            <div class="column_10 offset_1 text center margin_bottom">
+            <div class="column_10 offset_1 text center margin-bottom">
                 <h1 class="text color theme">Buttons</h1>
                 <h3 class="text thin">a site without buttons? Tuktuk has a gallery of styles and sizes that will be enough to interact with your site.</h3>
              </div>
         </div>
-        <div class="row margin_bottom">
+        <div class="row margin-bottom">
             <div class="column_8 ">
                   <a href="#" class="button large">Large</a>
                   <a href="#" class="button ">Normal</a>
@@ -187,32 +198,32 @@
                   <a href="#" class="button tiny">Tiny</a>
               </div>
             <div class="column_4">
-                <a href="#" class="button anchor margin_top">Anchor</a>
+                <a href="#" class="button anchor margin-top">Anchor</a>
             </div>
         </div>
-        <div class="row margin_bottom">
+        <div class="row margin-bottom">
             <div class="column_8 ">
-                  <a href="#" class="button large"><span class="icon cube"></span>Large</a>
-                  <a href="#" class="button "><span class="icon cube"></span>Normal</a>
-                  <a href="#" class="button secondary"><span class="icon cube"></span>Secondary</a>
-                  <a href="#" class="button accept"><span class="icon cube"></span>Accept</a>
-                  <a href="#" class="button tiny"><span class="icon cube"></span>Tiny</a>
+                  <a href="#" class="button large"><span class="icon ok"></span>Large</a>
+                  <a href="#" class="button "><span class="icon ok"></span>Normal</a>
+                  <a href="#" class="button secondary"><span class="icon ok"></span>Secondary</a>
+                  <a href="#" class="button accept"><span class="icon ok"></span>Accept</a>
+                  <a href="#" class="button tiny"><span class="icon ok"></span>Tiny</a>
               </div>
             <div class="column_4">
-                <a href="#" class="button anchor margin_top"><span class="icon cube"></span>Anchor</a>
+                <a href="#" class="button anchor margin-top"><span class="icon ok"></span>Anchor</a>
             </div>
         </div>
 
         <div class="row">
             <div class="column_8 ">
-                  <a href="#" class="button large icon cube"></a>
-                  <a href="#" class="button icon cube"></a>
-                  <a href="#" class="button secondary icon cube"></a>
-                  <a href="#" class="button small icon cube"></a>
-                  <a href="#" class="button tiny icon cube"></a>
+                  <a href="#" class="button large icon ok"></a>
+                  <a href="#" class="button icon ok"></a>
+                  <a href="#" class="button secondary icon ok"></a>
+                  <a href="#" class="button small icon ok"></a>
+                  <a href="#" class="button tiny icon ok"></a>
               </div>
             <div class="column_4">
-                <a href="#" class="button anchor icon cube margin_top"></a>
+                <a href="#" class="button anchor icon ok margin-top"></a>
             </div>
         </div>
     </section>
@@ -221,7 +232,7 @@
     <!-- ========================== LISTS ========================== -->
     <section class="padding">
         <div class="row">
-            <div class="column_10 offset_1 text center margin_bottom">
+            <div class="column_10 offset_1 text center margin-bottom">
                 <h1 class="text color theme">Lists</h1>
                 <h3 class="text thin">If buttons are important, so are lists. Tuktuk comes with a group of styles easily usable.</h3>
              </div>
@@ -298,7 +309,7 @@
 
     <!-- ========================== FORMS & TABLES ========================== -->
     <section class="padding bck light">
-         <div class="row margin_bottom">
+         <div class="row margin-bottom">
                 <div class="column_10 offset_1 text center">
                 <h1 class="text color theme">Forms & Tables</h1>
                 <h3 class="text thin">Make forms look gorgeous regardless of device and browser.</h3>
@@ -335,13 +346,13 @@
                                 <input type="radio" name="radio2" /><span>No</span>
                             </fieldset>
 
-                            <fieldset class="margin_bottom">
+                            <fieldset class="margin-bottom">
                                 <label>Check Boxes:</label>
                                 <input type="checkbox" name="radio1" /><span>One</span>
                                 <input type="checkbox" name="radio2" /><span>Two</span>
                             </fieldset>
 
-                            <button class="accept margin_right"><span class="icon accept"></span>Send</button>
+                            <button class="accept margin-right"><span class="icon accept"></span>Send</button>
                             <button class="secondary"><span class="icon cancel"></span>Cancel</button>
                         </form>
                     </div>
@@ -396,29 +407,29 @@
 
     <!-- ========================== Show & hide ========================== -->
     <section class="padding bck lightest ">
-        <div class="row margin_bottom">
+        <div class="row margin-bottom">
             <div class="column_10 offset_1 text center ">
                 <h1 class="text color theme">Show & Hide</h1>
                 <h3 class="text thin">There are times when you may need to only show something on a desktop and not on a tablet or phone or the other way around. TukTuk will do all the work for you with some extra classes to hide & show content.</h3>
              </div>
         </div>
 
-        <div class="row text center">
+        <div class="row text center devices">
             <div class="column_4">
-                <img src="images/laptop.png" class="responsive show-screen"/>
-                <img src="images/laptop.png" class="responsive hide-screen" style="opacity:0.1;"/>
+                <span class="icon desktop show-screen"></span>
+                <span class="icon desktop hide-screen" style="opacity:0.1;"></span>
             </div>
             <div class="column_4">
-                <img src="images/tablet.png" class="responsive show-tablet"/>
-                <img src="images/tablet.png" class="responsive hide-tablet" style="opacity:0.1;"/>
+                <span class="icon tablet show-tablet"></span>
+                <span class="icon tablet hide-tablet" style="opacity:0.1;"></span>
             </div>
             <div class="column_4">
-                <img src="images/smartphone.png" class="responsive show-phone"/>
-                <img src="images/smartphone.png" class="responsive hide-phone" style="opacity:0.1;"/>
+                <span class="icon mobile-phone show-phone"></span>
+                <span class="icon mobile-phone hide-phone" style="opacity:0.1;"></span>
             </div>
         </div>
 
-        <div class="row margin_top">
+        <div class="row margin-top">
             <table class="text align center">
                 <tbody>
                     <tr>
@@ -439,7 +450,7 @@
     <!-- ========================== Typography ========================== -->
     <section class="padding bck light">
         <div class="row ">
-            <div class="column_10 offset_1 text center margin_bottom">
+            <div class="column_10 offset_1 text center margin-bottom">
                 <h1 class="text color theme">Typography</h1>
                 <h3 class="text thin">Discover how you can play with the style of any element using style inheritance with ooCSS.</h3>
              </div>
@@ -492,19 +503,37 @@
         <div class="row text center">
             <nav class="group text bold">
                 <a href="#" class="active"><span class="icon folder"></span>Slides</a>
-                <a href="#"><span class="icon cube"></span>Themes</a>
-                <a href="#"><span class="icon cube"></span>Applications</a>
-                <a href="#"><span class="icon cube"></span>Friends</a>
-                <a href="#"><span class="icon cube"></span>Favorites</a>
+                <a href="#"><span class="icon ok"></span>Themes</a>
+                <a href="#"><span class="icon ok"></span>Applications</a>
+                <a href="#"><span class="icon ok"></span>Friends</a>
+                <a href="#"><span class="icon ok"></span>Favorites</a>
             </nav>
         </div>
     </section>
 
 
-    <!-- ========================== Widgets ========================== -->
+    <!-- ========================== Modals ========================== -->
     <section class="padding bck lightest">
         <div class="row ">
-            <div class="column_10 offset_1 text center margin_bottom">
+            <div class="column_10 offset_1 text center">
+                <h1 class="text color theme">Modals</h1>
+                <h3 class="text thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+             </div>
+        </div>
+    </section>
+    <section class="bck">
+        <div class="row">
+            <button class="large column_3" data-tuktuk-modal="default_modal">Default</button>
+            <button class="large column_3 secondary" data-tuktuk-modal="small_modal">column_6</button>
+            <button class="large column_3 secondary" data-tuktuk-modal="big_modal">column_8</button>
+        </div>
+    </section>
+
+
+    <!-- ========================== Widgets ========================== -->
+    <section class="padding bck light">
+        <div class="row ">
+            <div class="column_10 offset_1 text center margin-bottom">
                 <h1 class="text color theme">Widgets</h1>
                 <h3 class="text thin">If all of the above isn't enough, take a look at how you can easily extend TukTuk's functionality in your projects.</h3>
              </div>
@@ -513,7 +542,7 @@
         <div class="row">
             <div class="column_6">
                 <h4>tuktuk.widget.<span class="text bold">icon</span>.css</h4>
-                <div class="margin_bottom">A small embeded library of icons in CSS.</div>
+                <div class="margin-bottom">A small embeded library of icons in CSS.</div>
                 <table>
 
                     <tbody>
@@ -545,7 +574,7 @@
                                 <span class="icon heart"></span>
                                 <span class="icon star"></span>
                                 <span class="icon paper-plane"></span>
-                                <span class="icon cube"></span>
+                                <span class="icon ok"></span>
                                 <span class="icon upload"></span>
                                 <span class="icon download"></span>
                             </td>
@@ -555,61 +584,28 @@
             </div>
             <div class="column_6">
                 <h4>tuktuk.widget.<span class="text bold">modal</span> (.css & .js)</h4>
-                <div class="margin_bottom">Modal notifications for any device.</div>
+                <div class="margin-bottom">Modal notifications for any device.</div>
                 <div class="row">
-                    <button class="column_2" data-tuktuk-modal="default_modal">Default</button>
-                    <button class="column_2 secondary" data-tuktuk-modal="small_modal">column_6</button>
-                    <button class="column_2 secondary" data-tuktuk-modal="big_modal">column_8</button>
+
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- ========================== MODALS ========================== -->
-
-    <div id="default_modal" data-tuktuk="modal">
-        <header>
-            <h5 class="text bold">Default modal window</h5>
-        </header>
-        <div class="margin_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nihil aut sit incidunt amet modi dolores a sed.</div>
-        <footer>
-            <button data-modal="close" class="button">Cancel</button>
-        </footer>
-    </div>
-
-    <div id="small_modal" data-tuktuk="modal" class="column_6">
-        <header>
-            <h5 class="text bold">Small modal window</h5>
-        </header>
-        <div class="margin_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nihil aut sit incidunt amet modi dolores a sed.</div>
-        <footer>
-            <button data-modal="close" class="button anchor">Cancel</button>
-        </footer>
-    </div>
-
-    <div id="big_modal" data-tuktuk="modal" class="column_8">
-        <header>
-            <h5 class="text bold">Big modal window</h5>
-        </header>
-        <div class="margin_bottom text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nihil aut sit incidunt amet modi dolores a sed.</div>
-        <footer>
-            <button data-modal="close" class="button large">Cancel</button>
-        </footer>
-    </div>
 
     <!-- ========================== AUTHOR ========================== -->
     <section class="padding bck dark">
-        <div class="row margin_bottom">
+        <div class="row margin-bottom">
             <div class="column_10 offset_1 text center color white">
                 <h1>Author</h1>
                 <h3 class="text thin">Javi Jimenez is the CTO and co-founder of <a href="http://tapquo.com">tapquo</a>. A restless mind that always strives for continuous improvement, able to create frameworks like <a href="http://lungo.tapquo.com">Lungo</a>, <a href="http://quojs.tapquo.com">QuoJS</a>, <a href="http://monocle.tapquo.com">Monocle</a> used by thousands of developers around the world.</h3>
              </div>
          </div>
 
-        <div class="row margin_bottom">
+        <div class="row margin-bottom">
             <div class="column_4 offset_4 text center white">
-                <img src="http://cdn.tapquo.com/photos/soyjavi.jpg" class="responsive rounded margin_bottom"/>
+                <img src="http://cdn.tapquo.com/photos/soyjavi.jpg" class="responsive rounded margin-bottom"/>
                 <br/>
                 <a href="https://twitter.com/soyjavi" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @soyjavi</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -636,9 +632,40 @@
         </div>
     </footer>
 
+
+    <!-- ========================== MODALS ========================== -->
+    <div id="default_modal" data-tuktuk="modal">
+        <header>
+            <h5 class="text bold">Default modal window</h5>
+        </header>
+        <div class="margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nihil aut sit incidunt amet modi dolores a sed.</div>
+        <footer>
+            <button data-modal="close" class="button">Cancel</button>
+        </footer>
+    </div>
+
+    <div id="small_modal" data-tuktuk="modal" class="column_6">
+        <header>
+            <h5 class="text bold">Small modal window</h5>
+        </header>
+        <div class="margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nihil aut sit incidunt amet modi dolores a sed.</div>
+        <footer>
+            <button data-modal="close" class="button anchor">Cancel</button>
+        </footer>
+    </div>
+
+    <div id="big_modal" data-tuktuk="modal" class="column_8">
+        <header>
+            <h5 class="text bold">Big modal window</h5>
+        </header>
+        <div class="margin-bottom text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nihil aut sit incidunt amet modi dolores a sed.</div>
+        <footer>
+            <button data-modal="close" class="button large">Cancel</button>
+        </footer>
+    </div>
+
     <!-- TUKTUK.WIDGETS -->
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="package/widgets/modal/tuktuk.modal.js"></script>
-
+    <script src="package/tuktuk.js"></script>
 </body>
 </html>
