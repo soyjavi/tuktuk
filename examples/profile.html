@@ -5,12 +5,10 @@
     <title>tuktuk - Profile Example</title>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <!-- <link rel="stylesheet" href="includes/css/base.css"> -->
-    <!-- THEME -->
     <link rel="stylesheet" href="../package/tuktuk.css">
-    <link rel="stylesheet" href="../package/theme.default.css">
+    <link rel="stylesheet" href="../package/tuktuk.theme.css">
     <!-- TUKTUK.WIDGETS -->
-    <link rel="stylesheet" href="../package/widgets/icon/tuktuk.icon.css">
+    <link rel="stylesheet" href="package/tuktuk.icons.css">
 </head>
 <body class="text thin">
 
@@ -28,23 +26,30 @@
 
 <section class="padding bck dark">
     <div class="row text color white">
-        <div class="column_3">
-            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="padding responsive rounded" />
+        <div class="column_3" >
+            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="padding responsive rounded" data-tip="Hello world!" />
         </div>
-        <div class="column_9 ">
-            <h1 class="text bold color theme margin_top margin_bottom">Javi Jimenez</h1>
-            <h4 class="text justify margin_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos iste adipisci deserunt officia alias quod unde nisi animi maiores ex amet commodi rerum veritatis reiciendis autem ad optio quisquam praesentium.</h4>
+        <div class="column_9 " >
+            <h1 class="text bold color theme margin-top margin-bottom">Javi Jimenez</h1>
+            <h4 class="text justify margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos iste adipisci deserunt officia alias quod unde nisi animi maiores ex amet commodi rerum veritatis reiciendis autem ad optio quisquam praesentium.</h4>
+
+            <p class="form">
+                <div data-control="checkbox">
+                    <input type="checkbox" value="None" id="prueba" />
+                    <label for="prueba"></label>
+                </div>
+            </p>
 
             <div class="row text bold hide-phone">
-                <div class="column_3">
-                    <a href="#">http://tapquo.com</a>
+                <div class="column_3" >
+                    <a href="#" data-tip="Click to view">http://tapquo.com</a>
                 </div>
                 <div class="column_3 ">
                     <span class="icon cube"></span> Bilbao, SP
                 </div>
                 <div class="column_3 text right big">
-                    <a href="#" class="margin_right"><span class="icon github"></span></a>
-                    <a href="#" class="margin_right"><span class="icon facebook"></span></a>
+                    <a href="#" class="margin-right"><span class="icon github"></span></a>
+                    <a href="#" class="margin-right"><span class="icon facebook"></span></a>
                     <a href="#"><span class="icon dribbble"></span></a>
                 </div>
             </div>
@@ -65,24 +70,27 @@
 </section>
 
 <section>
-    <div class="row  ">
-        <div class="column_12 margin_top margin_bottom">
+    <div class="row">
+        <div class="column_12 margin-top margin-bottom">
             <h2 class="text bold inline">Thumbs</h2>
-            <nav class="inline right">
+            <nav class="inline on-right">
                 <a href="#" class="active"><span class="icon search"></span>Search</a>
                 <a href="#" class="button small">Follow</a>
             </nav>
             <small class="block">by <a href="#" class="text bold underline">Javi Jiménez</a></small>
         </div>
-        <div class="column_3 bck light text center margin_bottom padding_top padding_bottom">thumb</div>
-        <div class="column_3 bck light text center margin_bottom padding_top padding_bottom">thumb</div>
-        <div class="column_3 bck light text center margin_bottom padding_top padding_bottom">thumb</div>
-        <div class="column_3 bck light text center margin_bottom padding_top padding_bottom">thumb</div>
-        <div class="column_3 bck light text center margin_bottom padding_top padding_bottom">thumb</div>
-        <div class="column_3 bck light text center margin_bottom padding_top padding_bottom">thumb</div>
-        <div class="column_3 bck light text center margin_bottom padding_top padding_bottom">thumb</div>
-        <div class="column_3 bck light text center margin_bottom padding_top padding_bottom">thumb</div>
+        <div data-tip="Hello world!" class="tip-top column_3 bck light text center margin-bottom padding-top padding-bottom">thumb</div>
+        <div data-tip="Hello world!" class="tip-right column_3 bck light text center margin-bottom padding-top padding-bottom">thumb</div>
+        <div data-tip="Hello world!" class="tip-bottom column_3 bck light text center margin-bottom padding-top padding-bottom">thumb</div>
+        <div data-tip="Hello world!" class="tip-left column_3 bck light text center margin-bottom padding-top padding-bottom">thumb</div>
+        <div data-tip="Hello world!" class="tip-top column_3 bck light text center margin-bottom padding-top padding-bottom">thumb</div>
+        <div data-tip="Hello world!" class="tip-right column_3 bck light text center margin-bottom padding-top padding-bottom">thumb</div>
+        <div data-tip="Hello world!" class="tip-bottom column_3 bck light text center margin-bottom padding-top padding-bottom">thumb</div>
+        <div data-tip="Hello world!" class="tip-left column_3 bck light text center margin-bottom padding-top padding-bottom">thumb</div>
     </div>
 </section>
+
+    <script src="components/jquery/jquery.js"></script>
+    <script src="../package/tuktuk.js"></script>
 </body>
 </html>
