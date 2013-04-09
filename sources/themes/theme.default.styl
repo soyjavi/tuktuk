@@ -69,6 +69,10 @@ body
       background-color: bck_darkest
     &.theme
       background-color: THEME
+    &.alert
+      background-color: ALERT !important
+    &.theme
+      background-color: THEME
 
   /* ================================= TEXT ================================ */
   & .text
@@ -145,7 +149,6 @@ body
   & .button, button
     color: white
     font-weight: 600
-
     &:not(.transparent)
       background-color: THEME
       border-radius BORDER-RADIUS
@@ -161,6 +164,10 @@ body
         background-color: SUCCESS
        &.alert
         background-color: ALERT
+
+    &.transparent
+      background: none !important
+
     &.large
       font-weight: 500
 
