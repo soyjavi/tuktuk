@@ -4,32 +4,89 @@ form, .form
   & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
     display: block
     width: 100%
-    line-height: 2.4em
+    line-height: 2.2em
     padding: 0 10px
     margin: 2px 0 6px 0
-    transition all 400ms linear
     font-family: inherit
     font-size: inherit
+    -webkit-appearance: none
+    -webkit-user-select: text
+    -webkit-font-smoothing: antialiased
     &:focus
       outline: none !important;
     &.large
-      height: size = 52px
-      padding: 0 20px
-      font-size: 1.2em
-      margin: 0px
+      line-height: 2.4em
+      padding: 0 14px
+      font-size: font-size-large
+
   & textarea
+    padding-top: 5px
     min-height: 64px
     line-height: 1.4em
+
   & label
     font-size: font-size-small
     font-weight: 400
 
 
+  & input[type="checkbox"], input[type="radio"]
+    display: inline-block !important
+    margin-right: 5px
+    width: 18px
+    height: 18px
+    -webkit-appearance: none
+    text-align: center
+    &:after
+      content: "+"
+      opacity: 0
+      font-weight: bold
+    &:checked
+      &:after
+        opacity: 1
+
+
+  & input[type="checkbox"]:checked:after
+    content: "✔"
+
+  & input[type="radio"]
+    border-radius: 9px
+    &:checked:after
+      content: "·"
+
+
+  & .select
+    position: relative
+    display: block
+    &:after
+      z-index: 128
+      position: absolute
+      top: 10px
+      right: 10px
+      content: "▼"
+      pointer-events: none
+
+  & .fieldset, fieldset
+    & label
+      display: block
+      text-align: right
+      float: left
+      width: 25%
+      padding: 2px 8px
+
+      & > small
+        display: block
+        font-size: 0.8em
+        font-weight: 300
+
+    & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
+      width: 75%
 
 /* -------------------------- CHECKBOX -------------------------- */
 [data-control=checkbox]
   HEIGHT = 29px
 
+  display: inline-block
+  margin: 2px 0 6px 0
   width: 76px
   height: HEIGHT
   position: relative
@@ -71,19 +128,3 @@ form, .form
 
   & input[type=checkbox]:checked + label
     left: 50px
-
-.fieldset, fieldset
-  & label
-    display: block
-    text-align: right
-    float: left
-    width: 25%
-    padding: 2px 8px
-
-    & > small
-      display: block
-      font-size: 0.8em
-      font-weight: 300
-
-  & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
-    width: 75%
