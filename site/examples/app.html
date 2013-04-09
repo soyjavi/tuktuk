@@ -5,61 +5,49 @@
     <title>tuktuk - Boxes Example</title>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="../package/tuktuk.css">
-    <link rel="stylesheet" href="../package/tuktuk.theme.css">
+    <link rel="stylesheet" href="../../package/tuktuk.css">
+    <link rel="stylesheet" href="../../package/tuktuk.theme.css">
     <!-- TUKTUK.WIDGETS -->
-    <link rel="stylesheet" href="../package/tuktuk.icons.css">
+    <link rel="stylesheet" href="../../package/tuktuk.icons.css">
 </head>
 <body data-tuktuk="boxes">
-
-    <aside id="menu" class="bck dark absolute">
+    <aside id="menu" class="bck dark absolute column_3">
         <header class="bck darkest">
             <div class="session">
                 <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="avatar"/>
                 <strong class="text">logged in as <a href="#" class="active">soyjavi</a></strong>
-                <button data-box="close" class="small tiny secondary">close</button>
+                <button data-box="close" class="transparent  icon remove"></button>
             </div>
         </header>
         <article class="scroll">
-            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="avatar margin"/>
+            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="responsive padding-left padding-top padding-right"/>
             <nav data-menu="slidus" class="text center bold">
                 <a href="#" class="active">item .active<small>(100)</small></a>
                 <a href="#">item<small>(3)</small></a>
             </nav>
-
             <nav class="margin">
                 <button class="anchor large"><span class="icon users"></span>Following</button>
             </nav>
         </article>
     </aside>
 
-    <aside class="bck lightest">
+    <aside class="bck lightest column_3">
         <header class="text center bck theme">
             <div class="inline on-left">
-                <button class="tiny secondary icon cog" data-tuktuk-box="menu"></button>
+                <button class="transparent icon cog" data-tuktuk-box="menu"></button>
             </div>
-            <h2 class="text bold ">tuk<span class="text thin">tuk</span></h2>
+            <h3 class="text bold">tuk<span class="text thin">tuk</span></h3>
         </header>
         <article class="scroll">
-            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="avatar margin"/>
+            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="responsive padding-left padding-top padding-right"/>
             <h4 class="margin-left margin-bottom text bold inline">Javi Jiménez</h4>
             <span class="margin-left tag bck theme inline text bold">pro</span>
-            <hr/>
-
-
-            <p>
-                <div data-control="checkbox" class="margin inline">
-                    <input type="checkbox" value="None" id="prueba" />
-                    <label for="prueba"></label>
-                </div>
-                <strong class="inline">Share</strong>
-            </p>
 
             <hr/>
             <nav class="margin text bold uppercase" data-link="user">
-                <a href="#"><span class="icon cube"></span>london, UK</a>
-                <a href="#"><span class="icon cube"></span>WWW.TAPQUO.COM</a>
-                <a href="#"><span class="icon cube"></span>SOYJAVI</a>
+                <a href="#"><span class="icon globe"></span>london, UK</a>
+                <a href="#"><span class="icon home"></span>WWW.TAPQUO.COM</a>
+                <a href="#"><span class="icon user"></span>SOYJAVI</a>
             </nav>
             <hr/>
             <nav class="margin" data-button="relationships">
@@ -68,15 +56,16 @@
             </nav>
             <hr>
             <ul class="totals margin">
-                <li><strong>11.050</strong><small>followers</small></li>
-                <li><strong>171</strong><small>following</small></li>
+                <li><strong>3609</strong><small>followers</small></li>
+                <li><strong>138</strong><small>following</small></li>
                 <li><strong>14</strong><small>listed</small></li>
             </ul>
             <hr>
             <div class="margin">
                 <strong class="text big normal display block ">About <a href="#">Orman Clark</a></strong>
-                <div class="display block  text justify small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br/>Repellendus molestiae atque facilis odit magnam recusandae mollitia hic molestias corporis eos! Commodi perspiciatis nam maiores voluptate repudiandae cupiditate cum impedit. Quas!</div>
+                <div class="display block  text justify small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
             </div>
+            <hr>
             <nav data-menu="slidus" class="text center bold">
                 <a href="#" class="active">SHOTS<span>(100)</span></a>
                 <a href="#">PROJECTS<span>(3)</span></a>
@@ -84,27 +73,22 @@
                 <a href="#">TAGS<span>(160)</span></a>
             </nav>
         </article>
+        <footer>
+            <a href="#"></a>
+        </footer>
     </aside>
 
     <section class="bck light text white">
-        <header>
+        <header >
             <nav class="on-left text bold" data-filter="slidus">
                 <a href="#" class="active">item.active<small>small</small></a>
                 <a href="#">item</a>
             </nav>
 
             <nav class="on-right">
-                <button class="tiny secondary">tiny</button>
-                <button class="small secondary">small</button>
-                <button class="tiny secondary icon twitter">@soyjavi</button>
-                <button class="small secondary icon twitter">@soyjavi</button>
-                <button class="tiny secondary icon twitter"></button>
-                <button class="small secondary icon twitter"></button>
-                <a href="#" class="button tiny icon twitter"></a>
-                <a href="#" class="button small icon twitter"></a>
-                <a href="#" class="button tiny icon twitter">@soyjavi</a>
-                <a href="#" class="button small icon twitter">@soyjavi</a>
-
+                <button class="tiny secondary">tiny secondary</button>
+                <button class="small">small</button>
+                <button>normal</button>
             </nav>
         </header>
         <article class="padding">
@@ -153,7 +137,7 @@
     </div>
 
     <script src="components/jquery/jquery.js"></script>
-    <script src="../package/tuktuk.js"></script>
+    <script src="../../package/tuktuk.js"></script>
     <script>
         // TukTuk.Modal.show("modal");
         // TukTuk.Box.show("menu");

@@ -24,36 +24,43 @@
 .none
   display: none
 
-dimension = 20px
 .margin-none
   margin: 0
 .margin
-  margin: dimension
+  margin: MARGIN
 .margin-left
-  margin-left: dimension
+  margin-left: MARGIN
 .margin-right
-  margin-right: dimension
+  margin-right: MARGIN
 .margin-top
-  margin-top: dimension
+  margin-top: MARGIN
 .margin-bottom
-  margin-bottom: dimension
+  margin-bottom: MARGIN
 
 .padding-none
   padding: 0
 .padding
-  padding: dimension
+  padding: MARGIN
 .padding-left
-  padding-left: dimension
+  padding-left: MARGIN
 .padding-right
-  padding-right: dimension
+  padding-right: MARGIN
 .padding-top
-  padding-top: dimension
+  padding-top: MARGIN
 .padding-bottom
-  padding-bottom: dimension
-
+  padding-bottom: MARGIN
 
 
 /* ================== IMAGE & MEDIA ================== */
+div.img
+  height: 64px
+  &.h128
+    height: 128px
+  &.h256
+    height: 256px
+  &.h512
+    height: 512px
+
 img
   border: 0
   -ms-interpolation-mode: bicubic
@@ -71,3 +78,8 @@ img
   font-size: 9px !important
   line-height: 1.0em
   text-transform: uppercase
+
+hr
+  border: 0
+  height: 1px
+  margin: 0px
