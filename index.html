@@ -43,6 +43,7 @@
         </div>
     </header>
 
+
     <!-- ========================== FEATURES ========================== -->
     <section class="padding bck theme features">
         <div class="row text center book">
@@ -161,73 +162,194 @@
     </section>
 
 
-    <!-- ========================== HEADINGS ========================== -->
+    <!-- ========================== FORMS & TABLES ========================== -->
     <section class="padding bck lightest">
-        <div class="row margin-bottom">
-            <div class="column_10 offset_1 text center thin">
-                <h1 class="text color theme">Headings</h1>
-                <h3>You can use headings in a way optimized for each device.</h3>
-             </div>
-         </div>
+         <div class="row">
+            <div class="column_4">
+                <h1 class="text book center color theme">Forms & Tables</h1>
+                <h3 class="text book center">Make forms look gorgeous regardless of device and browser.</h3>
 
-        <div class="row">
-            <h1 class="column_2">H1</h1>
-            <h2 class="column_2">H2</h2>
-            <h3 class="column_2">H3</h3>
-            <h4 class="column_2">H4</h4>
-            <h5 class="column_2">H5</h5>
-            <h6 class="column_2">H6</h6>
+                <form id="form" name="form" class="margin-top">
+                    <label>Label example</label>
+                    <input type="text" name="default" id="default" />
+                    <!--
+                    <label>Label example</label>
+                    <input type="text" name="large" id="large" class="large" />
+                    -->
+
+                    <fieldset>
+                        <label>Drop down:<small>Select option</small></label>
+                        <span class="select">
+                            <select>
+                                <option value="1">HTML5 Jedi</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </span>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Required:<small>field</small></label>
+                        <input type="text" name="name" id="name" required />
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Feedback:<small>Comments here</small></label>
+                        <textarea></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Switches<small>Touch lover</small></label>
+                        <div data-control="checkbox">
+                            <input type="checkbox" value="None" id="prueba" />
+                            <label for="prueba"></label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Radio<small>buttons</small></label>
+                        <input type="radio" name="radio1"  /><span>Yes</span>
+                        <input type="radio" name="radio2" disabled /><span>No</span>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Checkbox:<small>Styled</small></label>
+                        <input type="checkbox" name="radio1" /><span>One</span>
+                        <input type="checkbox" name="radio2" /><span>Two</span>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="column_4">
+                <div class="row text thin center">
+                    <h1 class=" color theme">Buttons</h1>
+                    <h3>Gallery of styles and sizes that will be enough to interact with your site.</h3>
+                    <div class="margin-top">
+                        <a href="#" class="button large">Large</a>
+                        <a href="#" class="button secondary">Normal</a>
+                        <a href="#" class="button success small">Small</a>
+                        <a href="#" class="button alert tiny">Tiny</a>
+                    </div>
+
+                    <div class="margin-top">
+                        <a href="#" class="button large"><span class="icon ok"></span>Large</a>
+                        <a href="#" class="button secondary"><span class="icon ok"></span>Normal</a>
+                        <a href="#" class="button success small"><span class="icon ok"></span>Small</a>
+                        <a href="#" class="button alert tiny"><span class="icon ok"></span>Tiny</a>
+                    </div>
+
+                    <div class="margin-top">
+                        <a href="#" class="button large icon ok"></a>
+                        <a href="#" class="button secondary icon ok"></a>
+                        <a href="#" class="button success small icon ok"></a>
+                        <a href="#" class="button alert tiny icon ok"></a>
+                    </div>
+
+                    <div class="margin-top">
+                        <a href="#" class="button anchor secondary"><span class="icon ok"></span>Anchor</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column_4">
+                <h1 class=" color theme text thin center">Tables</h1>
+                <h3 class="text thin center">TukTuk comes with clean styling for table elements like TH, odds...</h3>
+                <table class="margin-top">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Category</th>
+                            <th>Version</th>
+                            <th><span class="right">Price</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>iPhone</td>
+                            <td>Mobile</td>
+                            <td>5</td>
+                            <td><span class="right">$ 699</span></td>
+                        </tr>
+                        <tr>
+                            <td>iPad Mini</td>
+                            <td>Tablet</td>
+                            <td>1</td>
+                            <td><span class="right">$ 399</span></td>
+                        </tr>
+                        <tr>
+                            <td>iPad</td>
+                            <td>Tablet</td>
+                            <td>4</td>
+                            <td><span class="right">$ 499</span></td>
+                        </tr>
+                        <tr>
+                            <td>Macbook Air 13"</td>
+                            <td>Laptop</td>
+                            <td>2</td>
+                            <td><span class="right">$ 1299</span></td>
+                        </tr>
+                        <tr>
+                            <td>Macbook Pro 15"</td>
+                            <td>Laptop</td>
+                            <td class="highlight">Retina</td>
+                            <td><span class="right">$ 2299</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
-
-    <!-- ========================== BUTTONS ========================== -->
+    <!-- ========================== Typography ========================== -->
     <section class="padding bck light">
         <div class="row ">
-            <div class="column_10 offset_1 text thin center margin-bottom">
-                <h1 class="text color theme">Buttons</h1>
-                <h3>a site without buttons? Tuktuk has a gallery of styles and sizes that will be enough to interact with your site.</h3>
+            <div class="column_10 offset_1 text center margin-bottom">
+                <h1 class="text color theme">Typography</h1>
+                <h3 class="text thin">Discover how you can play with the style of any element using style inheritance with ooCSS.</h3>
              </div>
-        </div>
-        <div class="row margin-bottom">
-            <div class="column_8 ">
-                  <a href="#" class="button large">Large</a>
-                  <a href="#" class="button ">Normal</a>
-                  <a href="#" class="button secondary">Secondary</a>
-                  <a href="#" class="button small success">Small</a>
-                  <a href="#" class="button tiny alert">Tiny</a>
-              </div>
-            <div class="column_4">
-                <a href="#" class="button anchor margin-top">Anchor</a>
-            </div>
-        </div>
-        <div class="row margin-bottom">
-            <div class="column_8 ">
-                  <a href="#" class="button large "><span class="icon ok"></span>Large</a>
-                  <a href="#" class="button "><span class="icon ok"></span>Normal</a>
-                  <a href="#" class="button secondary"><span class="icon ok"></span>Secondary</a>
-                  <a href="#" class="button small success"><span class="icon ok"></span>Small</a>
-                  <a href="#" class="button tiny alert"><span class="icon ok"></span>Tiny</a>
-              </div>
-            <div class="column_4">
-                <a href="#" class="button anchor margin-top"><span class="icon ok"></span>Anchor</a>
-            </div>
         </div>
 
         <div class="row">
-            <div class="column_8 ">
-                  <a href="#" class="button large icon ok"></a>
-                  <a href="#" class="button icon ok"></a>
-                  <a href="#" class="button secondary icon ok"></a>
-                  <a href="#" class="button small icon ok success"></a>
-                  <a href="#" class="button tiny icon ok alert"></a>
-              </div>
-            <div class="column_4">
-                <a href="#" class="button anchor icon ok margin-top"></a>
+            <div class="offset_1 column_2">
+                <h4><span class="text bold">.color</span> class</h4>
+                <h6>color normal</h6>
+                <h6 class="text color theme">color theme</h6>
+            </div>
+            <div class="column_2">
+                <h4><span class="text bold">.bck</span> class</h4>
+                <h6 class="bck lightest">lightest</h6>
+                <h6 class="bck light">light</h6>
+                <h6 class="bck dark text color white">dark</h6>
+                <h6 class="bck darkest text color white">darkest</h6>
+                <h6 class="bck theme">theme</h6>
+            </div>
+            <div class="column_2">
+                <h4><span class="text bold">.text</span> class</h4>
+                <h6 class="text thin">thin</h6>
+                <h6 class="text book">book</h6>
+                <h6 class="text normal">normal</h6>
+                <h6 class="text bold">bold</h6>
+                <h6 class="text italic">italic</h6>
+                <h6 class="text underline">underline</h6>
+            </div>
+            <div class="column_2">
+                <h4><span class="text bold">.align</span> class</h4>
+                <h6 class="text left">left</h6>
+                <h6 class="text right">right</h6>
+                <h6 class="text center">center</h6>
+                <h6 class="text justify">justify</h6>
+            </div>
+            <div class="column_2">
+                <h4><span class="text bold">headings</span></h4>
+                <h1 class="inline">H1</h1>
+                <h2 class="inline">H2</h2>
+                <h3 class="inline">H3</h3>
+                <h4 class="inline">H4</h4>
+                <h5 class="inline">H5</h5>
+                <h6 class="inline">H6</h6>
             </div>
         </div>
     </section>
-
 
     <!-- ========================== LISTS ========================== -->
     <section class="padding">
@@ -307,106 +429,10 @@
     </section>
 
 
-    <!-- ========================== FORMS & TABLES ========================== -->
-    <section class="padding bck light">
-         <div class="row margin-bottom text thin">
-                <div class="column_10 offset_1 text center">
-                <h1 class="text color theme">Forms & Tables</h1>
-                <h3>Make forms look gorgeous regardless of device and browser.</h3>
-             </div>
-         </div>
 
-         <div class="row">
-                <div class="column_6">
-                    <div id="stylized-form">
-                        <form id="form" name="form" method="post" action="index.html">
-                            <label>Label example</label>
-                            <input type="text" name="name" id="name" />
-                            <fieldset>
-                                <label>Required:<small>on .error class</small></label>
-                                <input type="text" name="name" id="name" required />
-                            </fieldset>
-
-                            <fieldset>
-                                <label>This is a Drop down:<small>Please select one option</small></label>
-                                <select id="dropdown">
-                                    <option>Select something...</option>
-                                    <option>Drop down 01</option>
-                                    <option>Drop down 02</option>
-                                </select>
-                            </fieldset>
-                            <fieldset>
-                                <label>Feedback:<small>You can write your comments here</small></label>
-                                <textarea></textarea>
-                            </fieldset>
-
-                            <fieldset>
-                                <label>Radio buttons:</label>
-                                <input type="radio" name="radio1" /><span>Yes</span>
-                                <input type="radio" name="radio2" /><span>No</span>
-                            </fieldset>
-
-                            <fieldset class="margin-bottom">
-                                <label>Check Boxes:</label>
-                                <input type="checkbox" name="radio1" /><span>One</span>
-                                <input type="checkbox" name="radio2" /><span>Two</span>
-                            </fieldset>
-
-                            <button class="accept margin-right"><span class="icon accept"></span>Send</button>
-                            <button class="secondary"><span class="icon cancel"></span>Cancel</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="column_6">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Category</th>
-                                <th>Version</th>
-                                <th><span class="right">Price</span></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>iPhone</td>
-                                <td>Mobile</td>
-                                <td>5</td>
-                                <td><span class="right">$ 699</span></td>
-                            </tr>
-                            <tr>
-                                <td>iPad Mini</td>
-                                <td>Tablet</td>
-                                <td>1</td>
-                                <td><span class="right">$ 399</span></td>
-                            </tr>
-                            <tr>
-                                <td>iPad</td>
-                                <td>Tablet</td>
-                                <td>4</td>
-                                <td><span class="right">$ 499</span></td>
-                            </tr>
-                            <tr>
-                                <td>Macbook Air 13"</td>
-                                <td>Laptop</td>
-                                <td>2</td>
-                                <td><span class="right">$ 1299</span></td>
-                            </tr>
-                            <tr>
-                                <td>Macbook Pro 15"</td>
-                                <td>Laptop</td>
-                                <td class="highlight">Retina</td>
-                                <td><span class="right">$ 2299</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    TukTuk comes with some styling for table elements like Table Headings (TH) and the option to have odd and even table rows as well as the ability to highlight a cell in your table!
-                </div>
-            </div>
-    </section>
 
     <!-- ========================== Show & hide ========================== -->
-    <section class="padding bck lightest ">
+    <section class="padding bck light">
         <div class="row margin-bottom">
             <div class="column_10 offset_1 text center ">
                 <h1 class="text color theme">Show & Hide</h1>
@@ -447,49 +473,6 @@
         </div>
     </section>
 
-    <!-- ========================== Typography ========================== -->
-    <section class="padding bck light">
-        <div class="row ">
-            <div class="column_10 offset_1 text center margin-bottom">
-                <h1 class="text color theme">Typography</h1>
-                <h3 class="text thin">Discover how you can play with the style of any element using style inheritance with ooCSS.</h3>
-             </div>
-        </div>
-
-        <div class="row">
-            <div class="column_3">
-                <h4>Color (.text.color)</h4>
-                <h6>color normal</h6>
-                <h6 class="text color theme">color theme</h6>
-                <h6 class="text color secondary">color secondary</h6>
-            </div>
-            <div class="column_3">
-                <h4>Style (.text)</h4>
-                <h6 class="text thin">thin</h6>
-                <h6 class="text book">book</h6>
-                <h6 class="text normal">normal</h6>
-                <h6 class="text bold">bold</h6>
-                <h6 class="text italic">italic</h6>
-                <h6 class="text underline">underline</h6>
-            </div>
-            <div class="column_3">
-                <h4>Alignment (.text)</h4>
-                <h6 class="text left">left</h6>
-                <h6 class="text right">right</h6>
-                <h6 class="text center">center</h6>
-                <h6 class="text justify">justify</h6>
-            </div>
-            <div class="column_3">
-                <h4>Background (.bck)</h4>
-                <h6 class="bck lightest">lightest</h6>
-                <h6 class="bck light">light</h6>
-                <h6 class="bck dark text color white">dark</h6>
-                <h6 class="bck darkest text color white">darkest</h6>
-                <h6 class="bck theme">theme</h6>
-            </div>
-        </div>
-    </section>
-
     <!-- ========================== Navigation ========================== -->
     <section class="padding bck lightest">
         <div class="row ">
@@ -510,7 +493,6 @@
             </nav>
         </div>
     </section>
-
 
     <!-- ========================== Modals ========================== -->
     <section class="padding bck light">

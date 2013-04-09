@@ -26,7 +26,7 @@ aside_dark_anchor  = lighten(bck_dark, 15%)
 body
   color: COLOR
   font-size: 14px
-  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "-Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-weight: 400
 
   & > header
@@ -34,7 +34,6 @@ body
       color: rgba(255,255,255,0.5)
       &:hover, &:active
         color: #fff
-
 
   & hr
     border-style: solid
@@ -52,7 +51,9 @@ body
       color: #fff
       & > .icon
           opacity: 0.6
-      &:hover, &:active, &.active
+      &:hover
+        background: rgba(0,0,0,0.2)
+      &:active, &.active
         background: THEME
 
 
@@ -81,29 +82,42 @@ body
 
   /* ====================== FORM ====================== */
   & form, .form
+    FORM_BORDER = #dce4ec
     & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
       background-color: #fff
       color: COLOR
-      border: 2px solid #dce4ec
+      border: 2px solid FORM_BORDER
       border-radius BORDER-RADIUS
+      transition border-color TRANSITION
       &.error, &:required
         border-color: ALERT !important
         color: ALERT
       &:focus
         border-color: THEME
 
+    & .select:after
+      color: FORM_BORDER
+
+     & input[type="checkbox"], input[type="radio"]
+      background: #fff
+      border: 2px solid FORM_BORDER
+      &:checked
+        border-color: THEME
+        &:after
+          color: THEME
+     & input[type="checkbox"]
+      border-radius BORDER-RADIUS
+
 
   & [data-control="checkbox"]
-    FORM_color = #ccc
     RADIUS = BORDER-RADIUS * 5
-
-    background: THEME_secondary
-    color: darken(SECONDARY, 25%)
+    background: darken(bck_light, 25%)
+    color: darken(bck_light, 5%)
     font-weight: 700
     border-radius: RADIUS
     & label
       border-radius: RADIUS
-      background: darken(FORM_color, 25%)
+      background: darken(bck_light, 50%)
     &.checked
       background-color: THEME
       color: #fff !important
