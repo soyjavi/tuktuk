@@ -32,8 +32,8 @@ body
 
   & a
     color: COLOR
-    &:hover, &:active
-      color: THEME
+    &:not(.button):hover, &:not(.button):active
+      color: THEME !important
 
   & hr
     margin: 15px 0
@@ -54,7 +54,6 @@ body
       &:active, &.active
         background: THEME
 
-
   /* ====================== BACKGROUNDS ====================== */
   & .bck
     &.light
@@ -67,6 +66,17 @@ body
       background-color: THEME
     &.alert
       background-color: ALERT !important
+
+    &.theme, &.alert
+      color: #fff
+
+    &.dark, &.darkest
+      color: lighten(bck_dark, 85%)
+      & hr
+        background: lighten(bck_dark, 10%)
+      & a
+        color: #fff
+
 
   /* ================================= TEXT ================================ */
   & .text
@@ -186,43 +196,24 @@ body
 
 [data-tuktuk=boxes]
   /* ====================== ASIDE ====================== */
-  & > aside
-    &:not(.dark)
-      color: lighten(COLOR, 15%)
-      & a:not(.button)
-        color: lighten(COLOR, 25%)
-
-    &.dark
-      &
-        color: lighten(bck_dark, 90%)
-      & a:not(.button)
-        color: #fff
-      & hr
-        background: #444
-
-    & a:not(.button)
-      &:hover, &:active, &.active
-          color: THEME
-
-    &  header
-      color: #fff
+  & aside
+    background: #fff
+    color: lighten(COLOR, 15%)
+    & header
       box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1)
 
   /* ====================== SECTION ====================== */
-  & > section
-    box-shadow: inset 1px 0 0 rgba(0,0,0,0.025)
-    & header
+  & section header
       border-bottom: dotted 1px aside_light_anchor
 
   /* ====================== NAVIGATION ====================== */
   & nav
     &[data-filter] > a:not(.button)
-      border-radius BORDER-RADIUS
+      border-radius (BORDER-RADIUS / 2)
       color: lighten(COLOR, 40%)
       &:hover, &:active, &.active
-        color: text
-        background: darken(bck_light, 5%)
-        box-shadow 0 -1px 0 darken(bck_light, 20%), 0 1px 0 lighten(bck_light, 80%)
+        color: #fff
+        background: darken(bck_light, 10%)
 
     &[data-link] > a > .icon
       color: aside_light_anchor
@@ -231,11 +222,12 @@ body
       opacity: 0.5
 
   /* ====================== MENU ====================== */
-  & [data-menu] > a:not(.button)
-    aside.light &
-      border-bottom: dotted 1px aside_light_anchor
-      &:first-child
-        border-top: dotted 1px aside_light_anchor
+  & aside [data-menu] > a:not(.button)
+    border-radius (BORDER-RADIUS / 2)
+    &.active
+      background: THEME
+      color: #fff
+
     aside.dark &
       border-bottom: dotted 1px aside_dark_anchor
       &:first-child

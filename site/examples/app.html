@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../../package/tuktuk.icons.css">
 </head>
 <body data-tuktuk="boxes">
-    <aside id="menu" class="bck dark absolute column_3">
-        <header class="bck darkest">
+    <aside id="menu" class="absolute column_3">
+        <header class="bck theme">
             <div class="session">
                 <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="avatar"/>
                 <strong class="text">logged in as <a href="#" class="active">soyjavi</a></strong>
@@ -31,7 +31,54 @@
         </article>
     </aside>
 
-    <aside class="bck lightest column_3">
+    <aside class="bck dark column_3">
+        <header class="text center bck darkest">
+            <div class="inline on-left">
+                <button class="transparent icon cog" data-tuktuk-box="menu"></button>
+            </div>
+            <h3 class="text bold">tuk<span class="text thin">tuk</span></h3>
+        </header>
+        <article class="scroll">
+            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="responsive padding-left padding-top padding-right"/>
+            <h4 class="margin-left margin-bottom text bold inline">Javi Jiménez</h4>
+            <span class="margin-left tag bck theme inline text bold">pro</span>
+
+            <hr/>
+            <nav class="margin text bold uppercase" data-link="user">
+                <a href="#"><span class="icon globe"></span>london, UK</a>
+                <a href="#"><span class="icon home"></span>WWW.TAPQUO.COM</a>
+                <a href="#"><span class="icon user"></span>SOYJAVI</a>
+            </nav>
+            <hr/>
+            <nav class="margin" data-button="relationships">
+                <button data-tuktuk-modal="modal" data-tip="Click to view a modal window">Modal</button>
+                <button data-tuktuk-modal="modal-right" data-tip="Click to view a side window" class="secondary">Aside Right</button>
+            </nav>
+            <hr>
+            <ul class="totals margin">
+                <li><strong>3609</strong><small>followers</small></li>
+                <li><strong>138</strong><small>following</small></li>
+                <li><strong>14</strong><small>listed</small></li>
+            </ul>
+            <hr>
+            <div class="margin">
+                <strong class="text big normal display block ">About <a href="#">Orman Clark</a></strong>
+                <div class="display block  text justify small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+            <hr>
+            <nav data-menu="slidus" class="text  bold">
+                <a href="#" class="active"><span class="icon user"></span>SHOTS<span>(100)</span></a>
+                <a href="#"><span class="icon user"></span>PROJECTS<span>(3)</span></a>
+                <a href="#"><span class="icon user"></span>LIKES<span>(192)</span></a>
+                <a href="#"><span class="icon user"></span>TAGS<span>(160)</span></a>
+            </nav>
+        </article>
+        <footer class="text center">
+            Handcrafted by <a href="#" class="text bold">tapquo</a>
+        </footer>
+    </aside>
+
+    <aside class="column_3">
         <header class="text center bck theme">
             <div class="inline on-left">
                 <button class="transparent icon cog" data-tuktuk-box="menu"></button>
@@ -51,8 +98,8 @@
             </nav>
             <hr/>
             <nav class="margin" data-button="relationships">
-                <button data-tuktuk-modal="modal" data-tip="Push to follow user"><span class="icon users"></span>Following</button>
-                <button class="secondary">List</button>
+                <button data-tuktuk-modal="modal" data-tip="Click to view a modal window">Modal</button>
+                <button data-tuktuk-modal="modal-right" data-tip="Click to view a side window" class="secondary">Aside Right</button>
             </nav>
             <hr>
             <ul class="totals margin">
@@ -66,20 +113,20 @@
                 <div class="display block  text justify small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
             </div>
             <hr>
-            <nav data-menu="slidus" class="text center bold">
-                <a href="#" class="active">SHOTS<span>(100)</span></a>
-                <a href="#">PROJECTS<span>(3)</span></a>
-                <a href="#">LIKES<span>(192)</span></a>
-                <a href="#">TAGS<span>(160)</span></a>
+            <nav data-menu="slidus" class="text  bold">
+                <a href="#" class="active"><span class="icon user"></span>SHOTS<span>(100)</span></a>
+                <a href="#"><span class="icon user"></span>PROJECTS<span>(3)</span></a>
+                <a href="#"><span class="icon user"></span>LIKES<span>(192)</span></a>
+                <a href="#"><span class="icon user"></span>TAGS<span>(160)</span></a>
             </nav>
         </article>
-        <footer>
-            <a href="#"></a>
+        <footer class="text center">
+            Handcrafted by <a href="#" class="text bold">tapquo</a>
         </footer>
     </aside>
 
-    <section class="bck light text white">
-        <header >
+    <section>
+        <header>
             <nav class="on-left text bold" data-filter="slidus">
                 <a href="#" class="active">item.active<small>small</small></a>
                 <a href="#">item</a>
@@ -91,7 +138,7 @@
                 <button>normal</button>
             </nav>
         </header>
-        <article class="padding">
+        <article class="padding bck light ">
             <h1>lorem ipsum</h1>
             <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nesciunt inventore culpa modi. Explicabo maiores vel inventore eius iusto dolorum quia autem doloribus ut repellat voluptate rerum veniam natus recusandae.</h6>
         </article>
@@ -110,30 +157,27 @@
         </footer>
     </section>
 
-    <div id="modal" data-tuktuk="modal" class="column_6">
+
+
+
+    <div id="modal" data-tuktuk="modal" class="column_5">
         <header>
-            <h4 class="text inline">That's all, folks</h4>
+            <h4 class="text book inline">Normal window</h4>
             <button data-modal="close" class="transparent small on-right inline icon remove"></button>
         </header>
-        <article class="text -small -big">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda aperiam nobis quam earum nihil veritatis modi possimus blanditiis perferendis obcaecati voluptatibus fuga eaque ad et atque nostrum porro expedita!</article>
-        <footer>
-            <button class="button accept">Accept</button>
-        </footer>
+        <article>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda aperiam nobis quam earum nihil veritatis modi possimus blanditiis perferendis obcaecati voluptatibus fuga eaque ad et atque nostrum porro expedita!
+        </article>
     </div>
 
-    <div id="right" data-tuktuk="modal" class="side column_6">
+    <div id="modal-right" data-tuktuk="modal" class="side column_5">
         <header>
-            <h3 class="inline">Menu in ...</h3>
-            <nav class="inline on-right">
-                <button class="small secondary" data-modal="close">Close</button>
-            </nav>
+            <h4 class="inline text book">Side window.</h4>
+            <button data-modal="close" class="transparent small on-right inline icon remove"></button>
         </header>
         <article>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos dolorum minus fugiat rem similique velit aperiam est sequi neque nulla tenetur minima autem facilis temporibus quaerat consectetur impedit praesentium.
         </article>
-        <footer>
-            <button class="accept">Accept</button>
-        </footer>
     </div>
 
     <script src="components/jquery/jquery.js"></script>
