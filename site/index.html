@@ -15,7 +15,7 @@
               max-height: 48px; }
 
           body > footer img {
-              height: 16px;
+              height: 18px;
               position: relative;
               top: 5px;
               left: 2px; }
@@ -35,7 +35,7 @@
 
 <body>
     <!-- ========================== HEADER ========================== -->
-    <header class="margin-top margin-bottom">
+    <header class="padding-top">
         <div class="row">
             <div class="column_4">
                 <h2 class="text color theme"><span class="text bold">tuk</span>tuk</h2>
@@ -43,10 +43,10 @@
             <div class="column_4 text center hide-phone">
                 <a href="http://tapquo.com" class="tapquo"><img src="http://cdn.tapquo.com/images/tapquo_circle.png"></a>
             </div>
-            <nav class="column_4 text right color secondary hide-phone">
-                <a href="https://github.com/soyjavi/package-tuktuk/archive/0.7.0.zip" class="icon download"></a>
-                <a href="https://github.com/soyjavi/tuktuk" class="icon github"></a>
-                <a href="https://twitter.com/tapquo" target="_blank" class="icon twitter"></a>
+            <nav class="column_4 text right hide-phone large">
+                <a href="https://github.com/soyjavi/package-tuktuk/archive/0.7.0.zip" class="icon download"></a>&nbsp;
+                <a href="https://github.com/soyjavi/tuktuk" class="icon github"></a>&nbsp;
+                <a href="https://twitter.com/soyjavi" target="_blank" class="icon twitter"></a>
             </nav>
         </div>
     </header>
@@ -72,7 +72,7 @@
             <div class="column_3">
                 <h1 class="icon leaf text color white"></h1>
                 <h4 class="text color white">Lightweight & fast</h4>
-                <p class="text normal">You don't want to carry heavy stylesheets that only make for a slow loading site. Tuktuk is lightweight at just 15kb.</p>
+                <p class="text normal">You don't want to carry heavy stylesheets that only make for a slow loading site. Tuktuk is lightweight at just 9kb gzipped.</p>
             </div>
             <div class="column_3">
                 <h1 class="icon cogs text color white"></h1>
@@ -107,8 +107,8 @@
     </section>
 
     <!-- ========================== EXAMPLES ========================== -->
-    <section class="padding bck dark ">
-        <div class="row text center margin-bottom">
+    <section class="padding bck dark text center">
+        <div class="row margin-bottom">
             <div class="column_10 offset_1">
                 <h1 class="text thin color theme">Examples</h1>
                 <h3 class="text color white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, quas, esse!</h3>
@@ -117,16 +117,29 @@
 
         <div class="row">
             <div class="column_3">
-                a
+                <a href="examples/blog.html" target="_blank" class="tip-right" data-tip="Click to view">
+                    <img src="images/template-blog.png" class="responsive"/>
+                </a>
+                <h5><strong>Blog</strong> Page</h5>
             </div>
             <div class="column_3">
-                b
+                <a href="examples/landing.html" target="_blank" class="tip-right" data-tip="Click to view">
+                    <img src="images/template-landing.png" class="responsive"/>
+                </a>
+                <h5><strong>Landing</strong> Page</h5>
             </div>
             <div class="column_3">
-                c
+                <a href="examples/profile.html" target="_blank" class="tip-left" data-tip="Click to view">
+                    <img src="images/template-profile.png" class="responsive"/>
+                </a>
+                <h5><strong>Profile</strong> Page</h5>
             </div>
+
             <div class="column_3">
-                d
+                <a href="examples/app.html" target="_blank" class="tip-left" data-tip="Click to view">
+                    <img src="images/template-app.png" class="responsive"/>
+                </a>
+                <h5>Web <strong>Application</strong> <span class="tag bck theme">NEW!</span></h5>
             </div>
         </div>
     </section>
@@ -537,7 +550,7 @@
         </div>
         <div class="row margin-top margin-bottom text center">
             <button class="offset_2 large column_4" data-tuktuk-modal="default_modal">Default</button>
-            <button class="large column_4 alert" data-tuktuk-modal="big_modal">Stilyng modal</button>
+            <button class="large column_4 alert" data-tuktuk-modal="big_modal">Styling modal</button>
         </div>
     </section>
 
@@ -802,7 +815,7 @@
                 <span class="icon github-alt"></span>
                 <span class="icon folder-close-alt"></span>
                 <span class="icon folder-open-alt"></span>
-
+                <small>Based on <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank" class="text bold color theme">Font Awesome</a> Project</small>
             </div>
         </div>
     </section>
@@ -811,37 +824,38 @@
     <!-- ========================== AUTHOR ========================== -->
     <section class="padding bck dark">
         <div class="row margin-bottom">
-            <div class="column_10 offset_1 text center color white">
-                <h1>Author</h1>
-                <h3 class="text thin">Javi Jimenez is the CTO and co-founder of <a href="http://tapquo.com">tapquo</a>. A restless mind that always strives for continuous improvement, able to create frameworks like <a href="http://lungo.tapquo.com">Lungo</a>, <a href="http://quojs.tapquo.com">QuoJS</a>, <a href="http://monocle.tapquo.com">Monocle</a> used by thousands of developers around the world.</h3>
+            <div class="column_10 offset_1 text center">
+                <h1 class="color theme">Author</h1>
+                <h3 class="text thin">Javi Jimenez is the CTO and co-founder of <a href="http://tapquo.com" class="text normal">tapquo</a>. A restless mind that always strives for continuous improvement, able to create frameworks like <a href="http://lungo.tapquo.com" class="text normal">Lungo</a>, <a href="http://quojs.tapquo.com" class="text normal">QuoJS</a>, <a href="http://monocle.tapquo.com" class="text normal">Monocle</a> used by thousands of developers around the world.</h3>
              </div>
          </div>
 
         <div class="row margin-bottom">
-            <div class="column_3 offset_4 text center white">
+            <div class="column_4 offset_4 text center white">
                 <img src="http://cdn.tapquo.com/photos/soyjavi.jpg" class="responsive rounded margin-bottom"/>
-                <br/>
                 <a href="https://twitter.com/soyjavi" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @soyjavi</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div>
         </div>
     </section>
 
 
     <!-- ========================== FOOTER ========================== -->
-    <footer class="bck darkest padding text color white">
-        <div class="row padding-top padding-bottom">
+    <footer class="bck darkest padding">
+        <div class="row margin-top margin-bottom">
             <div class="column_5">
                 <p class="text bold big">Handcrafted by <a href="http://tapquo.com" class="display inline"><img src="http://cdn.tapquo.com/images/logo_footer.png"/></a></p>
-                We're a  user experiences company located in <span class="text normal">Bilbao</span>, SP.
+                We're a  user experiences company located in <span class="text normal">Bilbao</span>, ES.
             </div>
             <div class="column_4">
                 <p class="text bold big">Join the team!</p>
-                Let us know how you're!<a href="mailto:hello@tapquo.com?subject=job" class="text normal"> Get in touch</a>
+                Let us know how you're! <a href="mailto:hello@tapquo.com?subject=job" class="text underline color theme">Get in touch</a>
             </div>
             <div class="column_3">
                 <p class="text bold big">Need some help?</p>
-                For quick answers or help <a href="https://twitter.com/soyjavi" target="_blank" class="text normal">follow me</a>
+                For quick answers or help <a href="https://twitter.com/tapquo" target="_blank" class="text underline color theme">follow us</a>
             </div>
         </div>
     </footer>
