@@ -5,141 +5,147 @@
     <title>tuktuk - Landing Example</title>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <!-- TUKTUK -->
-    <link rel="stylesheet" href="../package/tuktuk.css">
-    <link rel="stylesheet" href="../package/theme.default.css">
+    <link rel="stylesheet" href="../../package/tuktuk.css">
+    <link rel="stylesheet" href="../../package/tuktuk.theme.css">
     <!-- TUKTUK.WIDGETS -->
-    <link rel="stylesheet" href="../package/widgets/icon/tuktuk.icon.css">
+    <link rel="stylesheet" href="../../package/tuktuk.icons.css">
+    <style>
+        body > footer img {
+          height: 18px;
+          position: relative;
+          top: 5px;
+          left: 2px; }
+
+        section.landing input {
+            border-radius: 4px 0px 0px 4px !important;}
+
+        section.landing button {
+            border-radius: 0px 4px 4px 0px !important;}
+    </style>
 </head>
 <body class="text thin">
-<!-- ========================== HEADER ========================== -->
-<header class="bck margin-top margin-bottom">
-    <div class="row">
-        <div class="column_3">
-            <a href="http://tuktuk.tapquo.com" class="logo text bold color theme">tuk<span class="text book">tuk</span></a>
+    <!-- ========================== HEADER ========================== -->
+    <header class="bck margin-top margin-bottom">
+        <div class="row">
+            <div class="column_3">
+                <a href="http://tuktuk.tapquo.com" class="logo text bold color theme">tuk<span class="text book">tuk</span></a>
+            </div>
+            <nav class="column_7 offset_2 text right">
+                <a href="#" class="button secondary"><span class="icon user"></span>Login</a>
+                <a href="#" class="button"><span class="icon pencil"></span>Signup</a>
+            </nav>
         </div>
-        <nav class="column_7 offset_2 text right">
-            <a href="#" class="button "><span class="icon user"></span>Login</a>
-            <a href="#" class="button secondary "><span class="icon pencil"></span>Signup</a>
-        </nav>
-    </div>
-</header>
+    </header>
 
-<section class="bck darkest landing text center color white">
-    <div class="row">
-        <div class="column_8 offset_2">
-            <h2 class="text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-            <h5 class="margin">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit beatae similique ex reprehenderit doloribus quasi magnam reiciendis vitae culpa minus modi aspernatur eius temporibus quas corrupti architecto error labore soluta.
-            </h5>
-            <h5 class="text thin">
-                We're currently in beta. Get access:
-            </h5>
+    <section class="bck darkest landing text center color white">
+        <div class="row">
+            <div class="column_10 offset_1">
+                <h1><strong>tuk</strong>tuk</h1>
+                <h2 class="margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                <h5 class="text small book">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+            </div>
         </div>
-    </div>
-    <div class="row">
-         <div class="column_6 offset_3 form">
-            <input type="email" id="mail" class="large float left" placeholder="Your email address">
-            <button id="sendRequest" class="button large float ">yes, please</button>
+        <div class="row">
+            <div class="column_6 offset_3 form">
+                <input type="email" id="mail" class="large on-left" placeholder="Your email address">
+                <button class="button large on-right"><span class="icon envelope"></span>Send</button>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ========================== Features ========================== -->
-<section class="bck theme padding">
-    <div class="row text center margin-bottom">
-        <div class="column_8 offset_2">
-            <h1 class="text book color white">Built for designers and agencies</h1>
-            <h4>
-                Slidus is designed from the ground-up to support and enhance the
-workflow of web designers. It’s more than just a slogan for us.
-            </h4>
+    <section class="bck theme padding text center ">
+        <div class="row margin-bottom">
+            <div class="column_10 offset_1">
+                <h1 class="text normal">Built for designers and agencies</h1>
+                <h4>
+                    Slidus is designed from the ground-up to support and enhance the
+    workflow of web designers. It’s more than just a slogan for us.
+                </h4>
+            </div>
         </div>
-    </div>
 
-    <div class="row text center color white book margin-top">
-        <div class="column_3">
-            <h5 class="text bold">Smooth workflows</h5>
-            <p>Create accounts with limited interaction from your clients. Send them a link to enter their payment info, and they’re good to go.</p>
+        <div class="row margin-top">
+            <div class="column_3">
+                <h2 class="icon user"></h2>
+                <h5 class="text normal">Lorem ipsum dolor sit</h5>
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
+            </div>
+            <div class="column_3">
+                <h2 class="icon group"></h2>
+                <h5 class="text normal">Lorem ipsum dolor sit</h5>
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
+            </div>
+            <div class="column_3">
+                <h2 class="icon cog"></h2>
+                <h5 class="text normal">Lorem ipsum dolor sit</h5>
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
+            </div>
+            <div class="column_3">
+                <h2 class="icon twitter"></h2>
+                <h5 class="text normal">Lorem ipsum dolor sit</h5>
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
+            </div>
         </div>
-        <div class="column_3">
-            <h5 class="text bold">A single login</h5>
-            <p>Access all of your clients’ sites with a single FTP login. No need to remember 50 different usernames and passwords.</p>
+    </section>
+
+    <section class="bck light padding">
+        <div class="row text thin center">
+            <div class="column_10 offset_1">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <h4>
+                    Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
+                </h4>
+            </div>
         </div>
-        <div class="column_3">
-            <h5 class="text bold">Demo sites are free</h5>
-            <p>Easily test out changes and preview them for your clients, before publishing them to the live site.</p>
+    </section>
+
+    <section class="bck lightest landing">
+        <div class="row text center">
+            <div class="column_10 offset_1">
+                <h2 class="text bold color theme">We're launching soon</h2>
+                <h4 class="text book italic">Join tuk<span class="text bold">tuk</span></h4>
+                <a href="#" class="button large margin-top">Yes, please!</a>
+            </div>
         </div>
-        <div class="column_3">
-            <h5 class="text bold">Earn recurring income</h5>
-            <p>Make money each month for the clients you host with Slidus. No need to pass around affiliate links or referral codes.</p>
+    </section>
+
+    <section class="padding bck dark">
+        <div class="row margin-bottom">
+            <div class="column_10 offset_1 text center">
+                <h1 class="color theme">Author</h1>
+                <h3 class="text thin">Javi Jimenez is the CTO and co-founder of <a href="http://tapquo.com" class="text normal">tapquo</a>. A restless mind that always strives for continuous improvement, able to create frameworks like <a href="http://lungo.tapquo.com" class="text normal">Lungo</a>, <a href="http://quojs.tapquo.com" class="text normal">QuoJS</a>, <a href="http://monocle.tapquo.com" class="text normal">Monocle</a> used by thousands of developers around the world.</h3>
+             </div>
+         </div>
+
+        <div class="row margin-bottom">
+            <div class="column_4 offset_4 text center white">
+                <img src="http://cdn.tapquo.com/photos/soyjavi.jpg" class="responsive rounded margin-bottom"/>
+                <a href="https://twitter.com/soyjavi" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @soyjavi</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ========================== Infraestructure ========================== -->
-<section class="bck light padding">
-    <div class="row text thin center">
-        <div class="column_10 offset_1">
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <h4>
-                Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
-            </h4>
-        </div>
-    </div>
-</section>
-
-
-<!-- ========================== Launching ========================== -->
-<section class="bck lightest landing">
-    <div class="row text center">
-        <div class="column_10 offset_1">
-            <h2 class="text bold color theme">We're launching soon</h2>
-            <h4 class="text book italic">Join tuk<span class="text bold">tuk</span></h4>
-            <a href="#" class="button large margin-top">Yes, please!</a>
-        </div>
-    </div>
-</section>
-
-<!-- ========================== Authors ========================== -->
-<section class="bck dark padding">
-    <div class="row text center color white">
-        <div class="column_10 offset_1">
-            <h1 class="text book color theme">Author</h1>
-            <h4 class="text thin">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur explicabo ratione aliquam maxime maiores ipsum quia ab?
-            </h4>
-        </div>
-    </div>
-
-    <div class="row text center">
-       <div class="offset_4 column_4 padding">
-            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="responsive rounded margin-bottom"/>
-            <br/>
-            <a href="https://twitter.com/soyjavi" class="twitter-follow-button " data-show-count="false" data-dnt="true">Follow @soyjavi</a>
-           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-       </div>
-
-    </div>
-</section>
-
-    <!-- ========================== FOOTER ========================== -->
-    <footer class="bck darkest padding text color white">
-        <div class="row ">
+    <footer class="bck darkest padding">
+        <div class="row margin-top margin-bottom">
             <div class="column_5">
-                <p class="text bold big">Handcrafted by <a href="http://tapquo.com" class="display inline">tapquo</a></p>
-                We're a  user experiences company located in <span class="text normal">Bilbao</span>, SP.
+                <p class="text bold big">Handcrafted by <a href="http://tapquo.com" class="display inline"><img src="http://cdn.tapquo.com/images/logo_footer.png"/></a></p>
+                We're a  user experiences company located in <span class="text normal">Bilbao</span>, ES.
             </div>
             <div class="column_4">
                 <p class="text bold big">Join the team!</p>
-                Let us know how you're!<a href="mailto:hello@tapquo.com?subject=job" class="text normal"> Get in touch</a>
+                Let us know how you're! <a href="mailto:hello@tapquo.com?subject=job" class="text underline color theme">Get in touch</a>
             </div>
             <div class="column_3">
                 <p class="text bold big">Need some help?</p>
-                For quick answers or help <a href="https://groups.google.com/forum/#!forum/quojs" class="text normal">write us</a>
+                For quick answers or help <a href="https://twitter.com/tapquo" target="_blank" class="text underline color theme">follow us</a>
             </div>
         </div>
     </footer>
 
+    <script src="components/jquery/jquery.js"></script>
+    <script src="../../package/tuktuk.js"></script>
 </body>
 </html>
