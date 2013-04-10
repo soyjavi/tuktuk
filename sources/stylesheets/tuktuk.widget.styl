@@ -27,28 +27,28 @@
 .margin-none
   margin: 0
 .margin
-  margin: MARGIN
+  margin: AIR
 .margin-left
-  margin-left: MARGIN
+  margin-left: AIR
 .margin-right
-  margin-right: MARGIN
+  margin-right: AIR
 .margin-top
-  margin-top: MARGIN
+  margin-top: AIR
 .margin-bottom
-  margin-bottom: MARGIN
+  margin-bottom: AIR
 
 .padding-none
   padding: 0
 .padding
-  padding: MARGIN
+  padding: AIR
 .padding-left
-  padding-left: MARGIN
+  padding-left: AIR
 .padding-right
-  padding-right: MARGIN
+  padding-right: AIR
 .padding-top
-  padding-top: MARGIN
+  padding-top: AIR
 .padding-bottom
-  padding-bottom: MARGIN
+  padding-bottom: AIR
 
 
 /* ================== IMAGE & MEDIA ================== */
@@ -68,6 +68,9 @@ img
   &.responsive
     width: 100%
     height: auto
+    &.vertical
+      height: 100%
+      width: auto
     &.rounded
       border-radius 50%
 

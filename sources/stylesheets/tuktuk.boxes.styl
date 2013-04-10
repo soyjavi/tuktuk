@@ -1,5 +1,9 @@
 @import "__constants.styl"
 
+DIMENSION = 14px
+
+HEADER_HEIGHT = 52px
+ASIDE_WIDTH   = 224px
 
 [data-tuktuk=boxes]
   display-box()
@@ -16,12 +20,7 @@
       display: block
       height: HEADER_HEIGHT
       line-height: HEADER_HEIGHT
-      padding: (DIMENSION / 2)
-      & > *
-        height: h = (HEADER_HEIGHT - DIMENSION)
-        line-height: h
-      & .button, button
-        margin: 0 1px
+      padding: 0 AIR
 
     & article
       box-flex(1)
@@ -59,13 +58,7 @@
   & > aside, & > section
     & .session
       & > *
+        display: inline-block
         float: left
-
-      & > .avatar
-        height: (HEADER_HEIGHT - DIMENSION)
-        margin-right: (DIMENSION / 2)
-
-      & > button, & > .button
-        margin-top: (DIMENSION / 5)
-        float: right
-
+      & > .responsive
+        padding: (AIR / 1.5) (AIR / 2) (AIR / 1.5) 0

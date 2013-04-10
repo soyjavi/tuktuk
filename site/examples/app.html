@@ -10,7 +10,7 @@
     <!-- TUKTUK.WIDGETS -->
     <link rel="stylesheet" href="../package/tuktuk.icons.css">
     <style>
-        aside > footer img {
+        aside footer img {
           height: 16px;
           position: relative;
           top: 5px;
@@ -29,44 +29,23 @@
     </style>
 </head>
 <body data-tuktuk="boxes">
-    <aside id="menu" class="absolute column_3">
+    <aside id="menu" class="absolute bck light column_3">
         <header class="bck theme">
-            <div class="session">
-                <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="avatar"/>
-                <strong class="text">logged in as <a href="#" class="active">soyjavi</a></strong>
-                <button data-box="close" class="transparent  icon remove"></button>
+            <div class="session on-left">
+                <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="responsive vertical"/>
+                <strong>logged in as <a href="#" class="color default">soyjavi</a></strong>
             </div>
+            <a href="#" data-box="close" class="on-right text big icon remove color white"></a>
         </header>
         <article class="scroll">
             <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="responsive padding-left padding-top padding-right"/>
-            <nav data-menu="slidus" class="text center bold">
-                <a href="#" class="active">item .active<small>(100)</small></a>
-                <a href="#">item<small>(3)</small></a>
-            </nav>
-            <nav class="margin">
-                <button class="anchor large"><span class="icon users"></span>Following</button>
-            </nav>
-        </article>
-    </aside>
 
-    <aside class="bck dark column_3">
-        <header class="text center bck color">
-            <div class="inline on-left">
-                <button class="transparent icon cog" data-tuktuk-box="menu"></button>
+            <div class="margin-left margin-right">
+                <h4 class="text bold color theme inline">Javi Jiménez</h4>
+                <span class="margin-left tag bck color inline text bold">pro</span>
+                <a href="#" class="block"><span class="icon twitter"></span> soyjavi</a>
             </div>
-            <h3 class="text bold">tuk<span class="text thin">tuk</span></h3>
-        </header>
-        <article class="scroll">
-            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="responsive padding-left padding-top padding-right"/>
-            <h4 class="margin-left margin-bottom text bold inline">Javi Jiménez</h4>
-            <span class="margin-left tag bck theme inline text bold">pro</span>
 
-            <hr/>
-            <nav class="margin text bold uppercase" data-link="user">
-                <a href="#"><span class="icon globe"></span>london, UK</a>
-                <a href="#"><span class="icon home"></span>WWW.TAPQUO.COM</a>
-                <a href="#"><span class="icon user"></span>SOYJAVI</a>
-            </nav>
             <hr/>
             <div class="margin" data-tuktuk="buttons">
                 <button data-tuktuk-modal="modal" data-tip="Click to view a modal window">Modal</button>
@@ -76,11 +55,50 @@
             <ul class="margin" data-tuktuk="totals">
                 <li><strong>3609</strong><small>followers</small></li>
                 <li><strong>138</strong><small>following</small></li>
-                <li><strong>14</strong><small>listed</small></li>
+                <li><strong>14</strong><small>lists</small></li>
             </ul>
             <hr>
             <div class="margin">
-                <strong class="text big normal display block ">About <a href="#">Orman Clark</a></strong>
+                <strong class="text big normal block ">About <a href="#">Orman Clark</a></strong>
+                <div class="display block  text justify small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+            <nav data-tuktuk="menu" class="text bold">
+                <a href="#" class="active"><span class="icon user"></span>Shots<small>(100)</small></a>
+                <a href="#"><span class="icon heart"></span>Trending<small>(3)</small></a>
+                <a href="#"><span class="icon group"></span>Following<small>(192)</small></a>
+                <a href="#"><span class="icon star"></span>Debuts<small>(160)</small></a>
+            </nav>
+        </article>
+    </aside>
+
+    <aside class="bck dark column_3">
+        <header class="text center bck color">
+            <h3 class="text bold on-left">tuk<span class="text thin">tuk</span> <span class="text italic thin">App</span></h3>
+            <a href="#" class="on-right text big icon cog" data-tuktuk-box="menu"></a>
+        </header>
+        <article class="scroll">
+            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="responsive padding-left padding-top padding-right"/>
+
+            <div class="margin-left margin-right">
+                <h4 class="text bold color theme inline">Javi Jiménez</h4>
+                <span class="margin-left tag bck theme inline text bold">pro</span>
+                <a href="#" class="block"><span class="icon twitter"></span> soyjavi</a>
+            </div>
+
+            <hr/>
+            <div class="margin" data-tuktuk="buttons">
+                <button data-tuktuk-modal="modal" data-tip="Click to view a modal window">Modal</button>
+                <button data-tuktuk-modal="modal-right" data-tip="Click to view a side window" class="secondary">Aside Right</button>
+            </div>
+            <hr>
+            <ul class="margin" data-tuktuk="totals">
+                <li><strong>3609</strong><small>followers</small></li>
+                <li><strong>138</strong><small>following</small></li>
+                <li><strong>14</strong><small>lists</small></li>
+            </ul>
+            <hr>
+            <div class="margin">
+                <strong class="text big normal block ">About <a href="#">Orman Clark</a></strong>
                 <div class="display block  text justify small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
             </div>
             <nav data-tuktuk="menu" class="text bold">
@@ -95,53 +113,6 @@
         </footer>
     </aside>
 
-    <!--
-    <aside class="column_3">
-        <header class="text center bck theme">
-            <div class="inline on-left">
-                <button class="transparent icon cog" data-tuktuk-box="menu"></button>
-            </div>
-            <h3 class="text bold">tuk<span class="text thin">tuk</span></h3>
-        </header>
-        <article class="scroll">
-            <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class="responsive padding-left padding-top padding-right"/>
-            <h4 class="margin-left margin-bottom text bold inline">Javi Jiménez</h4>
-            <span class="margin-left tag bck theme inline text bold">pro</span>
-
-            <hr/>
-            <nav class="margin text bold uppercase" data-link="user">
-                <a href="#"><span class="icon globe"></span>london, UK</a>
-                <a href="#"><span class="icon home"></span>WWW.TAPQUO.COM</a>
-                <a href="#"><span class="icon user"></span>SOYJAVI</a>
-            </nav>
-            <hr/>
-            <nav class="margin" data-button="relationships">
-                <button data-tuktuk-modal="modal" data-tip="Click to view a modal window">Modal</button>
-                <button data-tuktuk-modal="modal-right" data-tip="Click to view a side window" class="secondary">Aside Right</button>
-            </nav>
-            <hr>
-            <ul class="margin" data-tuktuk="totals">
-                <li><strong>3609</strong><small>followers</small></li>
-                <li><strong>138</strong><small>following</small></li>
-                <li><strong>14</strong><small>listed</small></li>
-            </ul>
-            <hr>
-            <div class="margin">
-                <strong class="text big normal display block ">About <a href="#">Orman Clark</a></strong>
-                <div class="display block  text justify small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-            </div>
-            <nav data-tuktuk="menu" class="text bold">
-                <a href="#" class="active"><span class="icon user"></span>Shots<small>(100)</small></a>
-                <a href="#"><span class="icon heart"></span>Trending<small>(3)</small></a>
-                <a href="#"><span class="icon group"></span>Following<small>(192)</small></a>
-                <a href="#"><span class="icon star"></span>Debuts<small>(160)</small></a>
-            </nav>
-        </article>
-        <footer class="bck light text center">
-            Handcrafted by <a href="#" class="text bold">tapquo</a>
-        </footer>
-    </aside>
-    -->
 
     <section>
         <header class="bck light">
