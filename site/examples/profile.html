@@ -5,10 +5,10 @@
     <title>tuktuk - Profile Example</title>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="../../package/tuktuk.css">
-    <link rel="stylesheet" href="../../package/tuktuk.theme.css">
+    <link rel="stylesheet" href="../package/tuktuk.css">
+    <link rel="stylesheet" href="../package/tuktuk.theme.css">
     <!-- TUKTUK.WIDGETS -->
-    <link rel="stylesheet" href="../../package/tuktuk.icons.css">
+    <link rel="stylesheet" href="../package/tuktuk.icons.css">
     <style>
         body > footer img {
           height: 18px;
@@ -19,19 +19,19 @@
 </head>
 <body class="text thin">
 
-    <header class="bck darkest padding color white">
+    <header class="bck dark padding color white">
         <div class="row">
             <div class="column_6">
                 <h2 class="text color bold">tuk<span class="text thin">tuk</span> <span class="text italic thin small">Profile Template</span></h2>
             </div>
             <nav class="column_6  text right bold">
-                <a href="#" class="color white">Login</a>
+                <a href="#">Login</a>
                 <a href="#" class="button small">Signup</a>
             </nav>
         </div>
     </header>
 
-    <section class="padding bck dark">
+    <section class="padding bck color">
         <div class="row ">
             <div class="column_3 padding" >
                 <img src="http://cdn.tapquo.com/photos/javi_color.jpg" class=" responsive rounded" data-tip="Hello world!" />
@@ -49,33 +49,33 @@
                         <span class="icon pushpin"></span> Bilbao, SP
                     </div>
                     <div class="column_3 text big right">
-                        <a href="#" class="margin-right color white icon twitter"></span></a>
-                        <a href="#" class="margin-right color white icon facebook"></span></a>
-                        <a href="#" class="color white icon linkedin"></span></a>
+                        <a href="#" class="margin-right icon twitter"></span></a>
+                        <a href="#" class="margin-right icon facebook"></span></a>
+                        <a href="#" class="icon linkedin"></span></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="underline bck darkest">
+    <section class="bck dark">
         <div class="row text center">
-            <nav class="column_12 group text bold">
-                <a href="#" class="active"><span class="icon user"></span>item.active</a>
-                <a href="#"><span class="icon cube"></span>item</a>
-                <a href="#"><span class="icon cube"></span>item</a>
-                <a href="#"><span class="icon cube"></span>item</a>
-                <a href="#"><span class="icon cube"></span>item</a>
+            <nav data-tuktuk="menu" class="column_12 padding text bold">
+                <a href="#" class="active"><span class="icon user"></span>Shots<small>(100)</small></a>
+                <a href="#"><span class="icon heart"></span>Trending<small>(3)</small></a>
+                <a href="#"><span class="icon group"></span>Following<small>(192)</small></a>
+                <a href="#"><span class="icon star"></span>Debuts<small>(160)</small></a>
             </nav>
         </div>
     </section>
+
 
     <section class="margin-bottom">
         <div class="row">
             <div class="column_12 margin-top margin-bottom">
                 <h2 class="text bold inline">Thumbs</h2>
                 <nav class="inline on-right">
-                    <a href="#" class="active"><span class="icon search"></span>Search</a>
+                    <a href="#" class="button secondary small "><span class="icon search"></span>Search</a>
                     <a href="#" class="button small">Follow</a>
                 </nav>
                 <small class="block">by <a href="#" class="text bold underline">Javi Jiménez</a></small>
@@ -125,6 +125,6 @@
     </footer>
 
     <script src="components/jquery/jquery.js"></script>
-    <script src="../../package/tuktuk.js"></script>
+    <script src="../package/tuktuk.js"></script>
 </body>
 </html>

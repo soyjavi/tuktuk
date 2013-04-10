@@ -5,16 +5,27 @@
     <title>tuktuk - Application Example</title>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="../../package/tuktuk.css">
-    <link rel="stylesheet" href="../../package/tuktuk.theme.css">
+    <link rel="stylesheet" href="../package/tuktuk.css">
+    <link rel="stylesheet" href="../package/tuktuk.theme.css">
     <!-- TUKTUK.WIDGETS -->
-    <link rel="stylesheet" href="../../package/tuktuk.icons.css">
+    <link rel="stylesheet" href="../package/tuktuk.icons.css">
     <style>
         aside > footer img {
           height: 16px;
           position: relative;
           top: 5px;
           left: 2px; }
+
+        .thumb {
+            height: 96px;
+            margin-bottom: 2.5em;
+            text-align: center;
+            line-height: 96px;
+        }
+        .column_4.thumb {
+            height: 220px;
+            line-height: 220px;
+        }
     </style>
 </head>
 <body data-tuktuk="boxes">
@@ -39,7 +50,7 @@
     </aside>
 
     <aside class="bck dark column_3">
-        <header class="text center bck darkest">
+        <header class="text center bck color">
             <div class="inline on-left">
                 <button class="transparent icon cog" data-tuktuk-box="menu"></button>
             </div>
@@ -57,12 +68,12 @@
                 <a href="#"><span class="icon user"></span>SOYJAVI</a>
             </nav>
             <hr/>
-            <nav class="margin" data-button="relationships">
+            <div class="margin" data-tuktuk="buttons">
                 <button data-tuktuk-modal="modal" data-tip="Click to view a modal window">Modal</button>
                 <button data-tuktuk-modal="modal-right" data-tip="Click to view a side window" class="secondary">Aside Right</button>
-            </nav>
+            </div>
             <hr>
-            <ul class="totals margin">
+            <ul class="margin" data-tuktuk="totals">
                 <li><strong>3609</strong><small>followers</small></li>
                 <li><strong>138</strong><small>following</small></li>
                 <li><strong>14</strong><small>listed</small></li>
@@ -72,12 +83,11 @@
                 <strong class="text big normal display block ">About <a href="#">Orman Clark</a></strong>
                 <div class="display block  text justify small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
             </div>
-            <hr>
-            <nav data-menu="slidus" class="text  bold">
-                <a href="#" class="active"><span class="icon user"></span>SHOTS<span>(100)</span></a>
-                <a href="#"><span class="icon user"></span>PROJECTS<span>(3)</span></a>
-                <a href="#"><span class="icon user"></span>LIKES<span>(192)</span></a>
-                <a href="#"><span class="icon user"></span>TAGS<span>(160)</span></a>
+            <nav data-tuktuk="menu" class="text bold">
+                <a href="#" class="active"><span class="icon user"></span>Shots<small>(100)</small></a>
+                <a href="#"><span class="icon heart"></span>Trending<small>(3)</small></a>
+                <a href="#"><span class="icon group"></span>Following<small>(192)</small></a>
+                <a href="#"><span class="icon star"></span>Debuts<small>(160)</small></a>
             </nav>
         </article>
         <footer class="bck darkest text center">
@@ -110,7 +120,7 @@
                 <button data-tuktuk-modal="modal-right" data-tip="Click to view a side window" class="secondary">Aside Right</button>
             </nav>
             <hr>
-            <ul class="totals margin">
+            <ul class="margin" data-tuktuk="totals">
                 <li><strong>3609</strong><small>followers</small></li>
                 <li><strong>138</strong><small>following</small></li>
                 <li><strong>14</strong><small>listed</small></li>
@@ -120,48 +130,74 @@
                 <strong class="text big normal display block ">About <a href="#">Orman Clark</a></strong>
                 <div class="display block  text justify small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
             </div>
-            <hr>
-            <nav data-menu="slidus" class="text  bold">
-                <a href="#" class="active"><span class="icon user"></span>SHOTS<span>(100)</span></a>
-                <a href="#"><span class="icon user"></span>PROJECTS<span>(3)</span></a>
-                <a href="#"><span class="icon user"></span>LIKES<span>(192)</span></a>
-                <a href="#"><span class="icon user"></span>TAGS<span>(160)</span></a>
+            <nav data-tuktuk="menu" class="text bold">
+                <a href="#" class="active"><span class="icon user"></span>Shots<small>(100)</small></a>
+                <a href="#"><span class="icon heart"></span>Trending<small>(3)</small></a>
+                <a href="#"><span class="icon group"></span>Following<small>(192)</small></a>
+                <a href="#"><span class="icon star"></span>Debuts<small>(160)</small></a>
             </nav>
         </article>
-        <footer class="text center">
+        <footer class="bck light text center">
             Handcrafted by <a href="#" class="text bold">tapquo</a>
         </footer>
     </aside>
     -->
 
     <section>
-        <header>
-            <nav class="on-left text bold" data-filter="slidus">
-                <a href="#" class="active">item.active<small>small</small></a>
-                <a href="#">item</a>
-            </nav>
-
+        <header class="bck light">
+            <h3 class="on-left text thin">Web Application <span class="tag bck theme">NEW!</span></h3>
             <nav class="on-right">
-                <button class="tiny secondary">tiny secondary</button>
-                <button class="small">small</button>
+                <button class="tiny secondary">tiny</button>
+                <button class="small secondary">small</button>
                 <button>normal</button>
             </nav>
         </header>
-        <article class="padding bck light ">
-            <h1>lorem ipsum</h1>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nesciunt inventore culpa modi. Explicabo maiores vel inventore eius iusto dolorum quia autem doloribus ut repellat voluptate rerum veniam natus recusandae.</h6>
+        <article class="padding scroll">
+            <div class="margin-bottom">
+                <h4 class="text book inline"><span class="icon star color theme "></span> Featured</h4>
+                <nav class="inline on-right">
+                    <a href="#" class="button secondary small"><span class="icon search"></span>Search</a>
+                    <a href="#" class="button small"><span class="icon envelope"></span>Send</a>
+                </nav>
+            </div>
+            <div class="inline">
+                <div class="column_4 thumb bck light">thumb</div>
+                <div class="column_4 thumb bck light">thumb</div>
+            </div>
+
+            <div class="margin-bottom">
+                <h4 class="text book inline"><span class="icon group color theme"></span> Friends</h4>
+                <nav class="inline on-right">
+                    <a href="#" class="button secondary small"><span class="icon search"></span>Search</a>
+                </nav>
+            </div>
+            <div class="inline">
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_2 thumb bck light">thumb</div>
+            </div>
         </article>
-        <footer>
-            <nav class="on-left text bold" data-filter="slidus">
-                <a href="#" class="active">SHOTS<small>(100)</small></a>
-                <a href="#">PROJECTS<small>(3)</small></a>
-                <a href="#">LIKES<small>(192)</small></a>
-                <a href="#">TAGS<small>(160)</small></a>
+
+        <footer class="bck light">
+            <nav class="on-left text bold" data-tuktuk="menu">
+                <a href="#" class="active">Shots<small>(100)</small></a>
+                <a href="#">Projects<small>(3)</small></a>
+                <a href="#">Likes<small>(192)</small></a>
+                <a href="#">Tags<small>(160)</small></a>
             </nav>
 
             <nav class="on-right">
-                <button class="small">Following</button>
-                <button class="small secondary">List</button>
+                <button class="tiny secondary">tiny</button>
+                <button class="small secondary">small</button>
+                <button class="secondary">normal</button>
             </nav>
         </footer>
     </section>
@@ -190,7 +226,7 @@
     </div>
 
     <script src="components/jquery/jquery.js"></script>
-    <script src="../../package/tuktuk.js"></script>
+    <script src="../package/tuktuk.js"></script>
     <script>
         // TukTuk.Modal.show("modal");
         // TukTuk.Box.show("menu");

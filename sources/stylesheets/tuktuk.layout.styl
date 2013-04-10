@@ -21,6 +21,10 @@ audio, video
   font-weight: inherit
   vertical-align: baseline
 
+body, html
+  height: 100%
+  width: 100%
+
 body
   margin: 0
   padding: 0
@@ -47,16 +51,11 @@ body
           margin-right: 0px
 
   & > section
-    background: none
-
     &.padding
-      padding: 48px 0
-
-    &.underline
-      padding: 0
+      padding: (AIR * 4) 0
 
     &.landing
-      padding: 64px 0
+      padding: (AIR * 6) 0
       & h1
         font-size: 8.0em
       & h2
@@ -70,8 +69,8 @@ body
         & .button, button
           width: 35%
 
-  a
-    text-decoration: none
-    outline: 0
-    &:link
-      transition(color 0.2s linear 0s)
+a
+  text-decoration: none
+  outline: 0
+  &:link
+    transition color 400ms linear
