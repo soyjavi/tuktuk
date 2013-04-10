@@ -1,11 +1,11 @@
 module.exports = (grunt) ->
 
   grunt.initConfig
-    pkg: grunt.file.readJSON "package/component.json"
+    pkg: grunt.file.readJSON "site/package/component.json"
 
     meta:
       file: "tuktuk"
-      endpoint: "package",
+      endpoint: "site/package",
       banner: """
         /* <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("m/d/yyyy") %>
            <%= pkg.homepage %>

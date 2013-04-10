@@ -1,21 +1,26 @@
 @import "__constants.styl"
 
-nav
-  &.group
-    & a
-      font-size: 15px
-      line-height: 2.0em
-      padding: 0 12px
-      margin: 10px 0px
-      display: inline-block
+nav[data-tuktuk=menu] > a
+  font-size: 15px
+  & small
+    font-size: font-size-tiny
+    margin-left: 0.4em
+  & .icon
+    display: inline-block
+    width: AIR
+    margin-right: (AIR/2)
 
-  &:not(.group)
-    & a
-      margin: 0 4px
-      &:last-child
-        margin-right: 0px
+section, header, footer
+  & nav[data-tuktuk=menu] > a
+    line-height: 2.5em
+    padding: 0 AIR
+    display: inline-block
+    &:not(:first-child)
+      margin-left: (AIR / 2)
 
-  & a:not(.button) .icon, a:not(.button) img
-    margin-right: 3px
-    position: relative
-    top: 1px
+[data-tuktuk=boxes] aside
+  & nav[data-tuktuk=menu]
+    margin: (AIR / 2)
+    & > a
+      display: block
+      padding: (AIR / 1.5) (AIR / 2)

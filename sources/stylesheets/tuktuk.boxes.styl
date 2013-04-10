@@ -1,10 +1,5 @@
 @import "__constants.styl"
 
-body, html
-  height: 100%
-  width: 100%
-  margin: 0
-  padding: 0
 
 [data-tuktuk=boxes]
   display-box()
@@ -34,7 +29,7 @@ body, html
   & > aside
     z-index: 2
     box-flex(0)
-    // width: ASIDE_WIDTH
+    min-width: ASIDE_WIDTH
     margin: 0px !important
     float: none !important
 
@@ -60,65 +55,6 @@ body, html
     box-flex(1)
     z-index: 0
 
-  /* ====================== LIST ====================== */
-  & ul
-    &.totals
-      display-box()
-      box-pack(justify)
-      text-align: center
-      list-style: none
-
-      & > li
-        box-flex(0)
-        & > strong
-          display: block
-          font-weight: 400
-          font-size: 1.75em
-          line-height: 0.9em
-
-        & > small
-          text-transform: uppercase
-          font-size: font-size-tiny
-
-  /* ====================== NAVIGATION ====================== */
-  & nav
-    &[data-filter]
-      font-size: font-size-tiny
-      & > a:not(.button)
-        margin-right: (DIMENSION / 2)
-        padding: (DIMENSION / 2.5) (DIMENSION / 1.5)
-        &:last-child
-          margin-right: 0
-
-    &[data-menu]
-      & > a
-        display: block
-        padding: (DIMENSION / 1.5)
-
-    &[data-link]
-      & > a
-        display: block
-        font-size: font-size-tiny
-        line-height: 2em
-        & > .icon
-          position: relative
-          top: 3px
-          margin-right: (DIMENSION / 3)
-          font-size: 1.5em
-          font-weight: normal
-
-    &[data-button]
-      display-box()
-      box-pack(justify)
-      & > *
-        box-flex(0)
-        display: inherit
-
-    & > a > small
-      position: relative
-      margin-left: 4px
-      bottom: 1px
-
   /* ====================== WIDGETS ====================== */
   & > aside, & > section
     & .session
@@ -133,8 +69,3 @@ body, html
         margin-top: (DIMENSION / 5)
         float: right
 
-  & > aside
-    & hr
-      border: 0
-      height: 1px
-      margin: 0px
