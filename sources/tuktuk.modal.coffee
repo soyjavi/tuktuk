@@ -22,7 +22,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
   ###
   hide = ->
     lock.removeClass("active").attr("data-loading", "false")
-    modal.removeClass "active"
+    modal?.removeClass "active"
     @
 
   ###
