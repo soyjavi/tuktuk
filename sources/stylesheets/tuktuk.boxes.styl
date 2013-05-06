@@ -36,11 +36,14 @@ ASIDE_WIDTH   = 224px
       transition all 400ms
 
       &:not(.right)
-        transform translateX(-100%)
+        // transform translateX(-100%)
+        transform translateX(-512px)
       &.right
-        transform translateX(100%)
+        // transform translateX(100%)
+        transform translateX(512px)
        &.active
-        transform translateX(0%)
+        // transform translateX(0%)
+        transform translateX(0px)
 
     & > div
       width: 100%
@@ -55,8 +58,7 @@ ASIDE_WIDTH   = 224px
   /* ====================== WIDGETS ====================== */
   & > aside, & > section
     & .session
+      height: inherit
       & > *
         display: inline-block
         float: left
-      & > .responsive
-        padding: (AIR / 1.5) (AIR / 2) (AIR / 1.5) 0
