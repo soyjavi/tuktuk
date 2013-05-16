@@ -7,8 +7,6 @@ padding = 12px
   top: 0
   left: 50%
   background: #fff
-  border-radius 0 0 3px 3px
-  box-shadow 0 1px 4px #000
   transition all 300ms 100ms
   transform translateY(-100%)
   opacity: 0
@@ -20,6 +18,8 @@ padding = 12px
 
   & article
     box-flex(1)
+      & [class^="column_"]
+        margin: 0px !important
 
   &.active
     transform translateY(0%)
