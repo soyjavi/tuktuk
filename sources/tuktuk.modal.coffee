@@ -12,9 +12,9 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
       @todo: Describe method
   ###
   show = (modal_id)->
+    lock.addClass("active").show()
     modal = tk.dom("[data-tuktuk=modal]##{modal_id}").first()
     modal.addClass "active"
-    lock.addClass "active"
     @
 
   ###
@@ -23,6 +23,9 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
   hide = ->
     lock.removeClass("active").attr("data-loading", "false")
     modal?.removeClass "active"
+    setTimeout ->
+      lock.hide()
+    , 250
     @
 
   ###
@@ -44,10 +47,12 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     tk.dom(document.body).append """
       <div data-tuktuk="lock" data-loading="false">
         <div class="loading">
-            <span class="top"></span>
-            <span class="right"></span>
-            <span class="bottom"></span>
-            <span class="left"></span>
+          <div class="container">
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
+          </div>
         </div>
       </div>
       """
@@ -57,4 +62,3 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
   show: show
   hide: hide
   loading: loading
-

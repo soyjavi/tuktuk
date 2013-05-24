@@ -4,12 +4,11 @@ padding = 12px
 
 [data-tuktuk="modal"]
   position: fixed
-  top: 0
   left: 50%
   background: #fff
-  transition all 300ms 100ms
+  transition all 250ms
+
   transform translateY(-100%)
-  opacity: 0
   visibility: hidden
   z-index: 1981
 
@@ -18,12 +17,12 @@ padding = 12px
 
   & article
     box-flex(1)
-      & [class^="column_"]
-        margin: 0px !important
+    & [class^="column_"]
+      margin: 0px !important
 
   &.active
+    top: 5%
     transform translateY(0%)
-    opacity: 1
     visibility: visible
 
   &:not(.side)
@@ -84,7 +83,6 @@ padding = 12px
     bottom: 0px
     left: auto
     margin: 0
-    box-shadow -1px 0 4px #000
     transform translateX(100%)
     &.active
       transform translateX(0%)
@@ -103,96 +101,101 @@ padding = 12px
     margin-left: 0px !important
 
 [data-tuktuk="lock"]
+  display: none
   width: 100%
   height: 100%
   position: fixed
   top: 0
   bottom: 0
   left: 0
-  background: rgba(0,0,0,0.75)
+  background: rgba(0,0,0,0.8)
   z-index: 1980
-  visibility: hidden
   opacity: 0
-  transition all 300ms 100ms
+  transition opacity 250ms
 
   &.active
-    visibility: visible
     opacity: 1
-
     &[data-loading=true]
-      background: rgba(0,0,0,0.25)
+      background: none
       & > .loading
-        -webkit-animation: rotatingLoader 800ms  infinite linear
-        moz-animation:  rotatingLoader 800ms  infinite linear
-        animation:  rotatingLoader 800ms  infinite linear
         display: block
+        & > .container
+          -webkit-animation: rotatingLoader 800ms  infinite linear
+          moz-animation:  rotatingLoader 800ms  infinite linear
+          animation:  rotatingLoader 800ms  infinite linear
 
   & > .loading
+    SIZE: 128px
     display: none
-    SIZE = 80px
-    position: relative
+    position: fixed
     left: 50%
     top: 50%
-    height: 1em
-    width: 1em
-    margin-left: -.5em
-    margin-top: -.5em
-    transform-origin .5em .5em
-    font-size: SIZE
+    width: SIZE
+    height: SIZE
+    margin-left: -64px
+    margin-top: -64px
+    padding: 28px
+    background-color: rgba(0,0,0,0.75)
 
-    & > span
-      left: 50%
-      margin-left: -0.05em
-      background-color: #fff
+    & > .container
+      SIZE = 64px
+      height: 1em
+      width: 1em
+      transform-origin .5em .5em
+      font-size: SIZE
 
-      &, &::before, &::after
-        display: block
-        position: absolute
-        width: .075em
-        height: .25em
-        top: 0
-        transform-origin( .05em .5em )
-        border-radius .075em
-      &::before, &::after
-        content: " "
+      & > span
+        left: 50%
+        margin-left: -0.05em
+        background-color: #fff
+        &, &::before, &::after
+          display: block
+          position: absolute
+          width: .075em
+          height: .25em
+          top: 0
+          transform-origin( .05em .5em )
+          border-radius .075em
+        &::before, &::after
+          content: " "
 
-      &.top
-        transform(rotate(0deg))
-      &.right
-        transform(rotate(90deg))
-      &.bottom
-        transform(rotate(180deg))
-      &.left
-        transform(rotate(270deg))
-      &::before
-        transform(rotate(30deg))
-      &::after
-        transform(rotate(-30deg))
+        &.top
+          transform(rotate(0deg))
+        &.right
+          transform(rotate(90deg))
+        &.bottom
+          transform(rotate(180deg))
+        &.left
+          transform(rotate(270deg))
+        &::before
+          transform(rotate(30deg))
+        &::after
+          transform(rotate(-30deg))
 
-      &.top
-        background-color: rgba(255,255,255,0.99)
-      &.top::after
-        background-color: rgba(255,255,255,0.90)
-      &.left::before
-        background-color: rgba(255,255,255,0.80)
-      &.left
-        background-color: rgba(255,255,255,0.70)
-      &.left::after
-        background-color: rgba(255,255,255,0.60)
-      &.bottom::before
-        background-color: rgba(255,255,255,0.50)
-      &.bottom
-        background-color: rgba(255,255,255,0.40)
-      &.bottom::after
-        background-color: rgba(255,255,255,0.35)
-      &.right::before
-        background-color: rgba(255,255,255,0.30)
-      &.right
-        background-color: rgba(255,255,255,0.25)
-      &.right::after
-        background-color: rgba(255,255,255,0.20)
-      &.top::before
-        background-color: rgba(255,255,255,0.15)
+        &.top
+          background-color: rgba(255,255,255,0.99)
+        &.top::after
+          background-color: rgba(255,255,255,0.90)
+        &.left::before
+          background-color: rgba(255,255,255,0.80)
+        &.left
+          background-color: rgba(255,255,255,0.70)
+        &.left::after
+          background-color: rgba(255,255,255,0.60)
+        &.bottom::before
+          background-color: rgba(255,255,255,0.50)
+        &.bottom
+          background-color: rgba(255,255,255,0.40)
+        &.bottom::after
+          background-color: rgba(255,255,255,0.35)
+        &.right::before
+          background-color: rgba(255,255,255,0.30)
+        &.right
+          background-color: rgba(255,255,255,0.25)
+        &.right::after
+          background-color: rgba(255,255,255,0.20)
+        &.top::before
+          background-color: rgba(255,255,255,0.15)
 
 @-webkit-keyframes rotatingLoader
   0%
