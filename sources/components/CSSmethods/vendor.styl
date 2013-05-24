@@ -12,16 +12,20 @@ vendorValue(prop, args)
   {prop} -o- + args
   {prop} args
 
+animation()
+  vendor('animation', arguments)
+
+animation-fill-mode()
+  vendor('animation-fill-mode', arguments)
+
 border-radius()
   vendor('border-radius', arguments)
 
 box-shadow()
   vendor('box-shadow', arguments)
 
-box-sizing()
-  -webkit-box-sizing arguments
-  -moz-box-sizing arguments
-  box-sizing arguments
+background-size()
+  vendor('background-size', arguments)
 
 text-shadow()
   vendor('text-shadow', arguments)
@@ -38,6 +42,9 @@ box-pack()
 
 box-align()
   vendor('box-align', arguments)
+
+box-sizing()
+  vendor('box-sizing', arguments)
 
 box-flex()
   vendor('box-flex', arguments)
