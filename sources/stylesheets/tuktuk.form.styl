@@ -2,27 +2,29 @@
 
 form, .form
   & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
-    display: block
+    display: inline-block
     width: 100%
-    line-height: 2.2em
+    height: 36px
     padding: 0 10px
     margin: 2px 0 6px 0
     font-family: inherit
     font-size: inherit
+    line-height: 1.0em
     -webkit-appearance: none
     -webkit-user-select: text
     -webkit-font-smoothing: antialiased
     &:focus
-      outline: none !important;
+      outline: none !important
     &.large
-      line-height: 2.25em
-      padding: 0 14px
-      font-size: font-size-large
+      height: 48px
+      font-size: font-size-big
 
   & textarea
-    padding-top: 5px
+    padding-top: 0.5em
     min-height: 64px
-    line-height: 1.4em
+    line-height: font-size-big
+    &.large
+      min-height: 82px
 
   & label
     font-size: font-size-small
