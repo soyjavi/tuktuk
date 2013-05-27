@@ -55,7 +55,6 @@ body
   & > section
     &.padding
       padding: (AIR * 4) 0
-
     &.landing
       padding: (AIR * 6) 0
       & h1
@@ -64,12 +63,18 @@ body
         font-size: 4.0em
       & h3
         font-size: 2.8em
-      & .form
-        margin-top: 5px
+      & .form.subscribe
+        margin-top: 1em
+        & *
+          float: left
         & input
-          width: 65%
+          box-flex()
+          width: 85%
+          border-right: 0px
+          margin-top: 0px
         & .button, button
-          width: 35%
+          width: 15%
+          box-shadow: none
 
 a
   text-decoration: none

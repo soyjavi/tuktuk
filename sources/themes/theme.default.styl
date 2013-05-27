@@ -1,5 +1,5 @@
 @import "../components/CSSmethods/vendor.styl"
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700")
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700")
 
 /* BUTTONS */
 WHITE           = #fff
@@ -20,7 +20,7 @@ body
   color: COLOR
   font-size: 14px
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
-  font-weight: 400
+  font-weight: 300
   background: WHITE
 
   &:not(.color):not(.dark) a
@@ -160,7 +160,8 @@ body
   /* ====================== BUTTONS ====================== */
   & .button, button
     color: white !important
-    font-weight: 600
+    font-weight: normal !important
+    text-shadow: 0 1px 1px rgba(0,0,0,0.05)
     &:not(.transparent)
       background-color: THEME
       border-radius BORDER-RADIUS
