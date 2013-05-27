@@ -110,13 +110,16 @@ padding = 12px
   left: 0
   background: rgba(0,0,0,0.8)
   z-index: 1980
+
   opacity: 0
-  transition opacity 250ms
+  transition all 250ms
+  visibility: hidden
 
   &.active
     opacity: 1
+    visibility: visible
     &[data-loading=true]
-      background: none
+      background: rgba(0,0,0,0)
       & > .loading
         display: block
         & > .container
