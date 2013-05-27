@@ -13,7 +13,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
   ###
   show = (modal_id)->
     lock.addClass("active").show()
-    tk.dom("[data-tuktuk=modal]").removeClass("active")
+    @_hideAnyModal()
     modal = tk.dom("[data-tuktuk=modal]##{modal_id}").addClass "active"
     @
 
@@ -32,8 +32,11 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
       @loading: Describe method
   ###
   loading = (text) ->
+    @_hideAnyModal()
     lock.attr("data-loading", "true").addClass("active").show()
     @
+
+  _hideAnyModal: -> tk.dom("[data-tuktuk=modal]").removeClass("active")
 
   _Instance: (->
     tk.dom("[data-tuktuk=modal].side").each (index, element) ->
