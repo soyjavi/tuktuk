@@ -4,14 +4,12 @@ ul
   list-style: disc
 
   &.square li, &.circle li
-    margin: 0 0 5px 18px
+    margin: 0 0 0.3em 0.6em
 
   &:not(.none) li
     padding: 0
     background: none
 
-  & ul, ol
-    margin: 5px 0 5px 0
   &.none
     list-style: none outside
     margin: 0
@@ -21,12 +19,13 @@ ul
     list-style: circle outside
 
 ol
-  margin: 0 0 20px 20px
+  margin: 0 0 0.3em 0.6em
   list-style: decimal
-  & ol, ul
-    margin: 5px 0 5px 20px
-
   & li
-    margin: 0 0 5px 0
     padding: 0
-    line-height: 18px
+
+ul, ol
+  & ul, ol
+    margin: 0.5em
+    & li
+      margin: 0 0 0.3em 0
