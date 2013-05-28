@@ -1,6 +1,5 @@
 @import "__constants.styl"
 
-padding = 12px
 
 [data-tuktuk="modal"]
   position: fixed
@@ -10,15 +9,17 @@ padding = 12px
 
   transform translateY(-100%)
   visibility: hidden
-  z-index: 1981
+  z-index: 1983
 
-  & header, footer, article
-    padding: padding
+  & header
+    padding: (AIR / 1.9) AIR
+  & article, footer
+    padding: (AIR / 1.5) AIR
 
   & article
     box-flex(1)
     & [class^="column_"]
-      margin: 0px !important
+      margin: 0 !important
 
   &.active
     top: 5%
@@ -26,34 +27,34 @@ padding = 12px
     visibility: visible
 
   &:not(.side)
-    w = 288px
-    margin-top: 0px !important
-    margin-right: 0px !important
+    WIDTH = 288px
+    margin-top: 0 !important
+    margin-right: 0 !important
 
     &.column_5
-      w = 368px
-      margin-left: -(w / 2)
+      WIDTH = 368px
+      margin-left: -(WIDTH / 2)
     &.column_6
-      w = 448px
-      margin-left: -(w / 2)
+      WIDTH = 448px
+      margin-left: -(WIDTH / 2)
     &.column_7
-      w = 528px
-      margin-left: -(w / 2)
+      WIDTH = 528px
+      margin-left: -(WIDTH / 2)
     &.column_8
-      w = 608px
-      margin-left: -(w / 2)
+      WIDTH = 608px
+      margin-left: -(WIDTH / 2)
     &.column_9
-      w = 688px
-      margin-left: -(w / 2)
+      WIDTH = 688px
+      margin-left: -(WIDTH / 2)
     &.column_10
-      w = 768px
-      margin-left: -(w / 2)
+      WIDTH = 768px
+      margin-left: -(WIDTH / 2)
     &.column_11
-      w = 848px
-      margin-left: -(w / 2)
+      WIDTH = 848px
+      margin-left: -(WIDTH / 2)
     &.column_12
-      w = 928px
-      margin-left: -(w / 2)
+      WIDTH = 928px
+      margin-left: -(WIDTH / 2)
 
   &
     width: 288px
@@ -78,9 +79,9 @@ padding = 12px
     position: absolute
     display-box()
     box-orient(vertical)
-    top: 0px
-    right: 0px
-    bottom: 0px
+    top: 0
+    right: 0
+    bottom: 0
     left: auto
     margin: 0
     transform translateX(100%)
@@ -98,7 +99,7 @@ padding = 12px
   [data-tuktuk="modal"]
     left: 5% !important
     width: w = 90% !important
-    margin-left: 0px !important
+    margin-left: 0 !important
 
 [data-tuktuk="lock"]
   display: none
@@ -154,11 +155,11 @@ padding = 12px
         &, &::before, &::after
           display: block
           position: absolute
-          width: .075em
+          width: .05em
           height: .25em
           top: 0
           transform-origin( .05em .5em )
-          border-radius .075em
+          border-radius 1em
         &::before, &::after
           content: " "
 
