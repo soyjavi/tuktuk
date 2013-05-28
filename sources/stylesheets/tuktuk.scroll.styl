@@ -1,71 +1,68 @@
 
 [data-tuktuk=boxes] ::-webkit-scrollbar
-    width: 2px
-    height: 2px
-    position: absolute
+  width: 0.25em
+  height: 0.25em
+  position: absolute
 
 
 [data-tuktuk=boxes] ::-webkit-scrollbar-button:vertical
-    background-color: red
+  background-color: none
 
 /* Turn on single button up on top, and down on bottom */
 [data-tuktuk=boxes] ::-webkit-scrollbar-button:start:decrement,
 [data-tuktuk=boxes] ::-webkit-scrollbar-button:end:increment
-    display: block
+  display: block
 
 /* Turn off the down area up on top, and up area on bottom */
 [data-tuktuk=boxes] ::-webkit-scrollbar-button:vertical:start:increment,
 [data-tuktuk=boxes] ::-webkit-scrollbar-button:vertical:end:decrement
-    display: none
+  display: none
 
 /* Place The scroll down button at the bottom */
 [data-tuktuk=boxes] ::-webkit-scrollbar-button:vertical:increment
-    display: none
+  display: none
 
 /* Place The scroll up button at the up */
 [data-tuktuk=boxes] ::-webkit-scrollbar-button:vertical:decrement
-    display: none
+  display: none
 
 /* Place The scroll down button at the bottom */
 [data-tuktuk=boxes] ::-webkit-scrollbar-button:horizontal:increment
-    display: none
+  display: none
 
  Place The scroll up button at the up
 [data-tuktuk=boxes] ::-webkit-scrollbar-button:horizontal:decrement
-    display: none
+  display: none
 
 [data-tuktuk=boxes] ::-webkit-scrollbar-track:vertical
-    // background-color: rgba(255,255,255,0.1)
-    background-color: none
-
+  background-color: none
 
 /* Top area above thumb and below up button */
 [data-tuktuk=boxes] ::-webkit-scrollbar-track-piece:vertical:start
-    border: 0px
+  border: 0
 
 /* Bottom area below thumb and down button */
 [data-tuktuk=boxes] ::-webkit-scrollbar-track-piece:vertical:end
-    border: 0px
+  border: 0
 
 /* Track below and above */
 [data-tuktuk=boxes] ::-webkit-scrollbar-track-piece
-    background-color: none
+  background-color: none
 
 /* The thumb itself */
 [data-tuktuk=boxes] ::-webkit-scrollbar-thumb:vertical
-    height: 50px
-    background-color: rgba(0,0,0,0.4)
-
+  height: 1em
+  background-color: rgba(0,0,0,0.4)
 
 /* The thumb itself */
 [data-tuktuk=boxes] ::-webkit-scrollbar-thumb:horizontal
-    height: 50px
-    background-color: gray
+  height: 1em
+  background-color: gray
 
 /* Corner */
 [data-tuktuk=boxes] ::-webkit-scrollbar-corner:vertical
-    background-color: black
+  background-color: black
 
 /* Resizer */
 [data-tuktuk=boxes] ::-webkit-scrollbar-resizer:vertical
-    background-color: gray
+  background-color: gray
