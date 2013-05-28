@@ -12,7 +12,7 @@
     <style>
         aside > header .logo {
             margin-top: 10px;
-            max-height: 28px; }
+            max-height: 30px; }
 
         aside footer img {
           height: 16px;
@@ -209,11 +209,8 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="../package/tuktuk.js"></script>
     <script>
-        // TukTuk.Modal.show("modal");
-        TukTuk.Modal.show("modal-right");
-        setTimeout(function() {
-            TukTuk.Modal.loading();
-        }, 1000);
+        TukTuk.Modal.loading();
+        setTimeout( TukTuk.Modal.hide, 1000);
     </script>
 </body>
 </html>
