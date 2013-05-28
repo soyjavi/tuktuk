@@ -4,9 +4,8 @@ form, .form
   & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
     display: inline-block
     width: 100%
-    height: 36px
-    padding: 0 10px
-    margin: 2px 0 6px 0
+    padding: 0.5em
+    margin: 0.1em 0 0.25em 0
     font-family: inherit
     font-size: inherit
     -webkit-appearance: none
@@ -15,45 +14,42 @@ form, .form
     &:focus
       outline: none !important
     &.large
-      height: 52px
-      font-size: font-size-big
+      font-size: FONT-SIZE-LARGE
 
   & textarea
-    padding-top: 0.5em
-    min-height: 64px
-    line-height: font-size-big
-    &.large
-      min-height: 82px
+    padding: 0.4em 0.5em
+    min-height: 2.5em
+    line-height: FONT-SIZE-BIG
 
   & label
-    font-size: font-size-small
-    font-weight: 400
-
+    font-size: FONT-SIZE-SMALL
 
   & input[type="checkbox"], input[type="radio"]
     display: inline-block !important
-    margin-right: 5px
-    width: 18px
-    height: 18px
+    margin-right: 0.2em
+    font-family: inherit
+    font-size: inherit
+    width: 1.45em
+    height: 1.45em
+    line-height: 1.0em
     -webkit-appearance: none
     text-align: center
     &:after
       content: "+"
       opacity: 0
-      font-weight: bold
+      font-size: FONT-SIZE-BIG
+      line-height: 0.9em
     &:checked
       &:after
         opacity: 1
-
 
   & input[type="checkbox"]:checked:after
     content: "✔"
 
   & input[type="radio"]
-    border-radius: 9px
+    border-radius: 1em
     &:checked:after
       content: "·"
-
 
   & .select
     position: relative
@@ -61,8 +57,8 @@ form, .form
     &:after
       z-index: 128
       position: absolute
-      top: 10px
-      right: 10px
+      top: 0.8em
+      right: 0.5em
       content: "▼"
       pointer-events: none
 
@@ -72,11 +68,11 @@ form, .form
       text-align: right
       float: left
       width: 25%
-      padding: 2px 8px
+      padding: 0.2em 0.4em 0 0
 
       & > small
         display: block
-        font-size: 0.8em
+        font-size: FONT-SIZE-TINY
         font-weight: 300
 
     & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
@@ -84,15 +80,13 @@ form, .form
 
 /* -------------------------- CHECKBOX -------------------------- */
 [data-control=checkbox]
-  HEIGHT = 29px
-
   display: inline-block
-  margin: 2px 0 6px 0
-  width: 76px
-  height: HEIGHT
+  margin: 0.1em 0 0.25em 0
+  width: 5em
   position: relative
-  line-height: HEIGHT !important
-  font-size: FONT_size_normal
+  font-size: inherit
+  height: 2em
+  line-height: 2em
   &, & label
     transition all 200ms ease
 
@@ -104,11 +98,11 @@ form, .form
     position: absolute
   &:before
     content: "ON"
-    left: (HEIGHT / 2.2)
+    left: 1em
     opacity: 0
   &:after
     content: "OFF"
-    right: (HEIGHT / 2.2)
+    right: 1em
   &.checked
     &:before
       opacity: 1
@@ -119,13 +113,14 @@ form, .form
 
   & label
     display: block
-    height: S = (HEIGHT - 8)
-    width: S
+    height: 1.55em
+    width: 1.55em
+    margin: 0.35em
     cursor: pointer
     position: absolute
-    top: 4px
-    left: 5px
+    top: 0
+    left: 0
     z-index: 1
 
   & input[type=checkbox]:checked + label
-    left: 50px
+    left: 3.35em
