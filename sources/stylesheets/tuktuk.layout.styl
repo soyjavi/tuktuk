@@ -37,20 +37,11 @@ body
     padding: 0
 
   & > header
-    h = 48px
-    line-height: h
-    position: relative
-
-    & .logo
-      font-size: 2.0em
-      line-height: h
-
-    & nav
-      font-size: 0.95em
-      & a
-        margin: 0 10px
-        &:last-child
-          margin-right: 0px
+    line-height: 48px
+    & nav a
+      margin: 0 0.5em
+      &:last-child
+        margin-right: 0
 
   & > section
     &.padding
@@ -70,13 +61,12 @@ body
         & input
           box-flex()
           width: 85%
-          border-right: 0px
-          margin-top: 0px
+          border-right: 0
+          margin-top: 0
           border: 0
         & .button, button
           width: 15%
           box-shadow: none
-
 a
   text-decoration: none
   outline: 0
