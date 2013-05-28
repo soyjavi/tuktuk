@@ -18,7 +18,7 @@ BORDER-RADIUS   = 4px
 
 body
   color: COLOR
-  font-size: 14px
+  font-size: 16px
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-weight: 300
   background: WHITE
@@ -124,6 +124,9 @@ body
      & input[type="checkbox"]
       border-radius BORDER-RADIUS
 
+    & label
+      font-weight: bold
+
 
   & [data-control="checkbox"]
     RADIUS = BORDER-RADIUS * 5
@@ -144,8 +147,8 @@ body
   & table
     background: WHITE
     color: COLOR
-    border: 1px solid lighten(COLOR, 75%)
-    border-radius BORDER-RADIUS
+    border: 0.1em solid lighten(COLOR, 75%)
+    // border-radius BORDER-RADIUS
     & tr
       &:nth-child(even) td
         background-color: lighten(COLOR, 95%)
@@ -178,12 +181,15 @@ body
         background-color: SUCCESS
        &.alert
         background-color: ALERT
+      &:disabled, &.disabled
+        background: rgba(255,255,255,0.2)
+        color: #999 !important
 
     &.transparent
       background: none !important
 
     & .icon
-      opacity: 0.75
+      opacity: 0.6
 
   & div.img
     background: LIGHT

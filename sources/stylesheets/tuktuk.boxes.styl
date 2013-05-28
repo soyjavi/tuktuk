@@ -1,8 +1,5 @@
 @import "__constants.styl"
 
-HEADER_HEIGHT = 52px
-ASIDE_WIDTH   = 224px
-
 [data-tuktuk=boxes]
   display-box()
   box-pack(justify)
@@ -28,7 +25,7 @@ ASIDE_WIDTH   = 224px
     z-index: 2
     box-flex(0)
     min-width: ASIDE_WIDTH
-    margin: 0px !important
+    margin: 0 !important
     float: none !important
 
     &.absolute
@@ -37,14 +34,11 @@ ASIDE_WIDTH   = 224px
       transition all 400ms
 
       &:not(.right)
-        // transform translateX(-100%)
         transform translateX(-512px)
       &.right
-        // transform translateX(100%)
         transform translateX(512px)
        &.active
-        // transform translateX(0%)
-        transform translateX(0px)
+        transform translateX(0)
 
     & > div
       width: 100%
