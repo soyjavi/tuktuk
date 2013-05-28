@@ -1,4 +1,4 @@
-# tuktuk 0.7.0
+# tuktuk 0.7.3
 ### Simple (but powerful) RWD Framework
 
 More info in http://tuktuk.tapquo.com , [Source code](https://github.com/soyjavi/tuktuk) and [issue tracking](https://github.com/soyjavi/tuktuk/issues) are available on Github.
