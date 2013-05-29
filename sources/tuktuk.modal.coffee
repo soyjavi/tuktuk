@@ -11,7 +11,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
   ###
       @todo: Describe method
   ###
-  show = (modal_id)->
+  show = (modal_id) ->
     lock.addClass("active").show()
     @_hideAnyModal()
     modal = tk.dom("[data-tuktuk=modal]##{modal_id}").addClass "active"
@@ -21,10 +21,10 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
       @todo: Describe method
   ###
   hide = ->
-    lock.removeClass("active").attr("data-loading", "false")
+    lock.removeClass("active")
     modal?.removeClass "active"
     setTimeout ->
-      lock.hide()
+      lock.attr("data-loading", "false").hide()
     , 250
     @
 
