@@ -1,3 +1,9 @@
 [submodule "site/package"]
 	path = site/package
 	url = git://github.com/soyjavi/package-tuktuk.git
+[submodule "sources/components/CSSmethods"]
+	path = sources/components/CSSmethods
+	url = git://github.com/soyjavi/CSSmethods.git
+[submodule "sources/components/lungo.icon"]
+	path = sources/components/lungo.icon
+	url = git://github.com/tapquo/lungo.icon.git
