@@ -82,11 +82,11 @@ form, .form
 [data-control=checkbox]
   display: inline-block
   margin: 0.1em 0 0.25em 0
-  width: 5em
+  height: SIZE = 32px
+  width: (SIZE * 2)
   position: relative
   font-size: inherit
-  height: 2em
-  line-height: 2em
+  line-height: SIZE
   &, & label
     transition all 200ms ease
 
@@ -97,11 +97,11 @@ form, .form
     z-index: 0
     position: absolute
   &:before
-    content: "ON"
+    // content: "ON"
     left: 1em
     opacity: 0
   &:after
-    content: "OFF"
+    // content: "OFF"
     right: 1em
   &.checked
     &:before
@@ -113,9 +113,9 @@ form, .form
 
   & label
     display: block
-    height: 1.55em
-    width: 1.55em
-    margin: 0.35em
+    height: SIZE = (SIZE - 4)
+    width: SIZE
+    margin: 2px
     cursor: pointer
     position: absolute
     top: 0
@@ -123,4 +123,4 @@ form, .form
     z-index: 1
 
   & input[type=checkbox]:checked + label
-    left: 3.35em
+    left: SIZE
