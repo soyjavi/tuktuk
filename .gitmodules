@@ -1,0 +1,3 @@
+[submodule "site/package"]
+	path = site/package
+	url = git://github.com/soyjavi/package-tuktuk.git
