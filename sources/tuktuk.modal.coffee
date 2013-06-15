@@ -1,8 +1,3 @@
-unless window.TukTuk
-  window.TukTuk =
-    dom: (args...) -> if $$? then $$ args... else $ args...
-
-
 window.TukTuk.Modal = do (tk = TukTuk) ->
 
   lock = undefined

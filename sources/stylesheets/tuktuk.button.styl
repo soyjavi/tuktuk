@@ -1,6 +1,7 @@
 @import "__constants.styl"
 
 .button, button
+  position: relative
   display: inline-block
   border: none
   cursor: pointer
@@ -17,8 +18,8 @@
     padding: 0 0.65em
   &:not(.icon)
     padding: 0 1em
-    & .icon
-      margin-right: (AIR / 2)
+    & .icon, & .loading
+      margin-right: (AIR / 4)
 
   &.large
     font-size: FONT-SIZE-LARGE
@@ -29,7 +30,31 @@
 
   &.anchor
     width: 100%
-    position: relative
     &:not(.icon) .icon
       position: absolute
       left: AIR
+
+
+  &[data-loading]
+    & > .icon
+      display: none
+    & > .loading
+      display: inline-block
+      & > .container
+        -webkit-animation: loading 600ms  infinite linear
+        moz-animation:  loading 600ms  infinite linear
+        animation:  loading 600ms  infinite linear
+
+
+    & > .loading
+      position: relative
+      top: 0.2em
+      font-size: 1.25em
+      & > .container
+        height: 1em
+        width: 1em
+        & > span
+          &, &::before, &::after
+            width: 0.075em
+            border-radius 0
+
