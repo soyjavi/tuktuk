@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700")
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700")
 
 /* BUTTONS */
 WHITE           = #fff
@@ -13,14 +13,15 @@ LIGHT           = #ECF0F1
 DARK         = #2C3E50
 /* OTHERS */
 TRANSITION      = 400ms
-BORDER-RADIUS   = 4px
+BORDER-RADIUS   = 2px
 
 body
   color: COLOR
-  font-size: 16px
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
-  font-weight: 300
   background: WHITE
+  font-size: 15px
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif
+  font-weight: 300
+  letter-spacing: -0.05em
 
   &:not(.color):not(.dark) a
     color: COLOR
@@ -101,14 +102,21 @@ body
     & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
       background-color: WHITE
       color: COLOR
-      border: 2px solid FORM_BORDER
+      border: 1px solid FORM_BORDER
       border-radius BORDER-RADIUS
       transition border-color TRANSITION
+      background-color: lighten(FORM_BORDER, 60%)
       &.error, &:required
-        border-color: ALERT !important
+        border-color: lighten(ALERT,25%) !important
         color: ALERT
+        background-color: lighten(ALERT, 90%)
+        &:focus
+          border-color: ALERT !important
+          background-color: lighten(ALERT, 95%)
+
       &:focus
-        border-color: THEME
+        border-color: darken(FORM_BORDER, 25%)
+        background-color: lighten(FORM_BORDER, 75%)
 
     & .select:after
       color: FORM_BORDER
@@ -128,7 +136,7 @@ body
 
 
   & [data-control="checkbox"]
-    RADIUS = BORDER-RADIUS * 5
+    RADIUS = 1em
     background: darken(LIGHT, 25%)
     color: darken(LIGHT, 5%)
     font-weight: 700
@@ -161,34 +169,36 @@ body
 
   /* ====================== BUTTONS ====================== */
   & .button, button
-    color: white !important
-    font-weight: bold !important
-    text-shadow: rgba(0,0,0,0.1) 0 1px 0
-    &:not(.transparent)
-      background-color: THEME
+    font-weight: 600 !important
+    -webkit-font-smoothing: antialiased
+    &:not(.transparent):not(:disabled)
+      color: #fff !important
       border-radius BORDER-RADIUS
-      box-shadow: inset 0 0.1em 0 rgba(255,255,255,0.1), inset 0 -0.15em 0 rgba(0,0,0,0.2), 0 0.15em 0 rgba(0,0,0,0.075)
-      -webkit-font-smoothing: antialiased
+      background-color: THEME
+      box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15), 0 1px 0 rgba(0,0,0,0.075)
+      text-shadow:  0 1px rgba(0,0,0,0.1)
       &:hover
-        box-shadow: inset 0 0 5em rgba(0,0,0,0.15), inset 0 -0.15em 0 rgba(0,0,0,0.2), 0 0.15em 0 rgba(0,0,0,0.075)
+        box-shadow: inset 0 0 5em rgba(0,0,0,0.15), inset 0 -1px 0 rgba(0,0,0,0.15), 0 1px 0 rgba(0,0,0,0.075)
       &:active
-        box-shadow inset 0 0 5em rgba(0,0,0,0.3), inset 0 0.15em 0 rgba(0,0,0,0.1)
+        box-shadow inset 0 0 5em rgba(0,0,0,0.2), inset 0 1px 0 rgba(0,0,0,0.2)
       &.secondary
         background-color: darken(SECONDARY, 25%)
-        color: SECONDARY
        &.success
         background-color: SUCCESS
        &.alert
         background-color: ALERT
-      &:disabled, &.disabled
-        background: rgba(255,255,255,0.2)
-        color: #999 !important
 
     &.transparent
       background: none !important
 
+    &[disabled=disabled], &:disabled
+      background-color: darken(SECONDARY, 5%)
+      color: darken(SECONDARY, 30%) !important
+      border-radius BORDER-RADIUS
+      cursor: cursor
+
     & .icon
-      opacity: 0.6
+      opacity: 0.5
 
   & div.img
     background: LIGHT
