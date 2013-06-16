@@ -8,7 +8,7 @@
   font-size: inherit
   font-family: inherit
   font-weight: inherit
-  line-height: 2.25em
+  line-height: 2.5em
   text-align: center
   text-decoration: none
   outline: none
@@ -27,6 +27,8 @@
     font-size: FONT-SIZE-SMALL
   &.tiny
     font-size: FONT-SIZE-TINY
+    line-height: 2em
+    padding: 0 0.6em
 
   &.anchor
     width: 100%
@@ -34,7 +36,10 @@
       position: absolute
       left: AIR
 
+  &.disabled, &:disabled
+    cursor: default
 
+  transition background-color 400ms
   &[data-loading]
     & > .icon
       display: none
