@@ -1,6 +1,6 @@
 [submodule "site/package"]
 	path = site/package
-	url = git://github.com/soyjavi/package-tuktuk.git
+	url = https://github.com/soyjavi/package-tuktuk.git
 [submodule "sources/components/CSSmethods"]
 	path = sources/components/CSSmethods
 	url = git://github.com/soyjavi/CSSmethods.git
