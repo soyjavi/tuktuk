@@ -49,4 +49,4 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-copy"
   grunt.loadNpmTasks "grunt-contrib-watch"
 
-  grunt.registerTask "default", [ "coffee", "stylus", "copy"]
+  grunt.registerTask "default", [ "coffee", "stylus", "copy", "watch"]
