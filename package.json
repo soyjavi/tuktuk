@@ -1,9 +1,0 @@
-{
-  "devDependencies": {
-    "grunt-contrib-coffee" : "",
-    "grunt-contrib-stylus" : "",
-    "grunt-contrib-copy" : "",
-    "grunt-contrib-watch" : "",
-    "grunt": ""
-  }
-}
