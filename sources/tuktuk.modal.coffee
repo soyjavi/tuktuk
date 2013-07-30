@@ -54,8 +54,9 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
         </div>
       </div>
       """
-    tk.dom("[data-tuktuk=lock]").on "click", (e) ->
-      TukTuk.Modal.hide() unless e.target is modal
+    tk.dom("[data-tuktuk=lock]").on "click", (event) ->
+      loading = lock.attr("data-loading")
+      TukTuk.Modal.hide() unless event.target is modal or loading is "true"
       
     lock = tk.dom("[data-tuktuk=lock]").first()
   )()
