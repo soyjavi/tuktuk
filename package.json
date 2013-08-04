@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+  	"grunt-cli": "latest",
+  	"coffee": "latest",
+  	"grunt-contrib-coffee": "latest",
+  	"grunt-contrib-stylus": "latest",
+  	"grunt-contrib-copy": "latest",
+  	"grunt-contrib-watch": "latest"
+  }
+}
