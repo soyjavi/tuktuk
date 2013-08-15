@@ -31,19 +31,19 @@ module.exports = (grunt) ->
 
     stylus:
       engine:
-        options: compress: true, import: [ '__constants']
-        files: '<%= meta.endpoint %>/<%=meta.file%>.css': '<%= source.stylus %>'
+        options: compress: true, import: [ "__constants"]
+        files: "<%= meta.endpoint %>/<%=meta.file%>.css": "<%= source.stylus %>"
       theme_default:
-        options: compress: true, import: [ '__constants']
-        files: '<%= meta.endpoint %>/<%=meta.file%>.theme.default.css': '<%= source.theme_default %>'
+        options: compress: true, import: [ "__constants"]
+        files: "<%= meta.endpoint %>/<%=meta.file%>.theme.default.css": "<%= source.theme_default %>"
       theme_mock:
-        options: compress: true, import: [ '__constants']
-        files: '<%= meta.endpoint %>/<%=meta.file%>.theme.mock.css': '<%= source.theme_mock %>'
+        options: compress: true, import: [ "__constants"]
+        files: "<%= meta.endpoint %>/<%=meta.file%>.theme.mock.css": "<%= source.theme_mock %>"
 
     copy:
       main:
         files:
-          src: '<%= source.icons %>',
+          src: "<%= source.icons %>",
           dest: "<%= meta.endpoint %>/<%=meta.file%>.icons.css"
 
     watch:
