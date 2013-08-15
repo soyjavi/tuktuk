@@ -85,9 +85,7 @@ form, .form
   position: relative
   font-size: inherit
   line-height: SIZE
-  &, & label
-    transition all 200ms ease
-
+  
   input[type=checkbox]
     visibility: hidden
 
@@ -95,11 +93,9 @@ form, .form
     z-index: 0
     position: absolute
   &:before
-    // content: "ON"
     left: 1em
     opacity: 0
   &:after
-    // content: "OFF"
     right: 1em
   &.checked
     &:before

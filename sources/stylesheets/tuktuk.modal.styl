@@ -1,9 +1,6 @@
 [data-tuktuk="modal"]
   position: fixed
   left: 50%
-  background: #fff
-  transition all 250ms
-
   transform translateY(-100%)
   visibility: hidden
   z-index: 1983
@@ -108,40 +105,27 @@
   bottom: 0
   left: 0
   z-index: 1980
-  opacity: 0
-  transition all 250ms
   visibility: hidden
-
   &.active
-    opacity: 1
     visibility: visible
-    &:not([data-active=true])
-      background: rgba(0,0,0,0.8)
     &[data-loading=true]
-      background: rgba(0,0,0,0)
       & > .loading
         display: block
-        & > .container
-          -webkit-animation: loading 600ms  infinite linear
-          moz-animation:  loading 600ms  infinite linear
-          animation:  loading 600ms  infinite linear
 
   & > .loading
-    SIZE: 128px
+    SIZE = 128px
     display: none
     position: fixed
     left: 50%
     top: 50%
     width: SIZE
     height: SIZE
-    margin-left: -64px
-    margin-top: -64px
+    margin-left: -(SIZE / 2)
+    margin-top: -(SIZE / 2)
     padding: 28px
-    background-color: rgba(0,0,0,0.75)
 
     & > .container
-      SIZE = 64px
       height: 1em
       width: 1em
       transform-origin .5em .5em
-      font-size: SIZE
+      font-size: (SIZE / 2)
