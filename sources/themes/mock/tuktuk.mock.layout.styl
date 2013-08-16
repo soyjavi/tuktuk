@@ -1,0 +1,51 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700")
+
+body
+  color: COLOR
+  background: BACKGROUND
+  font-size: 15px
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif
+  font-weight: 300
+  letter-spacing: -0.05em
+  
+  & a
+    color: COLOR
+    &:not(.button):hover, &:not(.button):active
+      color: THEME
+
+  // &:not(.color):not(.dark) a
+  //   color: COLOR
+  //   &:not(.button):hover, &:not(.button):active
+  //     color: THEME
+
+  
+  /* ====================== BACKGROUNDS ====================== */
+  & .bck
+    &.light
+      background-color: LIGHT
+    &.dark
+      background-color: DARK
+    &.theme
+      background-color: THEME
+
+    &.theme, &.dark
+      color: WHITE
+      & a
+        color: WHITE
+        &:not(.button):hover, &:not(.button):active
+          color: WHITE
+
+  /* ================================= TEXT ================================ */
+  & .text
+    &.shadow
+      text-shadow 0 1px 1px rgba(0,0,0,0.5)
+  & .color
+    &.white
+      color: WHITE !important
+    &.theme
+      color: THEME !important
+    &.default
+      color: COLOR !important
+      
+    & strong
+      font-weight: 700 !important

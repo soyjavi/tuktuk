@@ -1,0 +1,52 @@
+form, .form
+  & input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea
+    background-color: WHITE
+    color: COLOR
+    border: 1px solid FORM_BORDER
+    border-radius: BORDER-RADIUS
+    transition border-color TRANSITION
+    background-color: lighten(FORM_BORDER, 60%)
+    &.error, &:required
+      border-color: lighten(ALERT,25%) !important
+      color: ALERT
+      background-color: lighten(ALERT, 90%)
+      &:focus
+        border-color: ALERT !important
+        background-color: lighten(ALERT, 95%)
+
+    &:focus
+      border-color: darken(FORM_BORDER, 25%)
+      background-color: lighten(FORM_BORDER, 75%)
+
+  & .select:after
+    color: FORM_BORDER
+
+   & input[type="checkbox"], input[type="radio"]
+    background: WHITE
+    border: 0.15em solid FORM_BORDER
+    &:checked
+      border-color: THEME
+      &:after
+        color: THEME
+
+
+  & label
+    font-weight: bold
+
+  & [data-control="checkbox"]
+    RADIUS = 1em
+    background: darken(LIGHT, 25%)
+    color: darken(LIGHT, 5%)
+    border-radius: RADIUS
+    
+    &, & label
+      transition all TRANSITION ease
+
+    & label
+      border-radius: RADIUS
+      background: darken(LIGHT, 50%)
+    &.checked
+      background-color: THEME
+      color: WHITE !important
+      & label
+        background-color: darken(THEME, 25%)

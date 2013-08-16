@@ -1,0 +1,14 @@
+table
+  background: WHITE
+  color: COLOR
+  border: 0.1em solid lighten(COLOR, 75%)
+  & tr
+    &:nth-child(even) td
+      background-color: lighten(COLOR, 95%)
+  & th
+    background-color: lighten(COLOR, 75%)
+    color: WHITE
+  & td
+    &.highlight
+      background-color: THEME !important
+      color: WHITE

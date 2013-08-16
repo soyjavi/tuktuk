@@ -1,0 +1,22 @@
+[data-tuktuk="modal"]
+  background: #fff
+  transition all 250ms
+  & header
+    background: THEME !important
+    color: WHITE
+
+[data-tuktuk="lock"]
+  opacity: 0
+  transition all 250ms
+  &.active
+    opacity: 1
+    &:not([data-active=true])
+      background: rgba(0,0,0,0.8)
+    &[data-loading=true]
+      background: rgba(0,0,0,0)
+      & > .loading
+        & > .container
+          animation loading 600ms infinite linear
+
+  & > .loading
+    background-color: rgba(0,0,0,0.75)

@@ -1,0 +1,32 @@
+// Based on Kushagra Gour with HINT.css
+// http://kushagragour.in/lab/hint/
+
+TIP-COLOR = rgba(0,0,0,0.75)
+[data-tip]
+  &:before, &:after
+    transition all 300ms
+  &:before
+    background: transparent
+    border: 0.5em solid transparent
+  &:after
+    background: TIP-COLOR
+    color: white
+    text-shadow: 0 -0.15em 0 #000
+    font-weight: bold
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.25)
+
+  &:not(.tip-top):not(.tip-right):not(.tip-left)
+    &:before
+      border-bottom-color: TIP-COLOR
+
+  &.tip-top
+    &:before
+      border-top-color: TIP-COLOR
+
+  &.tip-left
+    &:before
+      border-left-color: TIP-COLOR
+
+  &.tip-right
+    &:before
+      border-right-color: TIP-COLOR

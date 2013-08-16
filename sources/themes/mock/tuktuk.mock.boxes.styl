@@ -1,0 +1,16 @@
+[data-tuktuk=boxes]
+  /* ====================== ASIDE ====================== */
+  & aside
+    background: WHITE
+    color: lighten(COLOR, 15%)
+    &.absolute
+      transition all 400ms
+    & header
+      box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1)
+
+  /* ====================== MENU ====================== */
+  & aside [data-menu] > a:not(.button)
+    border-radius (BORDER-RADIUS / 2)
+    &.active
+      background: THEME
+      color: WHITE

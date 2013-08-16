@@ -1,0 +1,19 @@
+nav[data-tuktuk=menu] > a
+  border-radius BORDER-RADIUS
+  &:hover
+    background-color: rgba(0,0,0,0.05)
+    color: COLOR
+  &.active
+    background-color: rgba(0,0,0,0.1)
+  
+  &:hover, &.active
+    & .icon
+      color: THEME
+
+  &:not(.active):not(:hover) > .icon, & small
+    opacity: 0.75
+    font-weight: 400
+
+  .bck.theme  &
+    &.active .icon, &:hover .icon
+      color: COLOR

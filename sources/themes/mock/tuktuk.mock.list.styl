@@ -1,0 +1,29 @@
+ul
+  list-style: disc
+
+  &.square li, &.circle li
+    margin: 0 0 0.3em 0.6em
+
+  &:not(.none) li
+    padding: 0
+    background: none
+
+  &.empty
+    list-style: none outside
+    margin: 0
+  &.square, &.square ul
+    list-style: square outside
+  &.circle, &.circle ul
+    list-style: circle outside
+
+ol
+  margin: 0 0 0.3em 0.6em
+  list-style: decimal
+  & li
+    padding: 0
+
+ul, ol
+  & ul, ol
+    margin: 0.5em
+    & li
+      margin: 0 0 0.3em 0
