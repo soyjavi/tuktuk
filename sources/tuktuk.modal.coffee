@@ -44,14 +44,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
 
     tk.dom(document.body).append """
       <div data-tuktuk="lock" data-loading="false">
-        <div class="loading">
-          <div class="container">
-              <span class="top"></span>
-              <span class="right"></span>
-              <span class="bottom"></span>
-              <span class="left"></span>
-          </div>
-        </div>
+        <div class="loading"></div>
       </div>
       """
     tk.dom("[data-tuktuk=lock]").on "click", (event) ->

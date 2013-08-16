@@ -90,12 +90,6 @@
       box-orient(vertical)
 
 
-@media only screen and (max-width: 528px)
-  [data-tuktuk="modal"]
-    left: 5% !important
-    width: w = 90% !important
-    margin-left: 0 !important
-
 [data-tuktuk="lock"]
   display: none
   width: 100%
@@ -113,19 +107,42 @@
         display: block
 
   & > .loading
-    SIZE = 128px
+    SIZE = 5.5em
     display: none
     position: fixed
     left: 50%
     top: 50%
     width: SIZE
-    height: SIZE
+    height: (SIZE / 2)
     margin-left: -(SIZE / 2)
     margin-top: -(SIZE / 2)
-    padding: 28px
 
-    & > .container
-      height: 1em
-      width: 1em
-      transform-origin .5em .5em
-      font-size: (SIZE / 2)
+    SPEED = 1s
+    SIZE = (SIZE / 3.5)
+    &::before, &::after 
+      content: ""
+      position: absolute
+      display: block
+      top: (SIZE / 2.55)
+      width: SIZE
+      height: SIZE
+      animation loading-dots SPEED infinite
+
+    &::before 
+      left: (SIZE / 2.3)
+    &::after 
+      animation loading-dots SPEED (SPEED / 2) infinite
+      right: (SIZE / 2.3)
+
+@keyframes loading-dots 
+  0% 
+    opacity: 1
+    transform(scale( 1 ))
+  50% 
+    opacity: 0.5
+    transform(scale( 0.85 ))
+  100% 
+    opacity: 1
+    transform(scale( 1 ))
+
+
