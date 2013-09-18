@@ -1,6 +1,6 @@
 window.TukTuk.Modal = do (tk = TukTuk) ->
 
-  lock = undefined
+  lock  = undefined
   modal = undefined
 
   ###
@@ -23,6 +23,15 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     , 250
     @
 
+  alert = (message = "") ->
+    lock.addClass("active").show()
+    @_hideAnyModal()
+    modal = tk.dom("[data-tuktuk=modal][data-modal=alert")
+    text  = modal.find "#text"
+    text.html message
+    modal.addClass "active"
+    @
+
   ###
       @loading: Describe method
   ###
@@ -42,11 +51,34 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     tk.dom("[data-tuktuk-modal]").on "click", ->
       TukTuk.Modal.show(tk.dom(this).attr('data-tuktuk-modal'))
 
-    tk.dom(document.body).append """
+    loading = """
       <div data-tuktuk="lock" data-loading="false">
         <div class="loading"></div>
       </div>
       """
+    alert_template = """
+      <div data-tuktuk="modal" data-modal="alert" class="column_5">
+        <header class="bck alert">
+          <h4 class="text thin inline">Alert</h4>            
+        </header>
+        <article id="text" class="text big"></article>
+        <footer>
+          <button data-modal="close" class="button large theme on-right margin-bottom">Accept</button>            
+        </footer>
+      </div>
+      """
+    prompt_template = """
+      """
+    confirm_template = """
+      """
+
+    tk.dom(document.body).append """
+      #{alert_template}
+      #{prompt_template}
+      #{confirm_template}
+      #{loading}
+      """
+
     tk.dom("[data-tuktuk=lock]").on "click", (event) ->
       loading = lock.attr("data-loading")
       TukTuk.Modal.hide() unless event.target is modal or loading is "true"
@@ -54,6 +86,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     lock = tk.dom("[data-tuktuk=lock]").first()
   )()
 
-  show: show
-  hide: hide
-  loading: loading
+  show    : show
+  hide    : hide
+  loading : loading
+  alert   : alert
