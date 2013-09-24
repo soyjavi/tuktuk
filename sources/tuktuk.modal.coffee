@@ -1,6 +1,6 @@
 window.TukTuk.Modal = do (tk = TukTuk) ->
 
-  lock = undefined
+  lock  = undefined
   modal = undefined
 
   ###
@@ -23,6 +23,64 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     , 250
     @
 
+  alert = (message = "") ->
+    modal = tk.dom("[data-tuktuk=modal][data-modal=alert]")
+    text  = modal.find "#text"
+    text.html message
+
+    modal.find("button.success").on "click.Modal.alert", ->
+      hide()
+
+    lock.addClass("active").show()
+    @_hideAnyModal()
+    modal.addClass "active"
+    @
+
+  confirm = (message = "", true_cb, false_cb) ->
+    modal = tk.dom("[data-tuktuk=modal][data-modal=confirm]")
+    text  = modal.find "#text"
+    accept_button = modal.find "button.success"
+    cancel_button = modal.find "button.alert"
+
+    doCallback = (callback) ->
+      hide()
+      accept_button.unbind "click.Modal.confirm"
+      cancel_button.unbind "click.Modal.confirm"
+      if callback then setTimeout callback, 250
+
+    text.html message
+    accept_button.on "click.Modal.confirm", -> doCallback true_cb
+    cancel_button.on "click.Modal.confirm", -> doCallback false_cb
+
+    lock.addClass("active").show()
+    @_hideAnyModal()
+    modal.addClass "active"
+    @
+
+  prompt = (message = "", callback) ->
+    modal = tk.dom("[data-tuktuk=modal][data-modal=prompt]")
+    text  = modal.find "#text"
+    content = modal.find "#content"
+    accept_button = modal.find "button.success"
+    cancel_button = modal.find "button.alert"
+
+    text.html message
+    accept_button.on "click.Modal.prompt", -> 
+      content = content.val()      
+      hide()
+      accept_button.unbind "click.Modal.prompt"
+      if callback then setTimeout ->
+        callback(content)
+      , 250
+
+    cancel_button.on "click.Modal.prompt", -> hide()
+    content.val ""
+
+    lock.addClass("active").show()
+    @_hideAnyModal()
+    modal.addClass "active"
+    @
+
   ###
       @loading: Describe method
   ###
@@ -42,11 +100,71 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     tk.dom("[data-tuktuk-modal]").on "click", ->
       TukTuk.Modal.show(tk.dom(this).attr('data-tuktuk-modal'))
 
-    tk.dom(document.body).append """
+    loading_template = """
       <div data-tuktuk="lock" data-loading="false">
         <div class="loading"></div>
       </div>
       """
+    alert_template = """
+      <div data-tuktuk="modal" data-modal="alert" class="column_5">
+        <header class="bck alert">
+          <h4 class="text thin inline">Alert</h4>            
+        </header>
+        <article id="text" class="text big"></article>
+        <footer>
+          <button class="button large success on-right margin-bottom">
+            <span class="icon ok"></span>
+          </button>
+        </footer>
+      </div>
+      """
+
+    prompt_template = """
+      <div data-tuktuk="modal" data-modal="prompt" class="column_5">
+        <header class="bck alert">
+          <h4 class="text thin inline">Alert</h4>            
+        </header>
+        <article class="text big">
+          <form>
+            <label for="content" id="text"/>
+            <input type="text" id="content"/>
+          </form>
+        </article>
+        <footer>
+          <button class="button large alert on-right margin-bottom">
+            <span class="icon remove"></span>
+          </button>
+          <button class="button large success on-right margin-bottom margin-right">
+            <span class="icon ok"></span>
+          </button>          
+        </footer>        
+      </div>
+      """
+
+    confirm_template = """
+      <div data-tuktuk="modal" data-modal="confirm" class="column_5">
+        <header class="bck alert">
+          <h4 class="text thin inline">Confirm</h4>            
+        </header>
+        <article id="text" class="text big"></article>
+        <footer>
+          <button class="button large alert on-right margin-bottom">
+            <span class="icon remove"></span>
+          </button>
+          <button class="button large success on-right margin-bottom margin-right">
+            <span class="icon ok"></span>
+          </button>
+        </footer>
+      </div>
+      """
+
+    tk.dom(document.body).append """
+      #{alert_template}
+      #{prompt_template}
+      #{confirm_template}
+      #{loading_template}
+      """
+
     tk.dom("[data-tuktuk=lock]").on "click", (event) ->
       loading = lock.attr("data-loading")
       TukTuk.Modal.hide() unless event.target is modal or loading is "true"
@@ -54,6 +172,9 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     lock = tk.dom("[data-tuktuk=lock]").first()
   )()
 
-  show: show
-  hide: hide
-  loading: loading
+  show    : show
+  hide    : hide
+  loading : loading
+  alert   : alert
+  confirm : confirm
+  prompt  : prompt
