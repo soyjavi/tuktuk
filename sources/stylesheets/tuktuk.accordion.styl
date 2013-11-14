@@ -1,0 +1,42 @@
+[data-tuktuk=accordion]
+  overflow hidden
+  margin 0
+  > [data-accordion=content]
+    margin 0
+    transition all ease .2s
+    max-height 0px  
+    list-style none    
+    li:not([data-tuktuk=accordion])
+      padding AIR
+      margin 0 
+ 
+  > [data-accordion=activator]
+    padding AIR 
+    display block
+    width 100%
+    height 100% 
+    cursor pointer
+    &:hover 
+      background-color rgba(0,0,0,.4) 
+ 
+    &::after      
+      transition all ease .5s
+      content ">"
+      vertical-align middle
+      float right
+
+  &.active 
+    > [data-accordion=activator] 
+      font-weight 700
+
+      &::after
+        transform rotate(90deg)
+
+    > [data-accordion=content]
+      background-color rgba(0,0,0,.1)
+      transition max-height ease 1.5s
+      max-height 999px
+
+
+    
+  
