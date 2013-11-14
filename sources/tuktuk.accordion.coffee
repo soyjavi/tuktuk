@@ -1,7 +1,6 @@
 window.TukTuk.Accordion = do (tk = TukTuk) ->
 
-  init: do ->
-    selector = "[data-tuktuk=accordion] > [data-accordion=activator]"
+  init: do ->    
     tk.dom("[data-tuktuk=accordion]").each (index, element) ->
       accordion = tk.dom element
       activator = accordion.find("[data-accordion=activator]").first()
