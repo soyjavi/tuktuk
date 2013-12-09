@@ -64,14 +64,13 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     accept_button = modal.find "button.success"
     cancel_button = modal.find "button.alert"
 
-    accept_button = modal.unbind "click.Modal.prompt"
-    cancel_button = modal.unbind "click.Modal.prompt"
+    accept_button.unbind "click.Modal.prompt"
+    cancel_button.unbind "click.Modal.prompt"
 
     text.html message
-    accept_button.on "click.Modal.prompt", ->
-      content = content.val()
-      hide()
-      accept_button.unbind "click.Modal.prompt"
+    accept_button.on "click.Modal.prompt", -> 
+      content = content.val()      
+      hide()      
       if callback then setTimeout ->
         callback(content)
       , 250
