@@ -15,11 +15,11 @@ module.exports = (grunt) ->
 
     source:
       coffee: [
-        "sources/tuktuk.coffee", 
+        "sources/tuktuk.coffee",
         "sources/tuktuk.*.coffee"],
-      stylus: [ 
+      stylus: [
         "sources/stylesheets/tuktuk.*.styl"],
-      theme_default: [ 
+      theme_default: [
         "sources/themes/default/tuktuk.default.*.styl"],
       theme_mock: [
         "sources/themes/mock/tuktuk.mock.styl"
@@ -28,8 +28,8 @@ module.exports = (grunt) ->
         "sources/componentes/lungo.icon/lungo.icon.css"]
 
     coffee:
-      build: 
-        files: 
+      build:
+        files:
           "<%= meta.endpoint %>/<%= meta.file %>.js" : ["<%= source.coffee %>"]
 
     stylus:
@@ -65,7 +65,6 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-stylus"
-  grunt.loadNpmTasks "grunt-contrib-jade"
   grunt.loadNpmTasks "grunt-contrib-uglify"
   grunt.loadNpmTasks "grunt-contrib-concat"
   grunt.loadNpmTasks "grunt-contrib-watch"

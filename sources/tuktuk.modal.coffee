@@ -65,8 +65,8 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     cancel_button = modal.find "button.alert"
 
     text.html message
-    accept_button.on "click.Modal.prompt", -> 
-      content = content.val()      
+    accept_button.on "click.Modal.prompt", ->
+      content = content.val()
       hide()
       accept_button.unbind "click.Modal.prompt"
       if callback then setTimeout ->
@@ -91,7 +91,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
 
   _hideAnyModal: -> tk.dom("[data-tuktuk=modal]").removeClass("active")
 
-  _Instance: (->
+  _Instance: do ->
     tk.dom("[data-tuktuk=modal].side").each (index, element) ->
       modal = tk.dom(element)
       modal.html "<div>" + modal.html() + "</div>"
@@ -108,7 +108,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     alert_template = """
       <div data-tuktuk="modal" data-modal="alert" class="column_5">
         <header class="bck alert">
-          <h4 class="text thin inline">Alert</h4>            
+          <h4 class="text thin inline">Alert</h4>
         </header>
         <article id="text" class="text big"></article>
         <footer>
@@ -122,7 +122,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     prompt_template = """
       <div data-tuktuk="modal" data-modal="prompt" class="column_5">
         <header class="bck alert">
-          <h4 class="text thin inline">Alert</h4>            
+          <h4 class="text thin inline">Alert</h4>
         </header>
         <article class="text big">
           <form>
@@ -136,15 +136,15 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
           </button>
           <button class="button large success on-right margin-bottom margin-right">
             <span class="icon ok"></span>
-          </button>          
-        </footer>        
+          </button>
+        </footer>
       </div>
       """
 
     confirm_template = """
       <div data-tuktuk="modal" data-modal="confirm" class="column_5">
         <header class="bck alert">
-          <h4 class="text thin inline">Confirm</h4>            
+          <h4 class="text thin inline">Confirm</h4>
         </header>
         <article id="text" class="text big"></article>
         <footer>
@@ -165,12 +165,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
       #{loading_template}
       """
 
-    tk.dom("[data-tuktuk=lock]").on "click", (event) ->
-      loading = lock.attr("data-loading")
-      TukTuk.Modal.hide() unless event.target is modal or loading is "true"
-      
     lock = tk.dom("[data-tuktuk=lock]").first()
-  )()
 
   show    : show
   hide    : hide

@@ -1,0 +1,21 @@
+{
+  "name": "Tuktuk",
+  "description": "Simple (but powerful) RWD Framework",
+  "version": "0.7.5",
+  "homepage": "http://tuktuk.tapquo.com",
+  "author": {
+    "name": "Javi Jimenez",
+    "site": "https://twitter.com/soyjavi"},
+  "license": [ {"type": "GPLv3"} ],
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-watch": "*"
+  },
+  "scripts": {},
+  "engines": {}
+}
