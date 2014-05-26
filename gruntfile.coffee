@@ -20,10 +20,8 @@ module.exports = (grunt) ->
       stylus: [
         "sources/stylesheets/tuktuk.*.styl"],
       theme_default: [
+        "sources/themes/default/tuktuk.default.styl"
         "sources/themes/default/tuktuk.default.*.styl"],
-      theme_mock: [
-        "sources/themes/mock/tuktuk.mock.styl"
-        "sources/themes/mock/tuktuk.mock.*.styl"],
       icons: [
         "sources/componentes/lungo.icon/lungo.icon.css"]
 
@@ -39,9 +37,6 @@ module.exports = (grunt) ->
       theme_default:
         options: compress: true, import: [ "__constants"]
         files: "<%= meta.endpoint %>/<%=meta.file%>.theme.default.css": "<%= source.theme_default %>"
-      theme_mock:
-        options: compress: true, import: [ "__constants"]
-        files: "<%= meta.endpoint %>/<%=meta.file%>.theme.mock.css": "<%= source.theme_mock %>"
 
     copy:
       main:
@@ -59,9 +54,6 @@ module.exports = (grunt) ->
       theme_default:
         files: ["<%= source.theme_default %>"]
         tasks: ["stylus:theme_default"]
-      theme_mock:
-        files: ["<%= source.theme_mock %>"]
-        tasks: ["stylus:theme_mock"]
 
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-stylus"

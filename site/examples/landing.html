@@ -6,20 +6,14 @@
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="../package/tuktuk.css">
-    <link rel="stylesheet" href="../package/tuktuk.theme.mock.css">
+    <link rel="stylesheet" href="../package/tuktuk.theme.default.css">
     <!-- TUKTUK.WIDGETS -->
     <link rel="stylesheet" href="../package/tuktuk.icons.css">
     <style>
         body > header .logo {
-            margin-top: 8px;
-            margin-right: 8px;
-            max-height: 30px; }
-
-        body > footer img {
-            height: 18px;
-            position: relative;
-            top: 5px;
-            left: 2px; }
+            margin-right: 1rem;
+            max-height: 3rem;
+            border-radius: .25rem;}
 
         section.landing input {
             border-radius: 1px 0px 0px 1px !important;
@@ -38,12 +32,12 @@
     <header class="bck margin-top margin-bottom">
         <div class="row">
             <div class="column_6">
-                <img src="../images/logo-green.png" class="logo on-left"/>
+                <img src="../images/tuktuk.png" class="logo on-left"/>
                 <h2 class="text italic thin">Landing Template</h2>
             </div>
             <nav class="column_6 text right">
-                <a href="#" class="button secondary"><span class="icon user"></span>Login</a>
-                <a href="#" class="button"><span class="icon pencil"></span>Signup</a>
+                <a href="#" class="button"><span class="icon user"></span>Login</a>
+                <a href="#" class="button bck theme"><span class="icon pencil"></span>Signup</a>
             </nav>
         </div>
     </header>
@@ -64,10 +58,10 @@
         <h5 class="text book">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
     </section>
 
-    <section class="bck dark padding text center ">
+    <section class="bck dark padding text center">
         <div class="row padding-bottom">
             <div class="column_10 offset_1">
-                <h1 class="text book color default">Lorem ipsum dolor sit amet</h1>
+                <h1 class="text book color theme">Lorem ipsum dolor sit amet</h1>
                 <h4>
                     Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
                 </h4>
@@ -138,19 +132,12 @@
         </div>
     </section>
 
-    <footer class="bck dark padding">
-        <div class="row margin-top margin-bottom">
-            <div class="column_5">
-                <p class="text bold big">Handcrafted by <a href="http://tapquo.com" class="display inline"><img src="http://cdn.tapquo.com/images/logo_footer.png"/></a></p>
-                We're a  user experiences company located in <span class="text normal">Bilbao</span>, ES.
-            </div>
-            <div class="column_4">
-                <p class="text bold big">Join the team!</p>
-                Let us know how you're! <a href="mailto:hello@tapquo.com?subject=job" class="text underline color theme">Get in touch</a>
-            </div>
-            <div class="column_3">
-                <p class="text bold big">Need some help?</p>
-                For quick answers or help <a href="https://twitter.com/tapquo" target="_blank" class="text underline color theme">follow us</a>
+    <footer class="padding align center text small bck light">
+        <div class="row">
+            <div class="offset_3 column_6">
+                <p>Handcrafted by <a href="http://tapquo.com" class="text bold color theme">tapquo</a>
+                </p>
+                <smalL>We're a  user experiences company located in Bilbao, ES.</smalL>
             </div>
         </div>
     </footer>
