@@ -4,16 +4,17 @@
   transform translateY(-100%)
   visibility: hidden
   z-index: 1983
+  flex-direction column
 
-  & header
+  header
     padding: (AIR / 1.9) AIR
 
-  & article, footer
+  article, footer
     padding: (AIR / 1.5) AIR
 
-  & article
+  article
     box-flex(1)
-    & [class^="column_"]
+    [class^="column_"]
       margin: 0 !important
 
   &.active
@@ -72,8 +73,8 @@
 
   &.side
     position: absolute
-    display-box()
-    box-orient(vertical)
+    display-flex()
+    flex-direction column
     top: 0
     right: 0
     bottom: 0
@@ -82,12 +83,6 @@
     transform translateX(100%)
     &.active
       transform translateX(0%)
-
-    & > div
-      width: 100%
-      height: 100%
-      display-box()
-      box-orient(vertical)
 
 
 [data-tuktuk="lock"]
@@ -103,10 +98,10 @@
   &.active
     visibility: visible
     &[data-loading=true]
-      & > .loading
+      > .loading
         display: block
 
-  & > .loading
+  > .loading
     SIZE = 5.5em
     display: none
     position: fixed
@@ -119,7 +114,7 @@
 
     SPEED = 1s
     SIZE = (SIZE / 3.5)
-    &::before, &::after 
+    &::before, &::after
       content: ""
       position: absolute
       display: block
@@ -128,21 +123,19 @@
       height: SIZE
       animation loading-dots SPEED infinite
 
-    &::before 
+    &::before
       left: (SIZE / 2.3)
-    &::after 
+    &::after
       animation loading-dots SPEED (SPEED / 2) infinite
       right: (SIZE / 2.3)
 
-@keyframes loading-dots 
-  0% 
+@keyframes loading-dots
+  0%
     opacity: 1
     transform(scale( 1 ))
-  50% 
+  50%
     opacity: 0.5
     transform(scale( 0.85 ))
-  100% 
+  100%
     opacity: 1
     transform(scale( 1 ))
-
-

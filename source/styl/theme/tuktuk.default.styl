@@ -4,17 +4,17 @@ body
   color: COLOR
   background: BACKGROUND
   font-size: 16px
-  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif
-  font-weight: 300
+  font-family: FONT-FAMILY, "Helvetica Neue", Helvetica, sans-serif
+  font-weight: FONT-WEIGHT
 
   /* ====================== LINKS ====================== */
-  & a
+  a
     color: COLOR
     &:not(.button):hover, &:not(.button):active
       color: THEME
 
   /* ====================== BACKGROUNDS ====================== */
-  & .bck
+  .bck
     &.light
       background-color: LIGHT
     &.dark
@@ -23,21 +23,21 @@ body
       background-color: THEME
     &.theme, &.dark
       color: WHITE
-      & a
+      a
         color: WHITE
         &:not(.button):hover, &:not(.button):active
           color: WHITE
 
   /* ================================= TEXT ================================ */
-  & .text
+  .text
     &.shadow
       text-shadow 0 1px 1px rgba(0,0,0,0.5)
-  & .color
+  .color
     &.white
       color: WHITE !important
     &:not(.bck).theme
       color: THEME !important
     &.default
       color: COLOR !important
-  & strong
+  strong
     font-weight: 700 !important

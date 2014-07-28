@@ -58,7 +58,7 @@ gulp.task('styl', function() {
 });
 
 gulp.task('theme', function() {
-  gulp.src(source.styl)
+  gulp.src(source.theme)
     .pipe(concat('tuktuk.theme.default.styl'))
     .pipe(stylus({compress: true, errors: true}))
     .pipe(header(banner, {pkg: pkg}))

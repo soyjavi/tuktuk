@@ -6,27 +6,29 @@
   font-size: inherit
   font-family: inherit
   font-weight: inherit
-  line-height: 2.5em
+  line-height: (1.25 * UNIT)
   text-align: center
   text-decoration: none
   outline: none
   background: none
 
   &.icon
-    padding: 0 0.65em
+    padding: 0 (.5 * UNIT)
   &:not(.icon)
-    padding: 0 1em
+    padding: 0 UNIT
     & .icon, & .loading
       margin-right: (AIR / 4)
 
   &.large
     font-size: FONT-SIZE-LARGE
+    line-height: (2 * UNIT)
+    padding: 0 (1.75 * UNIT)
   &.small
     font-size: FONT-SIZE-SMALL
   &.tiny
     font-size: FONT-SIZE-TINY
-    line-height: 2em
-    padding: 0 0.6em
+    line-height: (.75 * UNIT)
+    padding: 0 (.5 * UNIT)
 
   &.anchor
     width: 100%
@@ -36,27 +38,3 @@
 
   &.disabled, &:disabled
     cursor: default
-
-  // @todo: Loading buttons
-  transition background-color 400ms
-  &[data-loading]
-    & > .icon
-      display: none
-    & > .loading
-      display: inline-block
-      & > .container
-        animation loading 600ms infinite linear
-
-
-    & > .loading
-      position: relative
-      top: 0.2em
-      font-size: 1.25em
-      & > .container
-        height: 1em
-        width: 1em
-        & > span
-          &, &::before, &::after
-            width: 0.075em
-            border-radius 0
-

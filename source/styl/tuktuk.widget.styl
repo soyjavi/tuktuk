@@ -49,7 +49,7 @@
   padding-bottom: AIR !important
 
 
-/* ================== IMAGE & MEDIA ================== */
+/* ================== IMAGE MEDIA ================== */
 div.img
   height: 64px
   &.h128
@@ -87,26 +87,25 @@ hr
   margin: 0
 
 /* ====================== CONTROLS ====================== */
+[data-tuktuk=totals], [data-tuktuk=buttons]
+  display-flex()
+  align-content stretch
+  > *
+    flex-grow 1
+    text-align: center
+
 [data-tuktuk=totals]
-  display-box()
-  box-pack(justify)
   text-align: center
   list-style: none
-
-  & > *
-    box-flex(0)
-    // width: 1px
-    & > strong
+  > *
+    > strong
       display: block
       font-size: 1.8em
       line-height: font-size-tiny
-    & > small
+    > small
       text-transform: uppercase
       font-size: font-size-tiny
 
 [data-tuktuk=buttons]
-  display-box()
-  box-pack(justify)
-  & > *
-    box-flex(0)
+  > *
     display: inherit
