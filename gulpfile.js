@@ -67,7 +67,7 @@ gulp.task('theme', function() {
 });
 
 gulp.task('webserver', function() {
-  connect.server({ port: 8000, root: 'www/', livereload: true });
+  connect.server({ port: 8000, root: './', livereload: true });
 });
 
 gulp.task('init', function() {

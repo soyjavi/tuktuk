@@ -1,3 +1,6 @@
-[submodule "/package"]
-	path = /package
+[submodule "package"]
+	path = package
 	url = https://github.com/soyjavi/package-tuktuk.git
+[submodule "source/styl/STYLmethods"]
+	path = source/styl/STYLmethods
+	url = https://github.com/soyjavi/STYLmethods.git
