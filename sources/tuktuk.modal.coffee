@@ -1,12 +1,14 @@
 window.TukTuk.Modal = do (tk = TukTuk) ->
 
-  lock  = undefined
-  modal = undefined
+  lock       = undefined
+  modal      = undefined
+  disposable = true
 
   ###
       @todo: Describe method
   ###
-  show = (modal_id) ->
+  show = (modal_id, allow_dismiss=true) ->
+    disposable = allow_dismiss
     lock.addClass("active").show()
     @_hideAnyModal()
     modal = tk.dom("[data-tuktuk=modal]##{modal_id}").addClass "active"
@@ -24,6 +26,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     @
 
   alert = (message = "") ->
+    disposable = true
     modal = tk.dom("[data-tuktuk=modal][data-modal=alert]")
     text  = modal.find "#text"
     text.html message
@@ -37,6 +40,7 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     @
 
   confirm = (message = "", true_cb, false_cb) ->
+    disposable = false
     modal = tk.dom("[data-tuktuk=modal][data-modal=confirm]")
     text  = modal.find "#text"
     accept_button = modal.find "button.success"
@@ -58,17 +62,20 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
     @
 
   prompt = (message = "", callback) ->
+    disposable = false
     modal = tk.dom("[data-tuktuk=modal][data-modal=prompt]")
     text  = modal.find "#text"
     content = modal.find "#content"
     accept_button = modal.find "button.success"
     cancel_button = modal.find "button.alert"
 
+    accept_button.unbind "click.Modal.prompt"
+    cancel_button.unbind "click.Modal.prompt"
+
     text.html message
-    accept_button.on "click.Modal.prompt", ->
-      content = content.val()
-      hide()
-      accept_button.unbind "click.Modal.prompt"
+    accept_button.on "click.Modal.prompt", -> 
+      content = content.val()      
+      hide()      
       if callback then setTimeout ->
         callback(content)
       , 250
@@ -164,6 +171,11 @@ window.TukTuk.Modal = do (tk = TukTuk) ->
       #{confirm_template}
       #{loading_template}
       """
+
+    tk.dom("[data-tuktuk=lock]").on "click", (event) ->
+      loading = lock.attr("data-loading")
+      unless event.target is modal or loading is "true" or not disposable
+        TukTuk.Modal.hide() 
 
     lock = tk.dom("[data-tuktuk=lock]").first()
 
