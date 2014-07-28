@@ -1,21 +1,20 @@
 {
-  "name": "Tuktuk",
-  "description": "Simple (but powerful) RWD Framework",
-  "version": "0.9.0",
-  "homepage": "http://tuktuk.tapquo.com",
-  "author": {
-    "name": "Javi Jimenez",
-    "site": "https://twitter.com/soyjavi"},
-  "license": [ {"type": "MIT"} ],
-  "devDependencies": {
-    "grunt": "*",
-    "grunt-contrib-coffee": "*",
-    "grunt-contrib-stylus": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-concat": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-watch": "*"
-  },
-  "scripts": {},
-  "engines": {}
+  "name"        : "Tuktuk",
+  "version"     : "1.0.0",
+  "description" : "Simple (but powerful) RWD Framework",
+  "author"      : "Javi Jimenez <https://twitter.com/soyjavi>",
+  "homepage"    : "http://tuktuk.tapquo.com",
+  "license"     : "MIT",
+  "devDependencies" : {
+    "gulp"        : "*",
+    "gulp-coffee" : "*",
+    "gulp-concat" : "*",
+    "gulp-connect": "*",
+    "gulp-header" : "*",
+    "gulp-jasmine": "*",
+    "gulp-stylus" : "*",
+    "gulp-uglify" : "*",
+    "gulp-util"   : "*",
+    "gulp-yml"    : "*"
+  }
 }
