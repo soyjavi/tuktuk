@@ -14,18 +14,18 @@ var pkg     = require('./package.json');
 
 // -- FILES --------------------------------------------------------------------
 var path = {
-  build : './site/package',
+  build : './package',
   js    : ['atoms.build/atoms.js', 'atoms.build/extension.*.js'],
   css   : ['atoms.build/atoms.css','atoms.build/extension.*.css']};
 
 var source = {
-  coffee: [ 'sources/tuktuk.coffee',
-            'sources/tuktuk.*.coffee'],
-  styl  : [ 'sources/stylesheets/__constants.styl',
-            'sources/stylesheets/tuktuk.*.styl'],
-  theme : [ 'sources/themes/default/__constants.styl',
-            'sources/themes/default/tuktuk.default.styl',
-            'sources/themes/default/tuktuk.default.*.styl'],
+  coffee: [ 'source/coffee/tuktuk.coffee',
+            'source/coffee/tuktuk.*.coffee'],
+  styl  : [ 'source/styl/__init.styl',
+            'source/styl/tuktuk.*.styl'],
+  theme : [ 'source/styl/theme/__init.styl',
+            'source/styl/theme/tuktuk.default.styl',
+            'source/styl/theme/tuktuk.default.*.styl'],
   icons  :[ 'sources/componentes/lungo.icon/lungo.icon.css']};
 
 var banner = ['/**',
