@@ -1,0 +1,3 @@
+[submodule "sources/components/CSSmethods"]
+	path = sources/components/CSSmethods
+	url = git://github.com/soyjavi/CSSmethods.git
