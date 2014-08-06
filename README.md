@@ -286,7 +286,7 @@ If buttons are important, so are lists. Tuktuk comes with a group of styles easi
         </li>
         <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
     </ul>
-#### Squeare Bullets
+#### Square Bullets
     <ul class="square">
         <li>Cras mattis consectetur purus sit amet fermentum.</li>
         <li>
