@@ -12,17 +12,17 @@ Getting Started
 ---------------
 ### Examples
 Check out four examples of what you can do with tuktuk:
-[Blog Page](http://tuktuk.tapquo.com/examples/blog.html)
-[Landing Page](http://tuktuk.tapquo.com/examples/landing.html)
-[Profile Page](http://tuktuk.tapquo.com/examples/profile.html)
-[Web Application](http://tuktuk.tapquo.com/examples/app.html)
+[Blog Page](http://tuktuk.tapquo.com/microsites/tuktuk_blog.html)
+[Landing Page](http://tuktuk.tapquo.com/microsites/tuktuk_landing.html)
+[Profile Page](http://tuktuk.tapquo.com/microsites/tuktuk_profile.html)
+[Web Application](http://tuktuk.tapquo.com/microsites/tuktuk_app.html)
 
 
 ### GitHub
 This is opensource, so feel free to fork this project to help us improve TukTuk. All source code is developed with CoffeeScript and Stylus.
 
 ### Licensing
-TukTuk is licensed under GPLv3 licensed and a Commercial License for OEM uses. See [LICENSE](https://github.com/soyjavi/tuktuk/blob/master/LICENSE.md) for more information.
+TukTuk is licensed under GPLv3 licensed and a Commercial License for OEM uses. See [LICENSE](https://github.com/soyjavi/tuktuk/blob/master/LICENSE) for more information.
 
 How to use
 ----------
