@@ -23,6 +23,7 @@ var source = {
             'source/coffee/tuktuk.*.coffee'],
   styl  : [ 'source/styl/__init.styl',
             'source/styl/tuktuk.*.styl'],
+  grid  : [ 'source/styl/tuktuk.grid.styl'],
   theme : [ 'source/styl/theme/__init.styl',
             'source/styl/theme/tuktuk.default.styl',
             'source/styl/theme/tuktuk.default.*.styl'],
@@ -49,12 +50,20 @@ gulp.task('coffee', function() {
 });
 
 gulp.task('styl', function() {
+  gulp.src(source.grid)
+    .pipe(concat('tuktuk.grid.styl'))
+    .pipe(stylus({compress: true, errors: true}))
+    .pipe(header(banner, {pkg: pkg}))
+    .pipe(gulp.dest(path.build))
+
   gulp.src(source.styl)
     .pipe(concat('tuktuk.styl'))
     .pipe(stylus({compress: true, errors: true}))
     .pipe(header(banner, {pkg: pkg}))
     .pipe(gulp.dest(path.build))
     .pipe(connect.reload());
+
+
 });
 
 gulp.task('theme', function() {
