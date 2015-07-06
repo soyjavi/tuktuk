@@ -12,10 +12,10 @@ Getting Started
 ---------------
 ### Examples
 Check out four examples of what you can do with tuktuk:
-[Blog Page](http://tuktuk.tapquo.com/microsites/tuktuk_blog.html)
-[Landing Page](http://tuktuk.tapquo.com/microsites/tuktuk_landing.html)
-[Profile Page](http://tuktuk.tapquo.com/microsites/tuktuk_profile.html)
-[Web Application](http://tuktuk.tapquo.com/microsites/tuktuk_app.html)
+[Blog Page](http://tuktuk.tapquo.com/microsites/tuktuk_blog.html),
+[Landing Page](http://tuktuk.tapquo.com/microsites/tuktuk_landing.html),
+[Profile Page](http://tuktuk.tapquo.com/microsites/tuktuk_profile.html),
+[Web Application](http://tuktuk.tapquo.com/microsites/tuktuk_app.html).
 
 
 ### GitHub
